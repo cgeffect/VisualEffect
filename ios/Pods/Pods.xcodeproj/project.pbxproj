@@ -7,47 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B5F048C258BBD71E56DF0A95A85369A /* CGDrawEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 789C640E13325B76ECB2810BC6D218CB /* CGDrawEngine.cpp */; };
-		0CAAB6F28D4E7BB048063F80AA20E869 /* VisualEffect-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EF98BB1B35ABD7ED3B3497597DCD7F /* VisualEffect-dummy.m */; };
-		0CFBD2859FF59B224415234753B793E6 /* CGDrawFramebufferCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 795AB7DDC7CB5118EFACFEE04A6B0766 /* CGDrawFramebufferCache.cpp */; };
-		3F01A0DD4A1D66A24C66944BA872208B /* CGVec.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F40AE3BF395E3B837EFCDEAEB92C243 /* CGVec.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48AF36DF4B66A168F7C741E45CD4B086 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610F342F4181D3F8F971D187F7E4A6AC /* CoreGraphics.framework */; };
-		61ED7E30E50FD548558243876B0C6BE3 /* CGDrawFramebufferCache.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE8E0C4CF4C382D14DD2091B57E1C4B /* CGDrawFramebufferCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65CFD45E99B1762DC7CDB84366B718B8 /* CGDrawLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F8E4A3151793522690201AF47BA570D /* CGDrawLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7425EB538882F777CDBB28AA62745E7B /* CGDrawBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = C07F8F25B8DC556997E723C498C44143 /* CGDrawBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A62804E335484BE1718C686E1848D83 /* CGShaderUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 011C0D77CEBDFD6AB3924FB1E17A6F76 /* CGShaderUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7B4B80341FB33CC8E334F30058A2F251 /* CGDrawProgram.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D08377C164A6857422C9099429AA25E /* CGDrawProgram.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8005C0B76EAD9853DB6D02959C32A91B /* CGDrawEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5696E5916E991AF8C277635D63B980BD /* CGDrawEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8EEA835BE0C205F26A4F4C2B49DFD9EE /* CGDrawShader.h in Headers */ = {isa = PBXBuildFile; fileRef = FC8C90326267C1B24F6D18065AC3BE26 /* CGDrawShader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8FDE30CED44AEC20FEA77259144E6EB2 /* CGVec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66F5883ACE3DD25D5822B2EA598674C3 /* CGVec.cpp */; };
-		9079420FED761216CFC07BE3A8DE6B4B /* VisualEffect-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19AE740E2BEFDBB056956D21431732DC /* VisualEffect-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90835CEC71FBED854BCD782A1F514726 /* CGDrawFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C79AFF1278E70AE81651712BF6493945 /* CGDrawFilter.cpp */; };
-		92022174CC477E06FC1119AD6084DAB9 /* CGDrawTextureInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 35621B254137E26CE419ED212E939788 /* CGDrawTextureInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96DC3B2527BFAF95001C6D9D /* glInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96DC3B2327BFAF95001C6D9D /* glInterface.cpp */; };
-		96DC3B2627BFAF95001C6D9D /* glInterface.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 96DC3B2427BFAF95001C6D9D /* glInterface.hpp */; };
-		96EEFB5FA5E15E365C44C2A3DEDF13F7 /* CGDrawFramebuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 782978F6F0B32453D1D21234E2D45B51 /* CGDrawFramebuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9BE4E0C93969776324A0320A68E83A64 /* CGDrawTextureOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 87D82D5E40D102BB17B1C02D7F9B7779 /* CGDrawTextureOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9DDC909ADE7B4AA3FEDFAC7AD98C1537 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F560E4EA55AE7C412C1818A9A94F9A3 /* CoreVideo.framework */; };
-		9E373C0547165433970516EBFF555E4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89810B13AEB0DECCBB6FA4E18270315D /* Foundation.framework */; };
-		9F20923C37A083304A1109C54695327F /* CGDrawTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6962A64EDB63DBAFCBBEC38382FFF661 /* CGDrawTexture.cpp */; };
-		A55981E91B224F47C4DF60DA3DC28D7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F694D8D23EF4482EEE8BE2557E9BA8 /* UIKit.framework */; };
-		A8E5B24D8DF5EDAC40F8FD7FF1E68BBF /* CGOpenGL.h in Headers */ = {isa = PBXBuildFile; fileRef = D844AE6CF393C92A01F59F1F42B616F8 /* CGOpenGL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0192F149E8B5816A8B02A75BD960EAAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2F694D8D23EF4482EEE8BE2557E9BA8 /* UIKit.framework */; };
+		0DF5BFF4792A7A2BD2D184898277ED9C /* VisualEffect-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 249AA60B6DBEB7074C5B3FDCE319381B /* VisualEffect-dummy.m */; };
+		246D068612A4FD1094597CEDE5B34C71 /* CGDrawLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EDD87179F2729DB6A7AEF3118A59E3 /* CGDrawLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BF4A4C980081BD41B0E05164747D355 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F560E4EA55AE7C412C1818A9A94F9A3 /* CoreVideo.framework */; };
+		30D137713072792862219F301D0A74C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610F342F4181D3F8F971D187F7E4A6AC /* CoreGraphics.framework */; };
+		3A08D4F770EE0086F6D3D261CF400AD9 /* CGDrawProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 288385FC6C6F2FBAA245B118A5E83FBB /* CGDrawProgram.cpp */; };
+		47B868C3D2BEF56567EFC15959597DB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89810B13AEB0DECCBB6FA4E18270315D /* Foundation.framework */; };
+		5659E3E7D25D8B832E909A760ED28E2F /* VisualEffect-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C43FB648F0BBFABDDCEB93C2A6494067 /* VisualEffect-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B6C829F8FA84DCBBF8E439A72431DD1 /* CGDrawTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CE26357F63B812A2379F0970587C323 /* CGDrawTexture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		657FC0795FD7D6D2B804F1FC9F39C0EF /* CGDrawFramebuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF56CC0383C8E5D8948590D1901AE0E /* CGDrawFramebuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65B1BEF5D792BDA49E217E860E988BB2 /* CGDrawFramebufferCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DAFFE0EFAFF1731AEB90A6C37422BF8 /* CGDrawFramebufferCache.cpp */; };
+		68EA487A50CFA304F1482B0A02C0BF14 /* CGDrawDataInput.h in Headers */ = {isa = PBXBuildFile; fileRef = F64670C17F4CE6407A7BDB4DE3D33A16 /* CGDrawDataInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7390FFD68796149D03D9500F24BFCBF4 /* CGDrawFramebuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F6A334B150CDFE10FF51A7D34F9B17D /* CGDrawFramebuffer.cpp */; };
+		77950EA4247559FCF7561973ECA8B9FD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA5B0A8B5F017CF4E9A3F5E2BDCDC0 /* AVFoundation.framework */; };
+		79FD628A3A0F74277A258BD0D751AAE1 /* CGDrawProgram.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A581863BAE072BF5217FF2E869CE5BE /* CGDrawProgram.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CB9565C70BB5F21E0E8F97E1B9E0F8F /* CGDrawTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B98E12D8F9ED1C732B6A486A0C6C8C4 /* CGDrawTexture.cpp */; };
+		7DEDBF75B3909F8FF027AF820497B973 /* CGVec.h in Headers */ = {isa = PBXBuildFile; fileRef = 5971FCFAF635830667350724CEBAAAB8 /* CGVec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		838D187C766094D926D5F4A305743CDF /* CGDrawEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 8956952A19F04D39F1979B2A83CA5603 /* CGDrawEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87BFEE1A192D7F7E9BF93E1A0A233CA5 /* CGDrawBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 8102934932AF9728CED54B7A3F089F8E /* CGDrawBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CA169284096DB6ED1EF4384F520219E /* CGDrawEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 771311F934F674D1FF1C5C2DC4F5C5FA /* CGDrawEngine.cpp */; };
+		8CBC8D6E40DC4BCAD5B721672827AB02 /* CGDrawInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 160731D3A371785A0E333C38A83511C6 /* CGDrawInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E4E9164DA077876CA906BD8A8D95CA8 /* glInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B228FA9B187B36FCB559BE9DF5D13AD9 /* glInterface.cpp */; };
+		9AC55CE6E6D03389AAEF244B35A6B6DE /* CGDrawFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 80F14A7252CD07E0A221626A7542C143 /* CGDrawFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D036471A712D75D34DBED7668751FA5 /* CGShaderUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A5E82A3FCC1E7B7B05741B63F43594CB /* CGShaderUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E106CECED4B6453450B6F4FC6DF7757 /* CGVec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B84C52FC419289A266752FA85D91AD01 /* CGVec.cpp */; };
+		A66D0C19DC4CFA25566476A401616316 /* CGShaderUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32A46508A832CDCE8E8CB930A181B0A3 /* CGShaderUtil.cpp */; };
 		B05D9051B81B770441292847AC2CA16B /* Pods-VisualEffect-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF11DE11351C53BE1E28584F8A2A5331 /* Pods-VisualEffect-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2CBF6A7FEE56C9801B3C3C6D5FC8940 /* Pods-VisualEffect-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1A1611E5C649E54043F0B9F2FB30FD /* Pods-VisualEffect-dummy.m */; };
-		B750BAF5086F32A8A30E28DB6E6D5BD1 /* CGDrawFramebuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 357B53DF2C9C092836778D906FCABE6A /* CGDrawFramebuffer.cpp */; };
-		B9111F1B0DCDAB109CF6A25705D106A0 /* CGDrawDataInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 9482597A3458E1AEEB9EEAF97173751A /* CGDrawDataInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDBE58DF8C200BE7D2D7645F1C0D7443 /* CGDrawOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 87097C27037A4B6F0B2D4D9AB1EA2AFE /* CGDrawOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D05C3D62675CF6666A95E18ACE2B80BB /* CGShaderUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6173E4E3F825B87F8FF757682E8580A /* CGShaderUtil.cpp */; };
-		DADFB2B89F312D5A34C90EAB0E4927D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFA5B0A8B5F017CF4E9A3F5E2BDCDC0 /* AVFoundation.framework */; };
-		E22730B35C1DBB39C702491FF11E55E4 /* CGDrawFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E4C4506ADA9F9EFD2E74D87CBA53DAC /* CGDrawFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA59F59DAD26D324A55A32B5E3B5B684 /* CGDrawTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = A40F1C90308145EA0E06FCE978A79A42 /* CGDrawTexture.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA89F28271152F769E297784AE3DD1DB /* CGDrawInput.h in Headers */ = {isa = PBXBuildFile; fileRef = A4671AE189817F3091790D68C0A5C228 /* CGDrawInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAC95840FC66E96E9CCAD5CE5BAFDE43 /* CGDrawFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFA17D1DA65D26F4C4D039DC088FA353 /* CGDrawFilter.cpp */; };
+		C6709F96EE1ADD9A0E13DEE959E5159F /* CGDrawFramebufferCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D8422F290D9D53D50BB61DE5F996F280 /* CGDrawFramebufferCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF2D938BF6F1126E62F2A406997AB104 /* CGDrawOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = E52FC4E33BB24A64974BDE31F92D6788 /* CGDrawOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E722323A3D2D4A61A466B25C163BB5A3 /* CGDrawTextureOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B898B1FB03AA1F81BC90875966A1A4 /* CGDrawTextureOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8E586EBC7645723C38836012B1C4E3F /* CGDrawTextureInput.h in Headers */ = {isa = PBXBuildFile; fileRef = B424E905E4943CF15014898A0245FCA6 /* CGDrawTextureInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE36B82AA046786107AE59C9BEBF9400 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89810B13AEB0DECCBB6FA4E18270315D /* Foundation.framework */; };
-		FB1442BABEEAAC488C826CDF3F41CF94 /* CGDrawProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81830EC96EC9B52E3C315ABB17D04DDB /* CGDrawProgram.cpp */; };
+		FB3D419ED00C694EA44AFEAAA64A5A1A /* CGOpenGL.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F766DB166D222BABB2F45C24507B8AF /* CGOpenGL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDA41A78294F98AFB4FEFCB2E8117C17 /* CGDrawShader.h in Headers */ = {isa = PBXBuildFile; fileRef = CF30185F03920078F0867E8CA21933C1 /* CGDrawShader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A49E4285DDA29D37E494BA271192BC69 /* PBXContainerItemProxy */ = {
+		636844785E183004F27C5AE63BDAC8C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -57,75 +56,62 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		011C0D77CEBDFD6AB3924FB1E17A6F76 /* CGShaderUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGShaderUtil.h; sourceTree = "<group>"; };
-		19AE740E2BEFDBB056956D21431732DC /* VisualEffect-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VisualEffect-umbrella.h"; sourceTree = "<group>"; };
+		0AF56CC0383C8E5D8948590D1901AE0E /* CGDrawFramebuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawFramebuffer.h; sourceTree = "<group>"; };
+		0CE26357F63B812A2379F0970587C323 /* CGDrawTexture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawTexture.h; sourceTree = "<group>"; };
+		0F766DB166D222BABB2F45C24507B8AF /* CGOpenGL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGOpenGL.h; sourceTree = "<group>"; };
+		160731D3A371785A0E333C38A83511C6 /* CGDrawInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawInput.h; sourceTree = "<group>"; };
+		249AA60B6DBEB7074C5B3FDCE319381B /* VisualEffect-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VisualEffect-dummy.m"; sourceTree = "<group>"; };
+		288385FC6C6F2FBAA245B118A5E83FBB /* CGDrawProgram.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawProgram.cpp; sourceTree = "<group>"; };
 		2B42509AC0A41B682653BA69871E7F45 /* Pods-VisualEffect-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VisualEffect-acknowledgements.plist"; sourceTree = "<group>"; };
-		30AAE232DB0B4ACB2F5E3128C02542E0 /* VisualEffect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VisualEffect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		35621B254137E26CE419ED212E939788 /* CGDrawTextureInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawTextureInput.h; sourceTree = "<group>"; };
-		357B53DF2C9C092836778D906FCABE6A /* CGDrawFramebuffer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawFramebuffer.cpp; sourceTree = "<group>"; };
-		3E4C4506ADA9F9EFD2E74D87CBA53DAC /* CGDrawFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawFilter.h; sourceTree = "<group>"; };
+		30AAE232DB0B4ACB2F5E3128C02542E0 /* VisualEffect */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VisualEffect; path = VisualEffect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32A46508A832CDCE8E8CB930A181B0A3 /* CGShaderUtil.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = CGShaderUtil.cpp; sourceTree = "<group>"; };
+		3B98E12D8F9ED1C732B6A486A0C6C8C4 /* CGDrawTexture.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawTexture.cpp; sourceTree = "<group>"; };
 		456416DF74D0FDFAB468D61764DF060D /* Pods-VisualEffect-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VisualEffect-frameworks.sh"; sourceTree = "<group>"; };
 		4602232941ACE4ADBBF075EAB6BCF76F /* Pods-VisualEffect-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VisualEffect-Info.plist"; sourceTree = "<group>"; };
-		4E195A611747B89A27092BFF13D73715 /* VisualEffect.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VisualEffect.modulemap; sourceTree = "<group>"; };
-		4EA8F64945392E1951553295ECE43B49 /* VisualEffect-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VisualEffect-prefix.pch"; sourceTree = "<group>"; };
+		46EDD87179F2729DB6A7AEF3118A59E3 /* CGDrawLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawLog.h; sourceTree = "<group>"; };
 		4F560E4EA55AE7C412C1818A9A94F9A3 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
-		4F8E4A3151793522690201AF47BA570D /* CGDrawLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawLog.h; sourceTree = "<group>"; };
-		55EF98BB1B35ABD7ED3B3497597DCD7F /* VisualEffect-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VisualEffect-dummy.m"; sourceTree = "<group>"; };
+		4F6A334B150CDFE10FF51A7D34F9B17D /* CGDrawFramebuffer.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawFramebuffer.cpp; sourceTree = "<group>"; };
 		566DE0A10BA678E523EE6CFA96F15598 /* Pods-VisualEffect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VisualEffect.release.xcconfig"; sourceTree = "<group>"; };
-		5696E5916E991AF8C277635D63B980BD /* CGDrawEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawEngine.h; sourceTree = "<group>"; };
+		5971FCFAF635830667350724CEBAAAB8 /* CGVec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGVec.h; sourceTree = "<group>"; };
 		610F342F4181D3F8F971D187F7E4A6AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		66F5883ACE3DD25D5822B2EA598674C3 /* CGVec.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = CGVec.cpp; sourceTree = "<group>"; };
-		6962A64EDB63DBAFCBBEC38382FFF661 /* CGDrawTexture.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawTexture.cpp; sourceTree = "<group>"; };
-		6D08377C164A6857422C9099429AA25E /* CGDrawProgram.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawProgram.h; sourceTree = "<group>"; };
-		6F40AE3BF395E3B837EFCDEAEB92C243 /* CGVec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGVec.h; sourceTree = "<group>"; };
+		611F62ADA85D97DAF812777F68A0A354 /* VisualEffect.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = VisualEffect.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		66B898B1FB03AA1F81BC90875966A1A4 /* CGDrawTextureOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawTextureOutput.h; sourceTree = "<group>"; };
 		71B3AA379D7E259C18F4F5A0E099D5B6 /* Pods-VisualEffect-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VisualEffect-acknowledgements.markdown"; sourceTree = "<group>"; };
-		771BFA064F49DBE62779A579E7FF7102 /* VisualEffect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VisualEffect.debug.xcconfig; sourceTree = "<group>"; };
-		782978F6F0B32453D1D21234E2D45B51 /* CGDrawFramebuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawFramebuffer.h; sourceTree = "<group>"; };
-		789C640E13325B76ECB2810BC6D218CB /* CGDrawEngine.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawEngine.cpp; sourceTree = "<group>"; };
-		78A84AD1E0B6B51A07556A3C33C93D81 /* VisualEffect-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VisualEffect-Info.plist"; sourceTree = "<group>"; };
-		795AB7DDC7CB5118EFACFEE04A6B0766 /* CGDrawFramebufferCache.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawFramebufferCache.cpp; sourceTree = "<group>"; };
-		81830EC96EC9B52E3C315ABB17D04DDB /* CGDrawProgram.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawProgram.cpp; sourceTree = "<group>"; };
-		87097C27037A4B6F0B2D4D9AB1EA2AFE /* CGDrawOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawOutput.h; sourceTree = "<group>"; };
-		87D82D5E40D102BB17B1C02D7F9B7779 /* CGDrawTextureOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawTextureOutput.h; sourceTree = "<group>"; };
+		771311F934F674D1FF1C5C2DC4F5C5FA /* CGDrawEngine.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawEngine.cpp; sourceTree = "<group>"; };
+		7A581863BAE072BF5217FF2E869CE5BE /* CGDrawProgram.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawProgram.h; sourceTree = "<group>"; };
+		7DAFFE0EFAFF1731AEB90A6C37422BF8 /* CGDrawFramebufferCache.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawFramebufferCache.cpp; sourceTree = "<group>"; };
+		80F14A7252CD07E0A221626A7542C143 /* CGDrawFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawFilter.h; sourceTree = "<group>"; };
+		8102934932AF9728CED54B7A3F089F8E /* CGDrawBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawBridge.h; sourceTree = "<group>"; };
+		8956952A19F04D39F1979B2A83CA5603 /* CGDrawEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawEngine.h; sourceTree = "<group>"; };
 		89810B13AEB0DECCBB6FA4E18270315D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		9482597A3458E1AEEB9EEAF97173751A /* CGDrawDataInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawDataInput.h; sourceTree = "<group>"; };
-		96DC3B2327BFAF95001C6D9D /* glInterface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = glInterface.cpp; sourceTree = "<group>"; };
-		96DC3B2427BFAF95001C6D9D /* glInterface.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = glInterface.hpp; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		958637949FA6A18C27A312A0AAEC06B4 /* VisualEffect-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "VisualEffect-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A044204FE935F4648FA11C7E06AE933B /* Pods-VisualEffect */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-VisualEffect"; path = Pods_VisualEffect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A40F1C90308145EA0E06FCE978A79A42 /* CGDrawTexture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawTexture.h; sourceTree = "<group>"; };
-		A4671AE189817F3091790D68C0A5C228 /* CGDrawInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawInput.h; sourceTree = "<group>"; };
-		B6173E4E3F825B87F8FF757682E8580A /* CGShaderUtil.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = CGShaderUtil.cpp; sourceTree = "<group>"; };
-		C07F8F25B8DC556997E723C498C44143 /* CGDrawBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawBridge.h; sourceTree = "<group>"; };
-		C227663C3EBCE685F7466168A525B0A4 /* VisualEffect.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = VisualEffect.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A598404CD56E64B07972B370C4A7CF35 /* VisualEffect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VisualEffect.debug.xcconfig; sourceTree = "<group>"; };
+		A5E82A3FCC1E7B7B05741B63F43594CB /* CGShaderUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGShaderUtil.h; sourceTree = "<group>"; };
+		AA321F557D15A59959B7CAB9C976BE7C /* VisualEffect.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VisualEffect.modulemap; sourceTree = "<group>"; };
+		B1EA99C9142E0E224CCFD3A11D066035 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B228FA9B187B36FCB559BE9DF5D13AD9 /* glInterface.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = glInterface.cpp; sourceTree = "<group>"; };
+		B424E905E4943CF15014898A0245FCA6 /* CGDrawTextureInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawTextureInput.h; sourceTree = "<group>"; };
+		B84C52FC419289A266752FA85D91AD01 /* CGVec.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = CGVec.cpp; sourceTree = "<group>"; };
 		C2F694D8D23EF4482EEE8BE2557E9BA8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C6A8DCDDA6162D256D381FAC7EF18A05 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		C79AFF1278E70AE81651712BF6493945 /* CGDrawFilter.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawFilter.cpp; sourceTree = "<group>"; };
-		C974680BA3C11881C6542086B2A479A3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D6A68F68EE6D40BA4D9F36B965312A1E /* VisualEffect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VisualEffect.release.xcconfig; sourceTree = "<group>"; };
-		D844AE6CF393C92A01F59F1F42B616F8 /* CGOpenGL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGOpenGL.h; sourceTree = "<group>"; };
+		C40C51C4D67DB44DED51664B9C8E9992 /* VisualEffect-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VisualEffect-prefix.pch"; sourceTree = "<group>"; };
+		C43FB648F0BBFABDDCEB93C2A6494067 /* VisualEffect-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VisualEffect-umbrella.h"; sourceTree = "<group>"; };
+		CF30185F03920078F0867E8CA21933C1 /* CGDrawShader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawShader.h; sourceTree = "<group>"; };
+		D8422F290D9D53D50BB61DE5F996F280 /* CGDrawFramebufferCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawFramebufferCache.h; sourceTree = "<group>"; };
+		DFA17D1DA65D26F4C4D039DC088FA353 /* CGDrawFilter.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawFilter.cpp; sourceTree = "<group>"; };
 		E2AD9BEF8B9FF986064B395982B849F1 /* Pods-VisualEffect.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VisualEffect.modulemap"; sourceTree = "<group>"; };
-		EBE8E0C4CF4C382D14DD2091B57E1C4B /* CGDrawFramebufferCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawFramebufferCache.h; sourceTree = "<group>"; };
+		E52FC4E33BB24A64974BDE31F92D6788 /* CGDrawOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawOutput.h; sourceTree = "<group>"; };
+		E684A81C2F5B42774F68DBAD3993862E /* VisualEffect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VisualEffect.release.xcconfig; sourceTree = "<group>"; };
 		EE5BD9A8A1F14C4160496443BCF8CC5D /* Pods-VisualEffect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VisualEffect.debug.xcconfig"; sourceTree = "<group>"; };
+		F13AC3C5E504B0A9A4A72A1FAF6FA613 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F64670C17F4CE6407A7BDB4DE3D33A16 /* CGDrawDataInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawDataInput.h; sourceTree = "<group>"; };
 		FC1A1611E5C649E54043F0B9F2FB30FD /* Pods-VisualEffect-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VisualEffect-dummy.m"; sourceTree = "<group>"; };
-		FC8C90326267C1B24F6D18065AC3BE26 /* CGDrawShader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = CGDrawShader.h; sourceTree = "<group>"; };
 		FCFA5B0A8B5F017CF4E9A3F5E2BDCDC0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		FF11DE11351C53BE1E28584F8A2A5331 /* Pods-VisualEffect-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VisualEffect-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		282779C5D219FD12CD1A3CE046BEDC51 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DADFB2B89F312D5A34C90EAB0E4927D2 /* AVFoundation.framework in Frameworks */,
-				48AF36DF4B66A168F7C741E45CD4B086 /* CoreGraphics.framework in Frameworks */,
-				9DDC909ADE7B4AA3FEDFAC7AD98C1537 /* CoreVideo.framework in Frameworks */,
-				9E373C0547165433970516EBFF555E4A /* Foundation.framework in Frameworks */,
-				A55981E91B224F47C4DF60DA3DC28D7E /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		50E117EB693408369DB275556A2D97DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,88 +120,85 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5DF72920635EC63BA311C993B6EFCF67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77950EA4247559FCF7561973ECA8B9FD /* AVFoundation.framework in Frameworks */,
+				30D137713072792862219F301D0A74C9 /* CoreGraphics.framework in Frameworks */,
+				2BF4A4C980081BD41B0E05164747D355 /* CoreVideo.framework in Frameworks */,
+				47B868C3D2BEF56567EFC15959597DB3 /* Foundation.framework in Frameworks */,
+				0192F149E8B5816A8B02A75BD960EAAD /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2735D9F79504D467B4BD2161F0CABB5E /* Pod */ = {
+		012DAB8254EC8E904774AF07EF756B40 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				C6A8DCDDA6162D256D381FAC7EF18A05 /* LICENSE */,
-				C974680BA3C11881C6542086B2A479A3 /* README.md */,
-				C227663C3EBCE685F7466168A525B0A4 /* VisualEffect.podspec */,
+				B1EA99C9142E0E224CCFD3A11D066035 /* LICENSE */,
+				F13AC3C5E504B0A9A4A72A1FAF6FA613 /* README.md */,
+				611F62ADA85D97DAF812777F68A0A354 /* VisualEffect.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		46C24F0F8F400A871971B8E2B1930E2F /* Support Files */ = {
+		02F873DDEF44B835DE34B208E7129298 /* input */ = {
 			isa = PBXGroup;
 			children = (
-				4E195A611747B89A27092BFF13D73715 /* VisualEffect.modulemap */,
-				55EF98BB1B35ABD7ED3B3497597DCD7F /* VisualEffect-dummy.m */,
-				78A84AD1E0B6B51A07556A3C33C93D81 /* VisualEffect-Info.plist */,
-				4EA8F64945392E1951553295ECE43B49 /* VisualEffect-prefix.pch */,
-				19AE740E2BEFDBB056956D21431732DC /* VisualEffect-umbrella.h */,
-				771BFA064F49DBE62779A579E7FF7102 /* VisualEffect.debug.xcconfig */,
-				D6A68F68EE6D40BA4D9F36B965312A1E /* VisualEffect.release.xcconfig */,
+				F64670C17F4CE6407A7BDB4DE3D33A16 /* CGDrawDataInput.h */,
+				160731D3A371785A0E333C38A83511C6 /* CGDrawInput.h */,
+				B424E905E4943CF15014898A0245FCA6 /* CGDrawTextureInput.h */,
 			);
-			name = "Support Files";
-			path = "ios/Pods/Target Support Files/VisualEffect";
+			name = input;
+			path = src/input;
 			sourceTree = "<group>";
 		};
-		4AEB1531EA9BE6708A9543ABDCB850D9 /* shader */ = {
+		1D7F91EFD66AD93FF1F07761B12E99BA /* output */ = {
 			isa = PBXGroup;
 			children = (
-				C79AFF1278E70AE81651712BF6493945 /* CGDrawFilter.cpp */,
-				3E4C4506ADA9F9EFD2E74D87CBA53DAC /* CGDrawFilter.h */,
-				FC8C90326267C1B24F6D18065AC3BE26 /* CGDrawShader.h */,
-			);
-			name = shader;
-			path = src/shader;
-			sourceTree = "<group>";
-		};
-		4F3B32AC25090217081C3DB86E4E5708 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				77E4169A8A3CDD857357D4ADA5A67AA4 /* VisualEffect */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		545492E9768C2C1E2D575BC2249D93F1 /* output */ = {
-			isa = PBXGroup;
-			children = (
-				87097C27037A4B6F0B2D4D9AB1EA2AFE /* CGDrawOutput.h */,
-				87D82D5E40D102BB17B1C02D7F9B7779 /* CGDrawTextureOutput.h */,
+				E52FC4E33BB24A64974BDE31F92D6788 /* CGDrawOutput.h */,
+				66B898B1FB03AA1F81BC90875966A1A4 /* CGDrawTextureOutput.h */,
 			);
 			name = output;
 			path = src/output;
 			sourceTree = "<group>";
 		};
-		77E4169A8A3CDD857357D4ADA5A67AA4 /* VisualEffect */ = {
+		2AD187CB3C439E3058CC6AAD8A0503DF /* VisualEffect */ = {
 			isa = PBXGroup;
 			children = (
-				D1C05881A0A98D4C69FFC4762621BF65 /* core */,
-				7A62AC4535CF74219B1E5E2B70336CA9 /* input */,
-				545492E9768C2C1E2D575BC2249D93F1 /* output */,
-				2735D9F79504D467B4BD2161F0CABB5E /* Pod */,
-				D01758D08CCDD560C2E5EBD1C62CB520 /* public */,
-				4AEB1531EA9BE6708A9543ABDCB850D9 /* shader */,
-				46C24F0F8F400A871971B8E2B1930E2F /* Support Files */,
-				F6B41A525647ADEB8BE455612E51B42E /* utils */,
+				B62C640FE70EFF6E9C1C7EBEEBE90878 /* core */,
+				02F873DDEF44B835DE34B208E7129298 /* input */,
+				1D7F91EFD66AD93FF1F07761B12E99BA /* output */,
+				012DAB8254EC8E904774AF07EF756B40 /* Pod */,
+				60CC061B0DA878B44E72CE46B7376A3E /* public */,
+				C19A75F7B0067202EFCE044F67ABC2D4 /* shader */,
+				DD60E6EBE9B012F396DB0DE0066432BD /* Support Files */,
+				C0DC486595951BC8D718F971FBC97CA6 /* utils */,
 			);
 			name = VisualEffect;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		7A62AC4535CF74219B1E5E2B70336CA9 /* input */ = {
+		4F3B32AC25090217081C3DB86E4E5708 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9482597A3458E1AEEB9EEAF97173751A /* CGDrawDataInput.h */,
-				A4671AE189817F3091790D68C0A5C228 /* CGDrawInput.h */,
-				35621B254137E26CE419ED212E939788 /* CGDrawTextureInput.h */,
+				2AD187CB3C439E3058CC6AAD8A0503DF /* VisualEffect */,
 			);
-			name = input;
-			path = src/input;
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		60CC061B0DA878B44E72CE46B7376A3E /* public */ = {
+			isa = PBXGroup;
+			children = (
+				8102934932AF9728CED54B7A3F089F8E /* CGDrawBridge.h */,
+				771311F934F674D1FF1C5C2DC4F5C5FA /* CGDrawEngine.cpp */,
+				8956952A19F04D39F1979B2A83CA5603 /* CGDrawEngine.h */,
+			);
+			name = public;
+			path = src/public;
 			sourceTree = "<group>";
 		};
 		82777F3696BD2FC21FFBB46BE932C6C4 /* Targets Support Files */ = {
@@ -238,6 +221,23 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		B62C640FE70EFF6E9C1C7EBEEBE90878 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				4F6A334B150CDFE10FF51A7D34F9B17D /* CGDrawFramebuffer.cpp */,
+				0AF56CC0383C8E5D8948590D1901AE0E /* CGDrawFramebuffer.h */,
+				7DAFFE0EFAFF1731AEB90A6C37422BF8 /* CGDrawFramebufferCache.cpp */,
+				D8422F290D9D53D50BB61DE5F996F280 /* CGDrawFramebufferCache.h */,
+				288385FC6C6F2FBAA245B118A5E83FBB /* CGDrawProgram.cpp */,
+				7A581863BAE072BF5217FF2E869CE5BE /* CGDrawProgram.h */,
+				3B98E12D8F9ED1C732B6A486A0C6C8C4 /* CGDrawTexture.cpp */,
+				0CE26357F63B812A2379F0970587C323 /* CGDrawTexture.h */,
+				B228FA9B187B36FCB559BE9DF5D13AD9 /* glInterface.cpp */,
+			);
+			name = core;
+			path = src/core;
+			sourceTree = "<group>";
+		};
 		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,11 +246,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C0DC486595951BC8D718F971FBC97CA6 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				46EDD87179F2729DB6A7AEF3118A59E3 /* CGDrawLog.h */,
+				0F766DB166D222BABB2F45C24507B8AF /* CGOpenGL.h */,
+				32A46508A832CDCE8E8CB930A181B0A3 /* CGShaderUtil.cpp */,
+				A5E82A3FCC1E7B7B05741B63F43594CB /* CGShaderUtil.h */,
+				B84C52FC419289A266752FA85D91AD01 /* CGVec.cpp */,
+				5971FCFAF635830667350724CEBAAAB8 /* CGVec.h */,
+			);
+			name = utils;
+			path = src/utils;
+			sourceTree = "<group>";
+		};
+		C19A75F7B0067202EFCE044F67ABC2D4 /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				DFA17D1DA65D26F4C4D039DC088FA353 /* CGDrawFilter.cpp */,
+				80F14A7252CD07E0A221626A7542C143 /* CGDrawFilter.h */,
+				CF30185F03920078F0867E8CA21933C1 /* CGDrawShader.h */,
+			);
+			name = shader;
+			path = src/shader;
+			sourceTree = "<group>";
+		};
 		C22216A48BCCB6BDAF4EC1156CF800CE /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				A044204FE935F4648FA11C7E06AE933B /* Pods-VisualEffect */,
-				30AAE232DB0B4ACB2F5E3128C02542E0 /* VisualEffect.framework */,
+				30AAE232DB0B4ACB2F5E3128C02542E0 /* VisualEffect */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,35 +289,6 @@
 				C22216A48BCCB6BDAF4EC1156CF800CE /* Products */,
 				82777F3696BD2FC21FFBB46BE932C6C4 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D01758D08CCDD560C2E5EBD1C62CB520 /* public */ = {
-			isa = PBXGroup;
-			children = (
-				C07F8F25B8DC556997E723C498C44143 /* CGDrawBridge.h */,
-				789C640E13325B76ECB2810BC6D218CB /* CGDrawEngine.cpp */,
-				5696E5916E991AF8C277635D63B980BD /* CGDrawEngine.h */,
-			);
-			name = public;
-			path = src/public;
-			sourceTree = "<group>";
-		};
-		D1C05881A0A98D4C69FFC4762621BF65 /* core */ = {
-			isa = PBXGroup;
-			children = (
-				357B53DF2C9C092836778D906FCABE6A /* CGDrawFramebuffer.cpp */,
-				782978F6F0B32453D1D21234E2D45B51 /* CGDrawFramebuffer.h */,
-				795AB7DDC7CB5118EFACFEE04A6B0766 /* CGDrawFramebufferCache.cpp */,
-				EBE8E0C4CF4C382D14DD2091B57E1C4B /* CGDrawFramebufferCache.h */,
-				81830EC96EC9B52E3C315ABB17D04DDB /* CGDrawProgram.cpp */,
-				6D08377C164A6857422C9099429AA25E /* CGDrawProgram.h */,
-				6962A64EDB63DBAFCBBEC38382FFF661 /* CGDrawTexture.cpp */,
-				A40F1C90308145EA0E06FCE978A79A42 /* CGDrawTexture.h */,
-				96DC3B2327BFAF95001C6D9D /* glInterface.cpp */,
-				96DC3B2427BFAF95001C6D9D /* glInterface.hpp */,
-			);
-			name = core;
-			path = src/core;
 			sourceTree = "<group>";
 		};
 		D72A855202415FF9138E6DF463410DDA /* Pods-VisualEffect */ = {
@@ -312,54 +308,54 @@
 			path = "Target Support Files/Pods-VisualEffect";
 			sourceTree = "<group>";
 		};
-		F6B41A525647ADEB8BE455612E51B42E /* utils */ = {
+		DD60E6EBE9B012F396DB0DE0066432BD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4F8E4A3151793522690201AF47BA570D /* CGDrawLog.h */,
-				D844AE6CF393C92A01F59F1F42B616F8 /* CGOpenGL.h */,
-				B6173E4E3F825B87F8FF757682E8580A /* CGShaderUtil.cpp */,
-				011C0D77CEBDFD6AB3924FB1E17A6F76 /* CGShaderUtil.h */,
-				66F5883ACE3DD25D5822B2EA598674C3 /* CGVec.cpp */,
-				6F40AE3BF395E3B837EFCDEAEB92C243 /* CGVec.h */,
+				AA321F557D15A59959B7CAB9C976BE7C /* VisualEffect.modulemap */,
+				249AA60B6DBEB7074C5B3FDCE319381B /* VisualEffect-dummy.m */,
+				958637949FA6A18C27A312A0AAEC06B4 /* VisualEffect-Info.plist */,
+				C40C51C4D67DB44DED51664B9C8E9992 /* VisualEffect-prefix.pch */,
+				C43FB648F0BBFABDDCEB93C2A6494067 /* VisualEffect-umbrella.h */,
+				A598404CD56E64B07972B370C4A7CF35 /* VisualEffect.debug.xcconfig */,
+				E684A81C2F5B42774F68DBAD3993862E /* VisualEffect.release.xcconfig */,
 			);
-			name = utils;
-			path = src/utils;
+			name = "Support Files";
+			path = "ios/Pods/Target Support Files/VisualEffect";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0AE2C629609D9120B9F5D96E95690F77 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87BFEE1A192D7F7E9BF93E1A0A233CA5 /* CGDrawBridge.h in Headers */,
+				68EA487A50CFA304F1482B0A02C0BF14 /* CGDrawDataInput.h in Headers */,
+				838D187C766094D926D5F4A305743CDF /* CGDrawEngine.h in Headers */,
+				9AC55CE6E6D03389AAEF244B35A6B6DE /* CGDrawFilter.h in Headers */,
+				657FC0795FD7D6D2B804F1FC9F39C0EF /* CGDrawFramebuffer.h in Headers */,
+				C6709F96EE1ADD9A0E13DEE959E5159F /* CGDrawFramebufferCache.h in Headers */,
+				8CBC8D6E40DC4BCAD5B721672827AB02 /* CGDrawInput.h in Headers */,
+				246D068612A4FD1094597CEDE5B34C71 /* CGDrawLog.h in Headers */,
+				CF2D938BF6F1126E62F2A406997AB104 /* CGDrawOutput.h in Headers */,
+				79FD628A3A0F74277A258BD0D751AAE1 /* CGDrawProgram.h in Headers */,
+				FDA41A78294F98AFB4FEFCB2E8117C17 /* CGDrawShader.h in Headers */,
+				5B6C829F8FA84DCBBF8E439A72431DD1 /* CGDrawTexture.h in Headers */,
+				E8E586EBC7645723C38836012B1C4E3F /* CGDrawTextureInput.h in Headers */,
+				E722323A3D2D4A61A466B25C163BB5A3 /* CGDrawTextureOutput.h in Headers */,
+				FB3D419ED00C694EA44AFEAAA64A5A1A /* CGOpenGL.h in Headers */,
+				9D036471A712D75D34DBED7668751FA5 /* CGShaderUtil.h in Headers */,
+				7DEDBF75B3909F8FF027AF820497B973 /* CGVec.h in Headers */,
+				5659E3E7D25D8B832E909A760ED28E2F /* VisualEffect-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63140450C94FE73FFAC599B5559101C5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B05D9051B81B770441292847AC2CA16B /* Pods-VisualEffect-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D18CE870505719F67BDBFCEF72B08AC1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7425EB538882F777CDBB28AA62745E7B /* CGDrawBridge.h in Headers */,
-				B9111F1B0DCDAB109CF6A25705D106A0 /* CGDrawDataInput.h in Headers */,
-				8005C0B76EAD9853DB6D02959C32A91B /* CGDrawEngine.h in Headers */,
-				E22730B35C1DBB39C702491FF11E55E4 /* CGDrawFilter.h in Headers */,
-				96EEFB5FA5E15E365C44C2A3DEDF13F7 /* CGDrawFramebuffer.h in Headers */,
-				61ED7E30E50FD548558243876B0C6BE3 /* CGDrawFramebufferCache.h in Headers */,
-				EA89F28271152F769E297784AE3DD1DB /* CGDrawInput.h in Headers */,
-				65CFD45E99B1762DC7CDB84366B718B8 /* CGDrawLog.h in Headers */,
-				BDBE58DF8C200BE7D2D7645F1C0D7443 /* CGDrawOutput.h in Headers */,
-				7B4B80341FB33CC8E334F30058A2F251 /* CGDrawProgram.h in Headers */,
-				8EEA835BE0C205F26A4F4C2B49DFD9EE /* CGDrawShader.h in Headers */,
-				EA59F59DAD26D324A55A32B5E3B5B684 /* CGDrawTexture.h in Headers */,
-				92022174CC477E06FC1119AD6084DAB9 /* CGDrawTextureInput.h in Headers */,
-				96DC3B2627BFAF95001C6D9D /* glInterface.hpp in Headers */,
-				9BE4E0C93969776324A0320A68E83A64 /* CGDrawTextureOutput.h in Headers */,
-				A8E5B24D8DF5EDAC40F8FD7FF1E68BBF /* CGOpenGL.h in Headers */,
-				7A62804E335484BE1718C686E1848D83 /* CGShaderUtil.h in Headers */,
-				3F01A0DD4A1D66A24C66944BA872208B /* CGVec.h in Headers */,
-				9079420FED761216CFC07BE3A8DE6B4B /* VisualEffect-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +374,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C19A839191114181A6FF976F4AAFBA4A /* PBXTargetDependency */,
+				56D3B8FF1854AA232694379B6825DA44 /* PBXTargetDependency */,
 			);
 			name = "Pods-VisualEffect";
 			productName = Pods_VisualEffect;
@@ -387,12 +383,12 @@
 		};
 		F40FF5A04C4E5F1181296F02AC2D620D /* VisualEffect */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 40C9AF7598BA09DD4B66ECBDC90282CE /* Build configuration list for PBXNativeTarget "VisualEffect" */;
+			buildConfigurationList = 8BCC21DB351E1D02BB03DB13BB0011EB /* Build configuration list for PBXNativeTarget "VisualEffect" */;
 			buildPhases = (
-				D18CE870505719F67BDBFCEF72B08AC1 /* Headers */,
-				0BF25FC4E69781BC9283BC8D039223E6 /* Sources */,
-				282779C5D219FD12CD1A3CE046BEDC51 /* Frameworks */,
-				4935E52BCB5D2C570060DDE242DFAF2F /* Resources */,
+				0AE2C629609D9120B9F5D96E95690F77 /* Headers */,
+				F8E5EAFB9A8E8979B7A7DAAA65A4CA81 /* Sources */,
+				5DF72920635EC63BA311C993B6EFCF67 /* Frameworks */,
+				14E544603E4A2E05D8A969227885CD1E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -400,7 +396,7 @@
 			);
 			name = VisualEffect;
 			productName = VisualEffect;
-			productReference = 30AAE232DB0B4ACB2F5E3128C02542E0 /* VisualEffect.framework */;
+			productReference = 30AAE232DB0B4ACB2F5E3128C02542E0 /* VisualEffect */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -410,7 +406,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -432,7 +428,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4935E52BCB5D2C570060DDE242DFAF2F /* Resources */ = {
+		14E544603E4A2E05D8A969227885CD1E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -449,23 +445,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0BF25FC4E69781BC9283BC8D039223E6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				96DC3B2527BFAF95001C6D9D /* glInterface.cpp in Sources */,
-				0B5F048C258BBD71E56DF0A95A85369A /* CGDrawEngine.cpp in Sources */,
-				90835CEC71FBED854BCD782A1F514726 /* CGDrawFilter.cpp in Sources */,
-				B750BAF5086F32A8A30E28DB6E6D5BD1 /* CGDrawFramebuffer.cpp in Sources */,
-				0CFBD2859FF59B224415234753B793E6 /* CGDrawFramebufferCache.cpp in Sources */,
-				FB1442BABEEAAC488C826CDF3F41CF94 /* CGDrawProgram.cpp in Sources */,
-				9F20923C37A083304A1109C54695327F /* CGDrawTexture.cpp in Sources */,
-				D05C3D62675CF6666A95E18ACE2B80BB /* CGShaderUtil.cpp in Sources */,
-				8FDE30CED44AEC20FEA77259144E6EB2 /* CGVec.cpp in Sources */,
-				0CAAB6F28D4E7BB048063F80AA20E869 /* VisualEffect-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7C8824454573E8829803620DDC5E3C26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -474,18 +453,70 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8E5EAFB9A8E8979B7A7DAAA65A4CA81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CA169284096DB6ED1EF4384F520219E /* CGDrawEngine.cpp in Sources */,
+				BAC95840FC66E96E9CCAD5CE5BAFDE43 /* CGDrawFilter.cpp in Sources */,
+				7390FFD68796149D03D9500F24BFCBF4 /* CGDrawFramebuffer.cpp in Sources */,
+				65B1BEF5D792BDA49E217E860E988BB2 /* CGDrawFramebufferCache.cpp in Sources */,
+				3A08D4F770EE0086F6D3D261CF400AD9 /* CGDrawProgram.cpp in Sources */,
+				7CB9565C70BB5F21E0E8F97E1B9E0F8F /* CGDrawTexture.cpp in Sources */,
+				A66D0C19DC4CFA25566476A401616316 /* CGShaderUtil.cpp in Sources */,
+				9E106CECED4B6453450B6F4FC6DF7757 /* CGVec.cpp in Sources */,
+				8E4E9164DA077876CA906BD8A8D95CA8 /* glInterface.cpp in Sources */,
+				0DF5BFF4792A7A2BD2D184898277ED9C /* VisualEffect-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C19A839191114181A6FF976F4AAFBA4A /* PBXTargetDependency */ = {
+		56D3B8FF1854AA232694379B6825DA44 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = VisualEffect;
 			target = F40FF5A04C4E5F1181296F02AC2D620D /* VisualEffect */;
-			targetProxy = A49E4285DDA29D37E494BA271192BC69 /* PBXContainerItemProxy */;
+			targetProxy = 636844785E183004F27C5AE63BDAC8C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0B6908A29AD6EFCF12E9AF79FCC97CFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E684A81C2F5B42774F68DBAD3993862E /* VisualEffect.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VisualEffect/VisualEffect-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VisualEffect/VisualEffect-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/VisualEffect/VisualEffect.modulemap";
+				PRODUCT_MODULE_NAME = VisualEffect;
+				PRODUCT_NAME = VisualEffect;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -689,9 +720,9 @@
 			};
 			name = Release;
 		};
-		6A6F5864C4BE64F8E1E67DDFFBBCDD05 /* Release */ = {
+		F48598F2C9A71F2D42C191EA8BE12AAD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6A68F68EE6D40BA4D9F36B965312A1E /* VisualEffect.release.xcconfig */;
+			baseConfigurationReference = A598404CD56E64B07972B370C4A7CF35 /* VisualEffect.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -705,42 +736,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/VisualEffect/VisualEffect-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/VisualEffect/VisualEffect-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/VisualEffect/VisualEffect.modulemap";
-				PRODUCT_MODULE_NAME = VisualEffect;
-				PRODUCT_NAME = VisualEffect;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6E8A8BAC1810D6BA7F92971783F545BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 771BFA064F49DBE62779A579E7FF7102 /* VisualEffect.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/VisualEffect/VisualEffect-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/VisualEffect/VisualEffect-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -761,20 +757,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		40C9AF7598BA09DD4B66ECBDC90282CE /* Build configuration list for PBXNativeTarget "VisualEffect" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6E8A8BAC1810D6BA7F92971783F545BF /* Debug */,
-				6A6F5864C4BE64F8E1E67DDFFBBCDD05 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
 				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BCC21DB351E1D02BB03DB13BB0011EB /* Build configuration list for PBXNativeTarget "VisualEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F48598F2C9A71F2D42C191EA8BE12AAD /* Debug */,
+				0B6908A29AD6EFCF12E9AF79FCC97CFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,63 +1,122 @@
-//
-//  CGDrawDemo.m
-//  CGDraw
-//
-//  Created by Jason on 2021/6/11.
-//
-
-#import "CGDrawAgent.h"
-#include "CGDrawFramebuffer.h"
-#include "CGDrawFilter.h"
-#include "CGDrawDataInput.h"
-#include "CGDrawTextureOutput.h"
-#include "CGDrawDataInput.h"
-
 #include "archiver.h"
 #include <iostream>
 #include <vector>
 
-using namespace std;
-using namespace CGDraw;
+//////////////////////////////////////////////////////////////////////////////
+// Test1: simple object
 
-@interface CGDrawAgent ()
-{
-    CGDrawDataInput *_dataInput;
-    CGDrawFilter *_filter;
-    CGDrawTextureOutput *_output;
-    CGDrawFramebuffer *_framebuffer;
+struct Student {
+    Student() : name(), age(), height(), canSwim() {}
+    Student(const std::string name, unsigned age, double height, bool canSwim) :
+        name(name), age(age), height(height), canSwim(canSwim)
+    {}
+
+    std::string name;
+    unsigned age;
+    double height;
+    bool canSwim;
+};
+
+template <typename Archiver>
+Archiver& operator&(Archiver& ar, Student& s) {
+    ar.StartObject();
+    ar.Member("name") & s.name;
+    ar.Member("age") & s.age;
+    ar.Member("height") & s.height;
+    ar.Member("canSwim") & s.canSwim;
+    return ar.EndObject();
 }
-@end
 
-@implementation CGDrawAgent
+std::ostream& operator<<(std::ostream& os, const Student& s) {
+    return os << s.name << " " << s.age << " " << s.height << " " << s.canSwim;
+}
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        _dataInput = new CGDrawDataInput();
-        _filter = new CGDrawFilter();
-        _output = new CGDrawTextureOutput();
-        _framebuffer = new CGDrawFramebuffer();
-        
-        test4();
+void test1() {
+    std::string json;
+
+    // Serialize
+    {
+        Student s("Lua", 9, 150.5, true);
+
+        JsonWriter writer;
+        writer & s;
+        json = writer.GetString();
+        std::cout << json << std::endl;
     }
-    return self;
-}
 
-- (void)setInputData:(UInt8 *)data size:(CGSize)size {
-    
-    _dataInput->setInputData(data, size.width, size.height);
-    _dataInput->addTarget(_filter);
-    _filter->addTarget(_output);
-    _dataInput->requestRender();
-    int texId = _output->getTexId();
-    CGSize textSize = CGSizeMake(_output->getTexWidth(), _output->getTexHeight());
-    
-    if (self.delegate && [self.delegate respondsToSelector:@selector(glRequestRender:size:)]) {
-        [self.delegate glRequestRender:texId size:textSize];
+    // Deserialize
+    {
+        Student s;
+        JsonReader reader(json.c_str());
+        reader & s;
+        std::cout << s << std::endl;
     }
 }
 
+//////////////////////////////////////////////////////////////////////////////
+// Test2: std::vector <=> JSON array
+// 
+// You can map a JSON array to other data structures as well
+
+struct Group {
+    Group() : groupName(), students() {}
+    std::string groupName;
+    std::vector<Student> students;
+};
+
+template <typename Archiver>
+Archiver& operator&(Archiver& ar, Group& g) {
+    ar.StartObject();
+    
+    ar.Member("groupName");
+    ar & g.groupName;
+
+    ar.Member("students");
+    size_t studentCount = g.students.size();
+    ar.StartArray(&studentCount);
+    if (ar.IsReader)
+        g.students.resize(studentCount);
+    for (size_t i = 0; i < studentCount; i++)
+        ar & g.students[i];
+    ar.EndArray();
+
+    return ar.EndObject();
+}
+
+std::ostream& operator<<(std::ostream& os, const Group& g) {
+    os << g.groupName << std::endl;
+    for (std::vector<Student>::const_iterator itr = g.students.begin(); itr != g.students.end(); ++itr)
+        os << *itr << std::endl;
+    return os;
+}
+
+void test2() {
+    std::string json;
+
+    // Serialize
+    {
+        Group g;
+        g.groupName = "Rainbow";
+
+        Student s1("Lua", 9, 150.5, true);
+        Student s2("Mio", 7, 120.0, false);
+        g.students.push_back(s1);
+        g.students.push_back(s2);
+
+        JsonWriter writer;
+        writer & g;
+        json = writer.GetString();
+        std::cout << json << std::endl;
+    }
+
+    // Deserialize
+    {
+        Group g;
+        JsonReader reader(json.c_str());
+        reader & g;
+        std::cout << g << std::endl;
+    }
+}
 
 //////////////////////////////////////////////////////////////////////////////
 // Test3: polymorphism & friend
@@ -195,7 +254,7 @@ Archiver& operator&(Archiver& ar, Canvas& c) {
     return ar.EndArray();
 }
 
-void test4() {
+void test3() {
     std::string json;
 
     // Serialize
@@ -218,4 +277,12 @@ void test4() {
         c.Print(std::cout);
     }
 }
-@end
+
+//////////////////////////////////////////////////////////////////////////////
+
+int main__() {
+    test1();
+    test2();
+    test3();
+    return 0;
+}
