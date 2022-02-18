@@ -1,0 +1,16 @@
+PODS:
+  - VisualEffect (1.0.0)
+
+DEPENDENCIES:
+  - VisualEffect (from `../`)
+
+EXTERNAL SOURCES:
+  VisualEffect:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  VisualEffect: 195951cc91fe5bffcb3d7ef7a3ff29c1e3fb1854
+
+PODFILE CHECKSUM: 6509bc7a4d867a2f826c54cba1be257b6807612e
+
+COCOAPODS: 1.11.2

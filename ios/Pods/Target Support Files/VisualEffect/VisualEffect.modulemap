@@ -1,0 +1,6 @@
+framework module VisualEffect {
+  umbrella header "VisualEffect-umbrella.h"
+
+  export *
+  module * { export * }
+}
