@@ -88,6 +88,7 @@
 		9674124327C20E990047AF24 /* LottieLogo1_masked.json in Resources */ = {isa = PBXBuildFile; fileRef = 967411F927C20E990047AF24 /* LottieLogo1_masked.json */; };
 		9674124427C20E990047AF24 /* timeremap.json in Resources */ = {isa = PBXBuildFile; fileRef = 967411FA27C20E990047AF24 /* timeremap.json */; };
 		9674124627C211740047AF24 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 9674124527C211740047AF24 /* data.json */; };
+		9674124A27C214980047AF24 /* Lottie.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9674124927C214980047AF24 /* Lottie.docc */; };
 		AF74D39F0439C315C0FC8271 /* Pods_LottieiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D4713E3FBD236CC01F2F68 /* Pods_LottieiOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -179,6 +180,7 @@
 		967411F927C20E990047AF24 /* LottieLogo1_masked.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LottieLogo1_masked.json; sourceTree = "<group>"; };
 		967411FA27C20E990047AF24 /* timeremap.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = timeremap.json; sourceTree = "<group>"; };
 		9674124527C211740047AF24 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		9674124927C214980047AF24 /* Lottie.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Lottie.docc; sourceTree = "<group>"; };
 		C3620B5773702362D1008508 /* Pods-Lottie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottie.debug.xcconfig"; path = "Target Support Files/Pods-Lottie/Pods-Lottie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,6 +210,7 @@
 		96740B3627C2017C0047AF24 = {
 			isa = PBXGroup;
 			children = (
+				9674124927C214980047AF24 /* Lottie.docc */,
 				96740B4127C2017C0047AF24 /* Lottie */,
 				96740B4027C2017C0047AF24 /* Products */,
 				5B407E3F5C042B0ACDB9C6C0 /* Pods */,
@@ -569,6 +572,7 @@
 				96740B4727C2017C0047AF24 /* ViewController.swift in Sources */,
 				96740B4327C2017C0047AF24 /* AppDelegate.swift in Sources */,
 				96740B4527C2017C0047AF24 /* SceneDelegate.swift in Sources */,
+				9674124A27C214980047AF24 /* Lottie.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
