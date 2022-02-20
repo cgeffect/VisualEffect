@@ -40,7 +40,7 @@
 		96740A5F27C1F2310047AF24 /* CGDrawFramebufferCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawFramebufferCache.h; sourceTree = "<group>"; };
 		96740A6027C1F2310047AF24 /* CGDrawTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawTexture.h; sourceTree = "<group>"; };
 		96740A6127C1F2310047AF24 /* CGDrawProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawProgram.h; sourceTree = "<group>"; };
-		96740A6227C1F2310047AF24 /* glInterface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = glInterface.hpp; sourceTree = "<group>"; };
+		96740A6227C1F2310047AF24 /* glInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glInterface.h; sourceTree = "<group>"; };
 		96740A6327C1F2310047AF24 /* CGDrawFramebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawFramebuffer.h; sourceTree = "<group>"; };
 		96740A6427C1F2310047AF24 /* CGDrawProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawProgram.cpp; sourceTree = "<group>"; };
 		96740A6527C1F2310047AF24 /* glInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glInterface.cpp; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 				96740A6727C1F2310047AF24 /* CGDrawTexture.cpp */,
 				96740A6027C1F2310047AF24 /* CGDrawTexture.h */,
 				96740A6527C1F2310047AF24 /* glInterface.cpp */,
-				96740A6227C1F2310047AF24 /* glInterface.hpp */,
+				96740A6227C1F2310047AF24 /* glInterface.h */,
 			);
 			path = core;
 			sourceTree = "<group>";

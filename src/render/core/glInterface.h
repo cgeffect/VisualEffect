@@ -7,7 +7,9 @@
 
 #ifndef glInterface_hpp
 #define glInterface_hpp
+#include "CGOpenGL.h"
 
-#include <stdio.h>
+void glesEnableVertexAttribArray(GLuint index);
+//glEnableVertexAttribArray(mTexCoord);
 
 #endif /* glInterface_hpp */

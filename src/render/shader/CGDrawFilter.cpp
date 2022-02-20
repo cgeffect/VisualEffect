@@ -11,6 +11,7 @@
 #include "CGShaderUtil.h"
 #include "CGOpenGL.h"
 #include "CGDrawFramebufferCache.h"
+#include "glinterface.h"
 
 using namespace CGDraw;
 
@@ -48,11 +49,8 @@ void CGDrawFilter::setInputVertexShader(unsigned char *vShader, unsigned char *f
         mPosition = program->getAttribLocation((unsigned char *)ATTR_POSITION);
         mTexCoord = program->getAttribLocation((unsigned char *)ATTR_TEXCOORD);
         uTexture = program->getUniformLocation((unsigned char *)UNIF_TEXTURE);
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-        glEnableVertexAttribArray(mPosition);
-        glEnableVertexAttribArray(mTexCoord);
-#pragma clang diagnostic pop
+        glesEnableVertexAttribArray(mPosition);
+        glesEnableVertexAttribArray(mTexCoord);
     }
     
     CGShaderUtil::glCheckError("CGDrawFilter2");
