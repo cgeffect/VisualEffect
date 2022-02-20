@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let path = Bundle.main.path(forResource: "_dog", ofType: "json")!
+        let path = Bundle.main.path(forResource: "Watermelon", ofType: "json")!
         let animation = Animation.filepath(path, animationCache: nil)
         let animationView = AnimationView(animation: animation)
         view.addSubview(animationView)
