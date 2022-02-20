@@ -16,6 +16,9 @@
 namespace CGDraw {
 class CGDrawOutput {
             
+//    virtual ~CGDrawOutput() {
+//        
+//    };
 public:
     virtual void addTarget(CGDrawInput *newtarget) {
         mTargetList.push_back(newtarget);

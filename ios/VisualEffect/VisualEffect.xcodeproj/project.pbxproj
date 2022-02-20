@@ -69,23 +69,7 @@
 		96740AD927C1F3950047AF24 /* CGDrawController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGDrawController.m; sourceTree = "<group>"; };
 		96740ADA27C1F3950047AF24 /* CGDrawAgent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CGDrawAgent.mm; sourceTree = "<group>"; };
 		96740ADB27C1F3950047AF24 /* CGDrawController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawController.h; sourceTree = "<group>"; };
-		96740AE327C1F4E70047AF24 /* CGDrawFramebufferCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawFramebufferCache.h; sourceTree = "<group>"; };
-		96740AE627C1F4E70047AF24 /* glInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glInterface.h; sourceTree = "<group>"; };
-		96740AE727C1F4E70047AF24 /* CGDrawFramebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawFramebuffer.h; sourceTree = "<group>"; };
-		96740AEE27C1F4E70047AF24 /* CGDrawDataInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawDataInput.h; sourceTree = "<group>"; };
-		96740AEF27C1F4E70047AF24 /* CGDrawTextureInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawTextureInput.h; sourceTree = "<group>"; };
-		96740AF027C1F4E70047AF24 /* CGDrawInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawInput.h; sourceTree = "<group>"; };
-		96740AF227C1F4E70047AF24 /* CGDrawTextureOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawTextureOutput.h; sourceTree = "<group>"; };
-		96740AF327C1F4E70047AF24 /* CGDrawOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawOutput.h; sourceTree = "<group>"; };
-		96740AF727C1F4E70047AF24 /* CGVec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGVec.h; sourceTree = "<group>"; };
-		96740AF827C1F4E70047AF24 /* CGOpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGOpenGL.h; sourceTree = "<group>"; };
-		96740AF927C1F4E70047AF24 /* CGShaderUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGShaderUtil.h; sourceTree = "<group>"; };
-		96740AFA27C1F4E70047AF24 /* CGDrawLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawLog.h; sourceTree = "<group>"; };
-		96740AFD27C1F4E70047AF24 /* CGDrawBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawBridge.h; sourceTree = "<group>"; };
-		96740AFE27C1F4E70047AF24 /* CGDrawEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawEngine.h; sourceTree = "<group>"; };
-		96740B0027C1F4E70047AF24 /* CGDrawFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawFilter.h; sourceTree = "<group>"; };
-		96740B0127C1F4E70047AF24 /* CGDrawShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawShader.h; sourceTree = "<group>"; };
-		96740B0C27C1F5380047AF24 /* CGDrawProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawProgram.h; sourceTree = "<group>"; };
+		9674124F27C2888A0047AF24 /* VeRenderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeRenderManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,81 +206,9 @@
 		96740ADF27C1F4510047AF24 /* libVisualEffect */ = {
 			isa = PBXGroup;
 			children = (
-				96740AE127C1F4E70047AF24 /* render */,
+				9674124F27C2888A0047AF24 /* VeRenderManager.h */,
 			);
 			path = libVisualEffect;
-			sourceTree = "<group>";
-		};
-		96740AE127C1F4E70047AF24 /* render */ = {
-			isa = PBXGroup;
-			children = (
-				96740AE227C1F4E70047AF24 /* core */,
-				96740AED27C1F4E70047AF24 /* input */,
-				96740AF127C1F4E70047AF24 /* output */,
-				96740AF427C1F4E70047AF24 /* utils */,
-				96740AFB27C1F4E70047AF24 /* public */,
-				96740AFF27C1F4E70047AF24 /* shader */,
-			);
-			path = render;
-			sourceTree = "<group>";
-		};
-		96740AE227C1F4E70047AF24 /* core */ = {
-			isa = PBXGroup;
-			children = (
-				96740B0C27C1F5380047AF24 /* CGDrawProgram.h */,
-				96740AE727C1F4E70047AF24 /* CGDrawFramebuffer.h */,
-				96740AE327C1F4E70047AF24 /* CGDrawFramebufferCache.h */,
-				96740AE627C1F4E70047AF24 /* glInterface.h */,
-			);
-			path = core;
-			sourceTree = "<group>";
-		};
-		96740AED27C1F4E70047AF24 /* input */ = {
-			isa = PBXGroup;
-			children = (
-				96740AEE27C1F4E70047AF24 /* CGDrawDataInput.h */,
-				96740AEF27C1F4E70047AF24 /* CGDrawTextureInput.h */,
-				96740AF027C1F4E70047AF24 /* CGDrawInput.h */,
-			);
-			path = input;
-			sourceTree = "<group>";
-		};
-		96740AF127C1F4E70047AF24 /* output */ = {
-			isa = PBXGroup;
-			children = (
-				96740AF227C1F4E70047AF24 /* CGDrawTextureOutput.h */,
-				96740AF327C1F4E70047AF24 /* CGDrawOutput.h */,
-			);
-			path = output;
-			sourceTree = "<group>";
-		};
-		96740AF427C1F4E70047AF24 /* utils */ = {
-			isa = PBXGroup;
-			children = (
-				96740AF727C1F4E70047AF24 /* CGVec.h */,
-				96740AF827C1F4E70047AF24 /* CGOpenGL.h */,
-				96740AF927C1F4E70047AF24 /* CGShaderUtil.h */,
-				96740AFA27C1F4E70047AF24 /* CGDrawLog.h */,
-			);
-			path = utils;
-			sourceTree = "<group>";
-		};
-		96740AFB27C1F4E70047AF24 /* public */ = {
-			isa = PBXGroup;
-			children = (
-				96740AFD27C1F4E70047AF24 /* CGDrawBridge.h */,
-				96740AFE27C1F4E70047AF24 /* CGDrawEngine.h */,
-			);
-			path = public;
-			sourceTree = "<group>";
-		};
-		96740AFF27C1F4E70047AF24 /* shader */ = {
-			isa = PBXGroup;
-			children = (
-				96740B0027C1F4E70047AF24 /* CGDrawFilter.h */,
-				96740B0127C1F4E70047AF24 /* CGDrawShader.h */,
-			);
-			path = shader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

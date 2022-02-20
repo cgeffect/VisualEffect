@@ -19,6 +19,8 @@
 		96740AB127C1F2310047AF24 /* CGDrawEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96740A7827C1F2310047AF24 /* CGDrawEngine.cpp */; };
 		96740AB227C1F2310047AF24 /* CGDrawFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96740A7E27C1F2310047AF24 /* CGDrawFilter.cpp */; };
 		967411A927C208710047AF24 /* VEModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 967411A727C208710047AF24 /* VEModel.cpp */; };
+		9674124E27C284EB0047AF24 /* VeRenderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9674124C27C284EB0047AF24 /* VeRenderManager.cpp */; };
+		9674125227C28A5C0047AF24 /* VeRenderInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9674125027C28A5C0047AF24 /* VeRenderInterface.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -105,6 +107,10 @@
 		96740AA927C1F2310047AF24 /* stdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdint.h; sourceTree = "<group>"; };
 		967411A727C208710047AF24 /* VEModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VEModel.cpp; sourceTree = "<group>"; };
 		967411A827C208710047AF24 /* VEModel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VEModel.hpp; sourceTree = "<group>"; };
+		9674124C27C284EB0047AF24 /* VeRenderManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VeRenderManager.cpp; sourceTree = "<group>"; };
+		9674124D27C284EB0047AF24 /* VeRenderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VeRenderManager.h; sourceTree = "<group>"; };
+		9674125027C28A5C0047AF24 /* VeRenderInterface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VeRenderInterface.cpp; sourceTree = "<group>"; };
+		9674125127C28A5C0047AF24 /* VeRenderInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VeRenderInterface.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,7 @@
 		967409FC27C1F0520047AF24 /* libVisualEffect */ = {
 			isa = PBXGroup;
 			children = (
+				9674124B27C284B20047AF24 /* public */,
 				96740B0D27C1FEA20047AF24 /* json */,
 				96740A5D27C1F2310047AF24 /* render */,
 				96740A7F27C1F2310047AF24 /* third */,
@@ -212,8 +219,8 @@
 		96740A7727C1F2310047AF24 /* public */ = {
 			isa = PBXGroup;
 			children = (
-				96740A7827C1F2310047AF24 /* CGDrawEngine.cpp */,
 				96740A7927C1F2310047AF24 /* CGDrawBridge.h */,
+				96740A7827C1F2310047AF24 /* CGDrawEngine.cpp */,
 				96740A7A27C1F2310047AF24 /* CGDrawEngine.h */,
 			);
 			path = public;
@@ -317,6 +324,18 @@
 			path = ../../../src/json;
 			sourceTree = "<group>";
 		};
+		9674124B27C284B20047AF24 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				9674124C27C284EB0047AF24 /* VeRenderManager.cpp */,
+				9674124D27C284EB0047AF24 /* VeRenderManager.h */,
+				9674125027C28A5C0047AF24 /* VeRenderInterface.cpp */,
+				9674125127C28A5C0047AF24 /* VeRenderInterface.h */,
+			);
+			name = public;
+			path = ../../../src/public;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -380,9 +399,11 @@
 				96740AB027C1F2310047AF24 /* CGVec.cpp in Sources */,
 				96740AAF27C1F2310047AF24 /* CGShaderUtil.cpp in Sources */,
 				96740AAC27C1F2310047AF24 /* CGDrawFramebufferCache.cpp in Sources */,
+				9674124E27C284EB0047AF24 /* VeRenderManager.cpp in Sources */,
 				96740AAB27C1F2310047AF24 /* glInterface.cpp in Sources */,
 				96740AB227C1F2310047AF24 /* CGDrawFilter.cpp in Sources */,
 				96740AAA27C1F2310047AF24 /* CGDrawProgram.cpp in Sources */,
+				9674125227C28A5C0047AF24 /* VeRenderInterface.cpp in Sources */,
 				967411A927C208710047AF24 /* VEModel.cpp in Sources */,
 				967409FF27C1F0520047AF24 /* libVisualEffect.m in Sources */,
 			);
