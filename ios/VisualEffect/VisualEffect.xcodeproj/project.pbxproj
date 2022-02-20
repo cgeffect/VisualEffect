@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		967409C527C1EFDA0047AF24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 967409C427C1EFDA0047AF24 /* AppDelegate.m */; };
+		967409C827C1EFDA0047AF24 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 967409C727C1EFDA0047AF24 /* SceneDelegate.m */; };
+		967409CB27C1EFDA0047AF24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967409CA27C1EFDA0047AF24 /* ViewController.m */; };
+		967409CE27C1EFDA0047AF24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967409CC27C1EFDA0047AF24 /* Main.storyboard */; };
+		967409D027C1EFDB0047AF24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967409CF27C1EFDB0047AF24 /* Assets.xcassets */; };
+		967409D327C1EFDB0047AF24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967409D127C1EFDB0047AF24 /* LaunchScreen.storyboard */; };
+		967409D627C1EFDB0047AF24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 967409D527C1EFDB0047AF24 /* main.m */; };
+		96740A0827C1F0B30047AF24 /* liblibVisualEffect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96740A0727C1F0B30047AF24 /* liblibVisualEffect.a */; };
+		96740ACD27C1F3570047AF24 /* CGPaintPipelineOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740AB627C1F3570047AF24 /* CGPaintPipelineOutput.m */; };
+		96740ACE27C1F3570047AF24 /* CGPaintRenderPipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740AB727C1F3570047AF24 /* CGPaintRenderPipeline.m */; };
+		96740ACF27C1F3570047AF24 /* CGPaintFramebuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740ABA27C1F3570047AF24 /* CGPaintFramebuffer.m */; };
+		96740AD027C1F3570047AF24 /* CGPaintProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740ABE27C1F3570047AF24 /* CGPaintProgram.m */; };
+		96740AD127C1F3570047AF24 /* CGPaintFramebufferCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740AC127C1F3570047AF24 /* CGPaintFramebufferCache.m */; };
+		96740AD227C1F3570047AF24 /* CGPaintOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740AC227C1F3570047AF24 /* CGPaintOutput.m */; };
+		96740AD327C1F3570047AF24 /* CGPaintContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740AC427C1F3570047AF24 /* CGPaintContext.m */; };
+		96740AD427C1F3570047AF24 /* CGPaintViewOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740AC827C1F3570047AF24 /* CGPaintViewOutput.m */; };
+		96740AD527C1F3570047AF24 /* CGPaintUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740ACA27C1F3570047AF24 /* CGPaintUtils.m */; };
+		96740ADC27C1F3950047AF24 /* rgba8_1125x1125.rgba in Resources */ = {isa = PBXBuildFile; fileRef = 96740AD727C1F3950047AF24 /* rgba8_1125x1125.rgba */; };
+		96740ADD27C1F3950047AF24 /* CGDrawController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740AD927C1F3950047AF24 /* CGDrawController.m */; };
+		96740ADE27C1F3950047AF24 /* CGDrawAgent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96740ADA27C1F3950047AF24 /* CGDrawAgent.mm */; };
+		96740B0427C1F4E70047AF24 /* glInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96740AE927C1F4E70047AF24 /* glInterface.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		967409C027C1EFDA0047AF24 /* VisualEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		967409C327C1EFDA0047AF24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		967409C427C1EFDA0047AF24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		967409C627C1EFDA0047AF24 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		967409C727C1EFDA0047AF24 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		967409C927C1EFDA0047AF24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		967409CA27C1EFDA0047AF24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		967409CD27C1EFDA0047AF24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		967409CF27C1EFDB0047AF24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		967409D227C1EFDB0047AF24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		967409D427C1EFDB0047AF24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		967409D527C1EFDB0047AF24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96740A0727C1F0B30047AF24 /* liblibVisualEffect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibVisualEffect.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		96740AB527C1F3570047AF24 /* CGPaintRenderPipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintRenderPipeline.h; sourceTree = "<group>"; };
+		96740AB627C1F3570047AF24 /* CGPaintPipelineOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintPipelineOutput.m; sourceTree = "<group>"; };
+		96740AB727C1F3570047AF24 /* CGPaintRenderPipeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintRenderPipeline.m; sourceTree = "<group>"; };
+		96740AB827C1F3570047AF24 /* CGPaintPipelineOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintPipelineOutput.h; sourceTree = "<group>"; };
+		96740ABA27C1F3570047AF24 /* CGPaintFramebuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintFramebuffer.m; sourceTree = "<group>"; };
+		96740ABB27C1F3570047AF24 /* CGPaintFramebufferCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintFramebufferCache.h; sourceTree = "<group>"; };
+		96740ABC27C1F3570047AF24 /* CGPaintContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintContext.h; sourceTree = "<group>"; };
+		96740ABD27C1F3570047AF24 /* CGPaintFilterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintFilterInput.h; sourceTree = "<group>"; };
+		96740ABE27C1F3570047AF24 /* CGPaintProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintProgram.m; sourceTree = "<group>"; };
+		96740ABF27C1F3570047AF24 /* CGPaintOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintOutput.h; sourceTree = "<group>"; };
+		96740AC027C1F3570047AF24 /* CGPaintFramebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintFramebuffer.h; sourceTree = "<group>"; };
+		96740AC127C1F3570047AF24 /* CGPaintFramebufferCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintFramebufferCache.m; sourceTree = "<group>"; };
+		96740AC227C1F3570047AF24 /* CGPaintOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintOutput.m; sourceTree = "<group>"; };
+		96740AC327C1F3570047AF24 /* CGPaintProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintProgram.h; sourceTree = "<group>"; };
+		96740AC427C1F3570047AF24 /* CGPaintContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintContext.m; sourceTree = "<group>"; };
+		96740AC627C1F3570047AF24 /* CGPaintInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintInput.h; sourceTree = "<group>"; };
+		96740AC827C1F3570047AF24 /* CGPaintViewOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintViewOutput.m; sourceTree = "<group>"; };
+		96740AC927C1F3570047AF24 /* CGPaintViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintViewOutput.h; sourceTree = "<group>"; };
+		96740ACA27C1F3570047AF24 /* CGPaintUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintUtils.m; sourceTree = "<group>"; };
+		96740ACB27C1F3570047AF24 /* CGPaintUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintUtils.h; sourceTree = "<group>"; };
+		96740ACC27C1F3570047AF24 /* CGPaint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaint.h; sourceTree = "<group>"; };
+		96740AD727C1F3950047AF24 /* rgba8_1125x1125.rgba */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rgba8_1125x1125.rgba; sourceTree = "<group>"; };
+		96740AD827C1F3950047AF24 /* CGDrawAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawAgent.h; sourceTree = "<group>"; };
+		96740AD927C1F3950047AF24 /* CGDrawController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGDrawController.m; sourceTree = "<group>"; };
+		96740ADA27C1F3950047AF24 /* CGDrawAgent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CGDrawAgent.mm; sourceTree = "<group>"; };
+		96740ADB27C1F3950047AF24 /* CGDrawController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawController.h; sourceTree = "<group>"; };
+		96740AE327C1F4E70047AF24 /* CGDrawFramebufferCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawFramebufferCache.h; sourceTree = "<group>"; };
+		96740AE627C1F4E70047AF24 /* glInterface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = glInterface.hpp; sourceTree = "<group>"; };
+		96740AE727C1F4E70047AF24 /* CGDrawFramebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawFramebuffer.h; sourceTree = "<group>"; };
+		96740AE927C1F4E70047AF24 /* glInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glInterface.cpp; sourceTree = "<group>"; };
+		96740AEE27C1F4E70047AF24 /* CGDrawDataInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawDataInput.h; sourceTree = "<group>"; };
+		96740AEF27C1F4E70047AF24 /* CGDrawTextureInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawTextureInput.h; sourceTree = "<group>"; };
+		96740AF027C1F4E70047AF24 /* CGDrawInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawInput.h; sourceTree = "<group>"; };
+		96740AF227C1F4E70047AF24 /* CGDrawTextureOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawTextureOutput.h; sourceTree = "<group>"; };
+		96740AF327C1F4E70047AF24 /* CGDrawOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawOutput.h; sourceTree = "<group>"; };
+		96740AF727C1F4E70047AF24 /* CGVec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGVec.h; sourceTree = "<group>"; };
+		96740AF827C1F4E70047AF24 /* CGOpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGOpenGL.h; sourceTree = "<group>"; };
+		96740AF927C1F4E70047AF24 /* CGShaderUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGShaderUtil.h; sourceTree = "<group>"; };
+		96740AFA27C1F4E70047AF24 /* CGDrawLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawLog.h; sourceTree = "<group>"; };
+		96740AFD27C1F4E70047AF24 /* CGDrawBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawBridge.h; sourceTree = "<group>"; };
+		96740AFE27C1F4E70047AF24 /* CGDrawEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawEngine.h; sourceTree = "<group>"; };
+		96740B0027C1F4E70047AF24 /* CGDrawFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawFilter.h; sourceTree = "<group>"; };
+		96740B0127C1F4E70047AF24 /* CGDrawShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawShader.h; sourceTree = "<group>"; };
+		96740B0C27C1F5380047AF24 /* CGDrawProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawProgram.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		967409BD27C1EFDA0047AF24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96740A0827C1F0B30047AF24 /* liblibVisualEffect.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		967409B727C1EFDA0047AF24 = {
+			isa = PBXGroup;
+			children = (
+				967409C227C1EFDA0047AF24 /* VisualEffect */,
+				967409C127C1EFDA0047AF24 /* Products */,
+				96740A0627C1F0B30047AF24 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		967409C127C1EFDA0047AF24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				967409C027C1EFDA0047AF24 /* VisualEffect.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		967409C227C1EFDA0047AF24 /* VisualEffect */ = {
+			isa = PBXGroup;
+			children = (
+				96740ADF27C1F4510047AF24 /* libVisualEffect */,
+				96740AD627C1F3950047AF24 /* Example */,
+				96740AB327C1F3570047AF24 /* ios */,
+				967409C327C1EFDA0047AF24 /* AppDelegate.h */,
+				967409C427C1EFDA0047AF24 /* AppDelegate.m */,
+				967409C627C1EFDA0047AF24 /* SceneDelegate.h */,
+				967409C727C1EFDA0047AF24 /* SceneDelegate.m */,
+				967409C927C1EFDA0047AF24 /* ViewController.h */,
+				967409CA27C1EFDA0047AF24 /* ViewController.m */,
+				967409CC27C1EFDA0047AF24 /* Main.storyboard */,
+				967409CF27C1EFDB0047AF24 /* Assets.xcassets */,
+				967409D127C1EFDB0047AF24 /* LaunchScreen.storyboard */,
+				967409D427C1EFDB0047AF24 /* Info.plist */,
+				967409D527C1EFDB0047AF24 /* main.m */,
+			);
+			path = VisualEffect;
+			sourceTree = "<group>";
+		};
+		96740A0627C1F0B30047AF24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96740A0727C1F0B30047AF24 /* liblibVisualEffect.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96740AB327C1F3570047AF24 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				96740AB427C1F3570047AF24 /* pipeline */,
+				96740AB927C1F3570047AF24 /* core */,
+				96740AC527C1F3570047AF24 /* input */,
+				96740AC727C1F3570047AF24 /* output */,
+				96740ACA27C1F3570047AF24 /* CGPaintUtils.m */,
+				96740ACB27C1F3570047AF24 /* CGPaintUtils.h */,
+				96740ACC27C1F3570047AF24 /* CGPaint.h */,
+			);
+			name = ios;
+			path = ../../../src/platform/ios;
+			sourceTree = "<group>";
+		};
+		96740AB427C1F3570047AF24 /* pipeline */ = {
+			isa = PBXGroup;
+			children = (
+				96740AB527C1F3570047AF24 /* CGPaintRenderPipeline.h */,
+				96740AB627C1F3570047AF24 /* CGPaintPipelineOutput.m */,
+				96740AB727C1F3570047AF24 /* CGPaintRenderPipeline.m */,
+				96740AB827C1F3570047AF24 /* CGPaintPipelineOutput.h */,
+			);
+			path = pipeline;
+			sourceTree = "<group>";
+		};
+		96740AB927C1F3570047AF24 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				96740ABA27C1F3570047AF24 /* CGPaintFramebuffer.m */,
+				96740ABB27C1F3570047AF24 /* CGPaintFramebufferCache.h */,
+				96740ABC27C1F3570047AF24 /* CGPaintContext.h */,
+				96740ABD27C1F3570047AF24 /* CGPaintFilterInput.h */,
+				96740ABE27C1F3570047AF24 /* CGPaintProgram.m */,
+				96740ABF27C1F3570047AF24 /* CGPaintOutput.h */,
+				96740AC027C1F3570047AF24 /* CGPaintFramebuffer.h */,
+				96740AC127C1F3570047AF24 /* CGPaintFramebufferCache.m */,
+				96740AC227C1F3570047AF24 /* CGPaintOutput.m */,
+				96740AC327C1F3570047AF24 /* CGPaintProgram.h */,
+				96740AC427C1F3570047AF24 /* CGPaintContext.m */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		96740AC527C1F3570047AF24 /* input */ = {
+			isa = PBXGroup;
+			children = (
+				96740AC627C1F3570047AF24 /* CGPaintInput.h */,
+			);
+			path = input;
+			sourceTree = "<group>";
+		};
+		96740AC727C1F3570047AF24 /* output */ = {
+			isa = PBXGroup;
+			children = (
+				96740AC827C1F3570047AF24 /* CGPaintViewOutput.m */,
+				96740AC927C1F3570047AF24 /* CGPaintViewOutput.h */,
+			);
+			path = output;
+			sourceTree = "<group>";
+		};
+		96740AD627C1F3950047AF24 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				96740AD827C1F3950047AF24 /* CGDrawAgent.h */,
+				96740ADA27C1F3950047AF24 /* CGDrawAgent.mm */,
+				96740ADB27C1F3950047AF24 /* CGDrawController.h */,
+				96740AD927C1F3950047AF24 /* CGDrawController.m */,
+				96740AD727C1F3950047AF24 /* rgba8_1125x1125.rgba */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		96740ADF27C1F4510047AF24 /* libVisualEffect */ = {
+			isa = PBXGroup;
+			children = (
+				96740AE127C1F4E70047AF24 /* render */,
+			);
+			path = libVisualEffect;
+			sourceTree = "<group>";
+		};
+		96740AE127C1F4E70047AF24 /* render */ = {
+			isa = PBXGroup;
+			children = (
+				96740AE227C1F4E70047AF24 /* core */,
+				96740AED27C1F4E70047AF24 /* input */,
+				96740AF127C1F4E70047AF24 /* output */,
+				96740AF427C1F4E70047AF24 /* utils */,
+				96740AFB27C1F4E70047AF24 /* public */,
+				96740AFF27C1F4E70047AF24 /* shader */,
+			);
+			path = render;
+			sourceTree = "<group>";
+		};
+		96740AE227C1F4E70047AF24 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				96740B0C27C1F5380047AF24 /* CGDrawProgram.h */,
+				96740AE727C1F4E70047AF24 /* CGDrawFramebuffer.h */,
+				96740AE327C1F4E70047AF24 /* CGDrawFramebufferCache.h */,
+				96740AE927C1F4E70047AF24 /* glInterface.cpp */,
+				96740AE627C1F4E70047AF24 /* glInterface.hpp */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		96740AED27C1F4E70047AF24 /* input */ = {
+			isa = PBXGroup;
+			children = (
+				96740AEE27C1F4E70047AF24 /* CGDrawDataInput.h */,
+				96740AEF27C1F4E70047AF24 /* CGDrawTextureInput.h */,
+				96740AF027C1F4E70047AF24 /* CGDrawInput.h */,
+			);
+			path = input;
+			sourceTree = "<group>";
+		};
+		96740AF127C1F4E70047AF24 /* output */ = {
+			isa = PBXGroup;
+			children = (
+				96740AF227C1F4E70047AF24 /* CGDrawTextureOutput.h */,
+				96740AF327C1F4E70047AF24 /* CGDrawOutput.h */,
+			);
+			path = output;
+			sourceTree = "<group>";
+		};
+		96740AF427C1F4E70047AF24 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				96740AF727C1F4E70047AF24 /* CGVec.h */,
+				96740AF827C1F4E70047AF24 /* CGOpenGL.h */,
+				96740AF927C1F4E70047AF24 /* CGShaderUtil.h */,
+				96740AFA27C1F4E70047AF24 /* CGDrawLog.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		96740AFB27C1F4E70047AF24 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				96740AFD27C1F4E70047AF24 /* CGDrawBridge.h */,
+				96740AFE27C1F4E70047AF24 /* CGDrawEngine.h */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
+		96740AFF27C1F4E70047AF24 /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				96740B0027C1F4E70047AF24 /* CGDrawFilter.h */,
+				96740B0127C1F4E70047AF24 /* CGDrawShader.h */,
+			);
+			path = shader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		967409BF27C1EFDA0047AF24 /* VisualEffect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 967409D927C1EFDB0047AF24 /* Build configuration list for PBXNativeTarget "VisualEffect" */;
+			buildPhases = (
+				967409BC27C1EFDA0047AF24 /* Sources */,
+				967409BD27C1EFDA0047AF24 /* Frameworks */,
+				967409BE27C1EFDA0047AF24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisualEffect;
+			productName = VisualEffect;
+			productReference = 967409C027C1EFDA0047AF24 /* VisualEffect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		967409B827C1EFDA0047AF24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					967409BF27C1EFDA0047AF24 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 967409BB27C1EFDA0047AF24 /* Build configuration list for PBXProject "VisualEffect" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 967409B727C1EFDA0047AF24;
+			productRefGroup = 967409C127C1EFDA0047AF24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				967409BF27C1EFDA0047AF24 /* VisualEffect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		967409BE27C1EFDA0047AF24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				967409D327C1EFDB0047AF24 /* LaunchScreen.storyboard in Resources */,
+				967409D027C1EFDB0047AF24 /* Assets.xcassets in Resources */,
+				967409CE27C1EFDA0047AF24 /* Main.storyboard in Resources */,
+				96740ADC27C1F3950047AF24 /* rgba8_1125x1125.rgba in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		967409BC27C1EFDA0047AF24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				967409CB27C1EFDA0047AF24 /* ViewController.m in Sources */,
+				96740AD127C1F3570047AF24 /* CGPaintFramebufferCache.m in Sources */,
+				96740AD027C1F3570047AF24 /* CGPaintProgram.m in Sources */,
+				96740ADD27C1F3950047AF24 /* CGDrawController.m in Sources */,
+				96740ADE27C1F3950047AF24 /* CGDrawAgent.mm in Sources */,
+				96740AD227C1F3570047AF24 /* CGPaintOutput.m in Sources */,
+				967409C527C1EFDA0047AF24 /* AppDelegate.m in Sources */,
+				967409D627C1EFDB0047AF24 /* main.m in Sources */,
+				96740ACD27C1F3570047AF24 /* CGPaintPipelineOutput.m in Sources */,
+				96740B0427C1F4E70047AF24 /* glInterface.cpp in Sources */,
+				96740ACE27C1F3570047AF24 /* CGPaintRenderPipeline.m in Sources */,
+				96740AD427C1F3570047AF24 /* CGPaintViewOutput.m in Sources */,
+				96740AD527C1F3570047AF24 /* CGPaintUtils.m in Sources */,
+				96740ACF27C1F3570047AF24 /* CGPaintFramebuffer.m in Sources */,
+				967409C827C1EFDA0047AF24 /* SceneDelegate.m in Sources */,
+				96740AD327C1F3570047AF24 /* CGPaintContext.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		967409CC27C1EFDA0047AF24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				967409CD27C1EFDA0047AF24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		967409D127C1EFDB0047AF24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				967409D227C1EFDB0047AF24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		967409D727C1EFDB0047AF24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		967409D827C1EFDB0047AF24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		967409DA27C1EFDB0047AF24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9ZSR9Q37TC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VisualEffect/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenqu.MediaEngineDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		967409DB27C1EFDB0047AF24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9ZSR9Q37TC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VisualEffect/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhenqu.MediaEngineDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		967409BB27C1EFDA0047AF24 /* Build configuration list for PBXProject "VisualEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				967409D727C1EFDB0047AF24 /* Debug */,
+				967409D827C1EFDB0047AF24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		967409D927C1EFDB0047AF24 /* Build configuration list for PBXNativeTarget "VisualEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				967409DA27C1EFDB0047AF24 /* Debug */,
+				967409DB27C1EFDB0047AF24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 967409B827C1EFDA0047AF24 /* Project object */;
+}

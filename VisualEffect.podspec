@@ -140,5 +140,6 @@ Pod::Spec.new do |spec|
   # spec.dependency "JSONKit", "~> 1.4"
 
   spec.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => 'TARGET_IPHONE_POD=1'}
+  spec.static_framework = true
   
 end

@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		967409FF27C1F0520047AF24 /* libVisualEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 967409FE27C1F0520047AF24 /* libVisualEffect.m */; };
+		96740A0027C1F0520047AF24 /* libVisualEffect.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 967409FD27C1F0520047AF24 /* libVisualEffect.h */; };
+		96740AAA27C1F2310047AF24 /* CGDrawProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96740A6427C1F2310047AF24 /* CGDrawProgram.cpp */; };
+		96740AAB27C1F2310047AF24 /* glInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96740A6527C1F2310047AF24 /* glInterface.cpp */; };
+		96740AAC27C1F2310047AF24 /* CGDrawFramebufferCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96740A6627C1F2310047AF24 /* CGDrawFramebufferCache.cpp */; };
+		96740AAD27C1F2310047AF24 /* CGDrawTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96740A6727C1F2310047AF24 /* CGDrawTexture.cpp */; };
+		96740AAE27C1F2310047AF24 /* CGDrawFramebuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96740A6827C1F2310047AF24 /* CGDrawFramebuffer.cpp */; };
+		96740AAF27C1F2310047AF24 /* CGShaderUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96740A7127C1F2310047AF24 /* CGShaderUtil.cpp */; };
+		96740AB027C1F2310047AF24 /* CGVec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96740A7227C1F2310047AF24 /* CGVec.cpp */; };
+		96740AB127C1F2310047AF24 /* CGDrawEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96740A7827C1F2310047AF24 /* CGDrawEngine.cpp */; };
+		96740AB227C1F2310047AF24 /* CGDrawFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96740A7E27C1F2310047AF24 /* CGDrawFilter.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		967409F827C1F0520047AF24 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				96740A0027C1F0520047AF24 /* libVisualEffect.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		967409FA27C1F0520047AF24 /* liblibVisualEffect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibVisualEffect.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		967409FD27C1F0520047AF24 /* libVisualEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libVisualEffect.h; sourceTree = "<group>"; };
+		967409FE27C1F0520047AF24 /* libVisualEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libVisualEffect.m; sourceTree = "<group>"; };
+		96740A5F27C1F2310047AF24 /* CGDrawFramebufferCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawFramebufferCache.h; sourceTree = "<group>"; };
+		96740A6027C1F2310047AF24 /* CGDrawTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawTexture.h; sourceTree = "<group>"; };
+		96740A6127C1F2310047AF24 /* CGDrawProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawProgram.h; sourceTree = "<group>"; };
+		96740A6227C1F2310047AF24 /* glInterface.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = glInterface.hpp; sourceTree = "<group>"; };
+		96740A6327C1F2310047AF24 /* CGDrawFramebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawFramebuffer.h; sourceTree = "<group>"; };
+		96740A6427C1F2310047AF24 /* CGDrawProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawProgram.cpp; sourceTree = "<group>"; };
+		96740A6527C1F2310047AF24 /* glInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = glInterface.cpp; sourceTree = "<group>"; };
+		96740A6627C1F2310047AF24 /* CGDrawFramebufferCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawFramebufferCache.cpp; sourceTree = "<group>"; };
+		96740A6727C1F2310047AF24 /* CGDrawTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawTexture.cpp; sourceTree = "<group>"; };
+		96740A6827C1F2310047AF24 /* CGDrawFramebuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawFramebuffer.cpp; sourceTree = "<group>"; };
+		96740A6A27C1F2310047AF24 /* CGDrawDataInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawDataInput.h; sourceTree = "<group>"; };
+		96740A6B27C1F2310047AF24 /* CGDrawTextureInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawTextureInput.h; sourceTree = "<group>"; };
+		96740A6C27C1F2310047AF24 /* CGDrawInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawInput.h; sourceTree = "<group>"; };
+		96740A6E27C1F2310047AF24 /* CGDrawTextureOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawTextureOutput.h; sourceTree = "<group>"; };
+		96740A6F27C1F2310047AF24 /* CGDrawOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawOutput.h; sourceTree = "<group>"; };
+		96740A7127C1F2310047AF24 /* CGShaderUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGShaderUtil.cpp; sourceTree = "<group>"; };
+		96740A7227C1F2310047AF24 /* CGVec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGVec.cpp; sourceTree = "<group>"; };
+		96740A7327C1F2310047AF24 /* CGVec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGVec.h; sourceTree = "<group>"; };
+		96740A7427C1F2310047AF24 /* CGOpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGOpenGL.h; sourceTree = "<group>"; };
+		96740A7527C1F2310047AF24 /* CGShaderUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGShaderUtil.h; sourceTree = "<group>"; };
+		96740A7627C1F2310047AF24 /* CGDrawLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawLog.h; sourceTree = "<group>"; };
+		96740A7827C1F2310047AF24 /* CGDrawEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawEngine.cpp; sourceTree = "<group>"; };
+		96740A7927C1F2310047AF24 /* CGDrawBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawBridge.h; sourceTree = "<group>"; };
+		96740A7A27C1F2310047AF24 /* CGDrawEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawEngine.h; sourceTree = "<group>"; };
+		96740A7C27C1F2310047AF24 /* CGDrawFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawFilter.h; sourceTree = "<group>"; };
+		96740A7D27C1F2310047AF24 /* CGDrawShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawShader.h; sourceTree = "<group>"; };
+		96740A7E27C1F2310047AF24 /* CGDrawFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawFilter.cpp; sourceTree = "<group>"; };
+		96740A8127C1F2310047AF24 /* fwd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fwd.h; sourceTree = "<group>"; };
+		96740A8227C1F2310047AF24 /* memorystream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memorystream.h; sourceTree = "<group>"; };
+		96740A8327C1F2310047AF24 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		96740A8427C1F2310047AF24 /* prettywriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prettywriter.h; sourceTree = "<group>"; };
+		96740A8527C1F2310047AF24 /* ostreamwrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ostreamwrapper.h; sourceTree = "<group>"; };
+		96740A8627C1F2310047AF24 /* encodedstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encodedstream.h; sourceTree = "<group>"; };
+		96740A8727C1F2310047AF24 /* filereadstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filereadstream.h; sourceTree = "<group>"; };
+		96740A8827C1F2310047AF24 /* cursorstreamwrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cursorstreamwrapper.h; sourceTree = "<group>"; };
+		96740A8927C1F2310047AF24 /* istreamwrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = istreamwrapper.h; sourceTree = "<group>"; };
+		96740A8A27C1F2310047AF24 /* uri.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = uri.h; sourceTree = "<group>"; };
+		96740A8B27C1F2310047AF24 /* stringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringbuffer.h; sourceTree = "<group>"; };
+		96740A8D27C1F2310047AF24 /* ieee754.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ieee754.h; sourceTree = "<group>"; };
+		96740A8E27C1F2310047AF24 /* strtod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strtod.h; sourceTree = "<group>"; };
+		96740A8F27C1F2310047AF24 /* swap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swap.h; sourceTree = "<group>"; };
+		96740A9027C1F2310047AF24 /* regex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = regex.h; sourceTree = "<group>"; };
+		96740A9127C1F2310047AF24 /* diyfp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = diyfp.h; sourceTree = "<group>"; };
+		96740A9227C1F2310047AF24 /* biginteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = biginteger.h; sourceTree = "<group>"; };
+		96740A9327C1F2310047AF24 /* strfunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strfunc.h; sourceTree = "<group>"; };
+		96740A9427C1F2310047AF24 /* itoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itoa.h; sourceTree = "<group>"; };
+		96740A9527C1F2310047AF24 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		96740A9627C1F2310047AF24 /* dtoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dtoa.h; sourceTree = "<group>"; };
+		96740A9727C1F2310047AF24 /* clzll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clzll.h; sourceTree = "<group>"; };
+		96740A9827C1F2310047AF24 /* meta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meta.h; sourceTree = "<group>"; };
+		96740A9927C1F2310047AF24 /* pow10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pow10.h; sourceTree = "<group>"; };
+		96740A9A27C1F2310047AF24 /* encodings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encodings.h; sourceTree = "<group>"; };
+		96740A9B27C1F2310047AF24 /* schema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = schema.h; sourceTree = "<group>"; };
+		96740A9C27C1F2310047AF24 /* stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stream.h; sourceTree = "<group>"; };
+		96740A9D27C1F2310047AF24 /* filewritestream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filewritestream.h; sourceTree = "<group>"; };
+		96740A9E27C1F2310047AF24 /* rapidjson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rapidjson.h; sourceTree = "<group>"; };
+		96740A9F27C1F2310047AF24 /* document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = document.h; sourceTree = "<group>"; };
+		96740AA027C1F2310047AF24 /* allocators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = allocators.h; sourceTree = "<group>"; };
+		96740AA127C1F2310047AF24 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		96740AA327C1F2310047AF24 /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
+		96740AA427C1F2310047AF24 /* en.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = en.h; sourceTree = "<group>"; };
+		96740AA527C1F2310047AF24 /* memorybuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memorybuffer.h; sourceTree = "<group>"; };
+		96740AA627C1F2310047AF24 /* pointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pointer.h; sourceTree = "<group>"; };
+		96740AA827C1F2310047AF24 /* inttypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inttypes.h; sourceTree = "<group>"; };
+		96740AA927C1F2310047AF24 /* stdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdint.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		967409F727C1F0520047AF24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		967409F127C1F0520047AF24 = {
+			isa = PBXGroup;
+			children = (
+				967409FC27C1F0520047AF24 /* libVisualEffect */,
+				967409FB27C1F0520047AF24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		967409FB27C1F0520047AF24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				967409FA27C1F0520047AF24 /* liblibVisualEffect.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		967409FC27C1F0520047AF24 /* libVisualEffect */ = {
+			isa = PBXGroup;
+			children = (
+				96740A5D27C1F2310047AF24 /* render */,
+				96740A7F27C1F2310047AF24 /* third */,
+				967409FD27C1F0520047AF24 /* libVisualEffect.h */,
+				967409FE27C1F0520047AF24 /* libVisualEffect.m */,
+			);
+			path = libVisualEffect;
+			sourceTree = "<group>";
+		};
+		96740A5D27C1F2310047AF24 /* render */ = {
+			isa = PBXGroup;
+			children = (
+				96740A5E27C1F2310047AF24 /* core */,
+				96740A6927C1F2310047AF24 /* input */,
+				96740A6D27C1F2310047AF24 /* output */,
+				96740A7027C1F2310047AF24 /* utils */,
+				96740A7727C1F2310047AF24 /* public */,
+				96740A7B27C1F2310047AF24 /* shader */,
+			);
+			name = render;
+			path = ../../../src/render;
+			sourceTree = "<group>";
+		};
+		96740A5E27C1F2310047AF24 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				96740A6827C1F2310047AF24 /* CGDrawFramebuffer.cpp */,
+				96740A6327C1F2310047AF24 /* CGDrawFramebuffer.h */,
+				96740A6627C1F2310047AF24 /* CGDrawFramebufferCache.cpp */,
+				96740A5F27C1F2310047AF24 /* CGDrawFramebufferCache.h */,
+				96740A6427C1F2310047AF24 /* CGDrawProgram.cpp */,
+				96740A6127C1F2310047AF24 /* CGDrawProgram.h */,
+				96740A6727C1F2310047AF24 /* CGDrawTexture.cpp */,
+				96740A6027C1F2310047AF24 /* CGDrawTexture.h */,
+				96740A6527C1F2310047AF24 /* glInterface.cpp */,
+				96740A6227C1F2310047AF24 /* glInterface.hpp */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		96740A6927C1F2310047AF24 /* input */ = {
+			isa = PBXGroup;
+			children = (
+				96740A6A27C1F2310047AF24 /* CGDrawDataInput.h */,
+				96740A6B27C1F2310047AF24 /* CGDrawTextureInput.h */,
+				96740A6C27C1F2310047AF24 /* CGDrawInput.h */,
+			);
+			path = input;
+			sourceTree = "<group>";
+		};
+		96740A6D27C1F2310047AF24 /* output */ = {
+			isa = PBXGroup;
+			children = (
+				96740A6E27C1F2310047AF24 /* CGDrawTextureOutput.h */,
+				96740A6F27C1F2310047AF24 /* CGDrawOutput.h */,
+			);
+			path = output;
+			sourceTree = "<group>";
+		};
+		96740A7027C1F2310047AF24 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				96740A7127C1F2310047AF24 /* CGShaderUtil.cpp */,
+				96740A7227C1F2310047AF24 /* CGVec.cpp */,
+				96740A7327C1F2310047AF24 /* CGVec.h */,
+				96740A7427C1F2310047AF24 /* CGOpenGL.h */,
+				96740A7527C1F2310047AF24 /* CGShaderUtil.h */,
+				96740A7627C1F2310047AF24 /* CGDrawLog.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		96740A7727C1F2310047AF24 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				96740A7827C1F2310047AF24 /* CGDrawEngine.cpp */,
+				96740A7927C1F2310047AF24 /* CGDrawBridge.h */,
+				96740A7A27C1F2310047AF24 /* CGDrawEngine.h */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
+		96740A7B27C1F2310047AF24 /* shader */ = {
+			isa = PBXGroup;
+			children = (
+				96740A7C27C1F2310047AF24 /* CGDrawFilter.h */,
+				96740A7D27C1F2310047AF24 /* CGDrawShader.h */,
+				96740A7E27C1F2310047AF24 /* CGDrawFilter.cpp */,
+			);
+			path = shader;
+			sourceTree = "<group>";
+		};
+		96740A7F27C1F2310047AF24 /* third */ = {
+			isa = PBXGroup;
+			children = (
+				96740A8027C1F2310047AF24 /* rapidjson */,
+			);
+			name = third;
+			path = ../../../src/third;
+			sourceTree = "<group>";
+		};
+		96740A8027C1F2310047AF24 /* rapidjson */ = {
+			isa = PBXGroup;
+			children = (
+				96740A8127C1F2310047AF24 /* fwd.h */,
+				96740A8227C1F2310047AF24 /* memorystream.h */,
+				96740A8327C1F2310047AF24 /* reader.h */,
+				96740A8427C1F2310047AF24 /* prettywriter.h */,
+				96740A8527C1F2310047AF24 /* ostreamwrapper.h */,
+				96740A8627C1F2310047AF24 /* encodedstream.h */,
+				96740A8727C1F2310047AF24 /* filereadstream.h */,
+				96740A8827C1F2310047AF24 /* cursorstreamwrapper.h */,
+				96740A8927C1F2310047AF24 /* istreamwrapper.h */,
+				96740A8A27C1F2310047AF24 /* uri.h */,
+				96740A8B27C1F2310047AF24 /* stringbuffer.h */,
+				96740A8C27C1F2310047AF24 /* internal */,
+				96740A9A27C1F2310047AF24 /* encodings.h */,
+				96740A9B27C1F2310047AF24 /* schema.h */,
+				96740A9C27C1F2310047AF24 /* stream.h */,
+				96740A9D27C1F2310047AF24 /* filewritestream.h */,
+				96740A9E27C1F2310047AF24 /* rapidjson.h */,
+				96740A9F27C1F2310047AF24 /* document.h */,
+				96740AA027C1F2310047AF24 /* allocators.h */,
+				96740AA127C1F2310047AF24 /* writer.h */,
+				96740AA227C1F2310047AF24 /* error */,
+				96740AA527C1F2310047AF24 /* memorybuffer.h */,
+				96740AA627C1F2310047AF24 /* pointer.h */,
+				96740AA727C1F2310047AF24 /* msinttypes */,
+			);
+			path = rapidjson;
+			sourceTree = "<group>";
+		};
+		96740A8C27C1F2310047AF24 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				96740A8D27C1F2310047AF24 /* ieee754.h */,
+				96740A8E27C1F2310047AF24 /* strtod.h */,
+				96740A8F27C1F2310047AF24 /* swap.h */,
+				96740A9027C1F2310047AF24 /* regex.h */,
+				96740A9127C1F2310047AF24 /* diyfp.h */,
+				96740A9227C1F2310047AF24 /* biginteger.h */,
+				96740A9327C1F2310047AF24 /* strfunc.h */,
+				96740A9427C1F2310047AF24 /* itoa.h */,
+				96740A9527C1F2310047AF24 /* stack.h */,
+				96740A9627C1F2310047AF24 /* dtoa.h */,
+				96740A9727C1F2310047AF24 /* clzll.h */,
+				96740A9827C1F2310047AF24 /* meta.h */,
+				96740A9927C1F2310047AF24 /* pow10.h */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		96740AA227C1F2310047AF24 /* error */ = {
+			isa = PBXGroup;
+			children = (
+				96740AA327C1F2310047AF24 /* error.h */,
+				96740AA427C1F2310047AF24 /* en.h */,
+			);
+			path = error;
+			sourceTree = "<group>";
+		};
+		96740AA727C1F2310047AF24 /* msinttypes */ = {
+			isa = PBXGroup;
+			children = (
+				96740AA827C1F2310047AF24 /* inttypes.h */,
+				96740AA927C1F2310047AF24 /* stdint.h */,
+			);
+			path = msinttypes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		967409F927C1F0520047AF24 /* libVisualEffect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96740A0327C1F0520047AF24 /* Build configuration list for PBXNativeTarget "libVisualEffect" */;
+			buildPhases = (
+				967409F627C1F0520047AF24 /* Sources */,
+				967409F727C1F0520047AF24 /* Frameworks */,
+				967409F827C1F0520047AF24 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libVisualEffect;
+			productName = libVisualEffect;
+			productReference = 967409FA27C1F0520047AF24 /* liblibVisualEffect.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		967409F227C1F0520047AF24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					967409F927C1F0520047AF24 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 967409F527C1F0520047AF24 /* Build configuration list for PBXProject "libVisualEffect" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 967409F127C1F0520047AF24;
+			productRefGroup = 967409FB27C1F0520047AF24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				967409F927C1F0520047AF24 /* libVisualEffect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		967409F627C1F0520047AF24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96740AAD27C1F2310047AF24 /* CGDrawTexture.cpp in Sources */,
+				96740AAE27C1F2310047AF24 /* CGDrawFramebuffer.cpp in Sources */,
+				96740AB127C1F2310047AF24 /* CGDrawEngine.cpp in Sources */,
+				96740AB027C1F2310047AF24 /* CGVec.cpp in Sources */,
+				96740AAF27C1F2310047AF24 /* CGShaderUtil.cpp in Sources */,
+				96740AAC27C1F2310047AF24 /* CGDrawFramebufferCache.cpp in Sources */,
+				96740AAB27C1F2310047AF24 /* glInterface.cpp in Sources */,
+				96740AB227C1F2310047AF24 /* CGDrawFilter.cpp in Sources */,
+				96740AAA27C1F2310047AF24 /* CGDrawProgram.cpp in Sources */,
+				967409FF27C1F0520047AF24 /* libVisualEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		96740A0127C1F0520047AF24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		96740A0227C1F0520047AF24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96740A0427C1F0520047AF24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		96740A0527C1F0520047AF24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		967409F527C1F0520047AF24 /* Build configuration list for PBXProject "libVisualEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96740A0127C1F0520047AF24 /* Debug */,
+				96740A0227C1F0520047AF24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96740A0327C1F0520047AF24 /* Build configuration list for PBXNativeTarget "libVisualEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96740A0427C1F0520047AF24 /* Debug */,
+				96740A0527C1F0520047AF24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 967409F227C1F0520047AF24 /* Project object */;
+}
