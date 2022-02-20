@@ -78,24 +78,24 @@ void CGDrawFramebuffer::upload(const unsigned char *data, CGVec2f size, GLenum i
 void CGDrawFramebuffer::generateTexture() {
     //静态函数
 //    CGDrawTexture::genTexture()
-    glGenTextures(1, &mTexture);
-    glBindTexture(GL_TEXTURE_2D, mTexture);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, mTextureOptions.minFilter);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, mTextureOptions.magFilter);
+    glesGenTextures(1, &mTexture);
+    glesBindTexture(GL_TEXTURE_2D, mTexture);
+    glesTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, mTextureOptions.minFilter);
+    glesTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, mTextureOptions.magFilter);
     // This is necessary for non-power-of-two textures
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, mTextureOptions.wrapS);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, mTextureOptions.wrapT);
+    glesTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, mTextureOptions.wrapS);
+    glesTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, mTextureOptions.wrapT);
 }
 
 void CGDrawFramebuffer::generateFramebuffer() {
-    glGenFramebuffers(1, &mFramebuffer);
-    glBindFramebuffer(GL_FRAMEBUFFER, mFramebuffer);
+    glesGenFramebuffers(1, &mFramebuffer);
+    glesBindFramebuffer(GL_FRAMEBUFFER, mFramebuffer);
 
     generateTexture();
-    glBindTexture(GL_TEXTURE_2D, mTexture);
-    glTexImage2D(GL_TEXTURE_2D, 0, mTextureOptions.internalFormat, (int)mFboSize.x, (int)mFboSize.y, 0, mTextureOptions.format, mTextureOptions.type, 0);
-    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, mTexture, 0);
-    glBindTexture(GL_TEXTURE_2D, 0);
+    glesBindTexture(GL_TEXTURE_2D, mTexture);
+    glesTexImage2D(GL_TEXTURE_2D, 0, mTextureOptions.internalFormat, (int)mFboSize.x, (int)mFboSize.y, 0, mTextureOptions.format, mTextureOptions.type, 0);
+    glesFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, mTexture, 0);
+    glesBindTexture(GL_TEXTURE_2D, 0);
     GLenum status = glCheckFramebufferStatus(GL_FRAMEBUFFER);
 //    Assert(status == GL_FRAMEBUFFER_COMPLETE, @"Incomplete filter FBO: %d", status);
     if (status != GL_FRAMEBUFFER_COMPLETE) {

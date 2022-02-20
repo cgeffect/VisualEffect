@@ -9,7 +9,7 @@
 #define CGDrawTexture_h
 
 #include <stdio.h>
-#include "CGOpenGL.h"
+#include "glInterface.h"
 
 namespace CGDraw {
 class CGDrawTexture {
@@ -17,7 +17,7 @@ class CGDrawTexture {
 public:
     static GLuint genTexture() {
         GLuint tid;
-        glGenTextures(1, &tid);
+        glesGenTextures(1, &tid);
         glBindTexture(GL_TEXTURE_2D, tid);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
@@ -32,7 +32,7 @@ public:
             return TEXTURE_NULL;
         }
         GLuint tid;
-        glGenTextures(1, &tid);
+        glesGenTextures(1, &tid);
         if (tid > TEXTURE_NULL) {
             glBindTexture(GL_TEXTURE_2D, tid);
             glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
@@ -48,7 +48,7 @@ public:
 
     static GLuint genTexture(void *data, int w, int h) {
         GLuint tid;
-        glGenTextures(1, (GLuint *) &tid);
+        glesGenTextures(1, (GLuint *) &tid);
         glBindTexture(GL_TEXTURE_2D, (GLuint) tid);
         glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
         glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);

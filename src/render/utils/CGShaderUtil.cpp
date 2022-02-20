@@ -7,7 +7,7 @@
 #include <cstring>
 #include "CGShaderUtil.h"
 #include "CGDrawLog.h"
-#include "CGOpenGL.h"
+#include "glInterface.h"
 #include <iostream>
 
 int CG_LOG_LEVEL = 4;
@@ -73,7 +73,7 @@ GLuint CGShaderUtil::createProgram(const GLchar *vertexSource, const GLchar *fra
 
 GLuint CGShaderUtil::genTexture() {
     GLuint tid;
-    glGenTextures(1, &tid);
+    glesGenTextures(1, &tid);
     glBindTexture(GL_TEXTURE_2D, tid);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
@@ -88,7 +88,7 @@ GLuint CGShaderUtil::genTexture(int w, int h, GLenum f) {
         return TEXTURE_NULL;
     }
     GLuint tid;
-    glGenTextures(1, &tid);
+    glesGenTextures(1, &tid);
     if (tid > TEXTURE_NULL) {
         glBindTexture(GL_TEXTURE_2D, tid);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
@@ -104,7 +104,7 @@ GLuint CGShaderUtil::genTexture(int w, int h, GLenum f) {
 
 GLuint CGShaderUtil::genTexture(void *data, int w, int h) {
     GLuint tid;
-    glGenTextures(1, (GLuint *) &tid);
+    glesGenTextures(1, (GLuint *) &tid);
     glBindTexture(GL_TEXTURE_2D, (GLuint) tid);
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);

@@ -18,6 +18,7 @@
 		96740AB027C1F2310047AF24 /* CGVec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96740A7227C1F2310047AF24 /* CGVec.cpp */; };
 		96740AB127C1F2310047AF24 /* CGDrawEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96740A7827C1F2310047AF24 /* CGDrawEngine.cpp */; };
 		96740AB227C1F2310047AF24 /* CGDrawFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96740A7E27C1F2310047AF24 /* CGDrawFilter.cpp */; };
+		967411A927C208710047AF24 /* VEModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 967411A727C208710047AF24 /* VEModel.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -102,6 +103,8 @@
 		96740AA627C1F2310047AF24 /* pointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pointer.h; sourceTree = "<group>"; };
 		96740AA827C1F2310047AF24 /* inttypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inttypes.h; sourceTree = "<group>"; };
 		96740AA927C1F2310047AF24 /* stdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdint.h; sourceTree = "<group>"; };
+		967411A727C208710047AF24 /* VEModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VEModel.cpp; sourceTree = "<group>"; };
+		967411A827C208710047AF24 /* VEModel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VEModel.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,7 @@
 		967409FC27C1F0520047AF24 /* libVisualEffect */ = {
 			isa = PBXGroup;
 			children = (
+				96740B0D27C1FEA20047AF24 /* json */,
 				96740A5D27C1F2310047AF24 /* render */,
 				96740A7F27C1F2310047AF24 /* third */,
 				967409FD27C1F0520047AF24 /* libVisualEffect.h */,
@@ -303,6 +307,16 @@
 			path = msinttypes;
 			sourceTree = "<group>";
 		};
+		96740B0D27C1FEA20047AF24 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				967411A727C208710047AF24 /* VEModel.cpp */,
+				967411A827C208710047AF24 /* VEModel.hpp */,
+			);
+			name = json;
+			path = ../../../src/json;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -369,6 +383,7 @@
 				96740AAB27C1F2310047AF24 /* glInterface.cpp in Sources */,
 				96740AB227C1F2310047AF24 /* CGDrawFilter.cpp in Sources */,
 				96740AAA27C1F2310047AF24 /* CGDrawProgram.cpp in Sources */,
+				967411A927C208710047AF24 /* VEModel.cpp in Sources */,
 				967409FF27C1F0520047AF24 /* libVisualEffect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
