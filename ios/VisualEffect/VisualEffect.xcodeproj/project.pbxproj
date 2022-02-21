@@ -15,18 +15,18 @@
 		967409D327C1EFDB0047AF24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967409D127C1EFDB0047AF24 /* LaunchScreen.storyboard */; };
 		967409D627C1EFDB0047AF24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 967409D527C1EFDB0047AF24 /* main.m */; };
 		96740A0827C1F0B30047AF24 /* liblibVisualEffect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96740A0727C1F0B30047AF24 /* liblibVisualEffect.a */; };
-		96740ACD27C1F3570047AF24 /* CGPaintPipelineOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740AB627C1F3570047AF24 /* CGPaintPipelineOutput.m */; };
-		96740ACE27C1F3570047AF24 /* CGPaintRenderPipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740AB727C1F3570047AF24 /* CGPaintRenderPipeline.m */; };
-		96740ACF27C1F3570047AF24 /* CGPaintFramebuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740ABA27C1F3570047AF24 /* CGPaintFramebuffer.m */; };
-		96740AD027C1F3570047AF24 /* CGPaintProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740ABE27C1F3570047AF24 /* CGPaintProgram.m */; };
-		96740AD127C1F3570047AF24 /* CGPaintFramebufferCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740AC127C1F3570047AF24 /* CGPaintFramebufferCache.m */; };
-		96740AD227C1F3570047AF24 /* CGPaintOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740AC227C1F3570047AF24 /* CGPaintOutput.m */; };
-		96740AD327C1F3570047AF24 /* CGPaintContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740AC427C1F3570047AF24 /* CGPaintContext.m */; };
-		96740AD427C1F3570047AF24 /* CGPaintViewOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740AC827C1F3570047AF24 /* CGPaintViewOutput.m */; };
-		96740AD527C1F3570047AF24 /* CGPaintUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740ACA27C1F3570047AF24 /* CGPaintUtils.m */; };
 		96740ADC27C1F3950047AF24 /* rgba8_1125x1125.rgba in Resources */ = {isa = PBXBuildFile; fileRef = 96740AD727C1F3950047AF24 /* rgba8_1125x1125.rgba */; };
 		96740ADD27C1F3950047AF24 /* CGDrawController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740AD927C1F3950047AF24 /* CGDrawController.m */; };
 		96740ADE27C1F3950047AF24 /* CGDrawAgent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96740ADA27C1F3950047AF24 /* CGDrawAgent.mm */; };
+		9688434627C3E3B8008EDB78 /* CGPaintPipelineOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688432F27C3E3B8008EDB78 /* CGPaintPipelineOutput.m */; };
+		9688434727C3E3B8008EDB78 /* CGPaintRenderPipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688433027C3E3B8008EDB78 /* CGPaintRenderPipeline.m */; };
+		9688434827C3E3B8008EDB78 /* CGPaintFramebuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688433327C3E3B8008EDB78 /* CGPaintFramebuffer.m */; };
+		9688434927C3E3B8008EDB78 /* CGPaintProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688433727C3E3B8008EDB78 /* CGPaintProgram.m */; };
+		9688434A27C3E3B8008EDB78 /* CGPaintFramebufferCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688433A27C3E3B8008EDB78 /* CGPaintFramebufferCache.m */; };
+		9688434B27C3E3B8008EDB78 /* CGPaintOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688433B27C3E3B8008EDB78 /* CGPaintOutput.m */; };
+		9688434C27C3E3B8008EDB78 /* CGPaintContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688433D27C3E3B8008EDB78 /* CGPaintContext.m */; };
+		9688434D27C3E3B8008EDB78 /* CGPaintViewOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688434127C3E3B8008EDB78 /* CGPaintViewOutput.m */; };
+		9688434E27C3E3B8008EDB78 /* CGPaintUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688434327C3E3B8008EDB78 /* CGPaintUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,33 +43,33 @@
 		967409D427C1EFDB0047AF24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		967409D527C1EFDB0047AF24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		96740A0727C1F0B30047AF24 /* liblibVisualEffect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibVisualEffect.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		96740AB527C1F3570047AF24 /* CGPaintRenderPipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintRenderPipeline.h; sourceTree = "<group>"; };
-		96740AB627C1F3570047AF24 /* CGPaintPipelineOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintPipelineOutput.m; sourceTree = "<group>"; };
-		96740AB727C1F3570047AF24 /* CGPaintRenderPipeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintRenderPipeline.m; sourceTree = "<group>"; };
-		96740AB827C1F3570047AF24 /* CGPaintPipelineOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintPipelineOutput.h; sourceTree = "<group>"; };
-		96740ABA27C1F3570047AF24 /* CGPaintFramebuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintFramebuffer.m; sourceTree = "<group>"; };
-		96740ABB27C1F3570047AF24 /* CGPaintFramebufferCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintFramebufferCache.h; sourceTree = "<group>"; };
-		96740ABC27C1F3570047AF24 /* CGPaintContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintContext.h; sourceTree = "<group>"; };
-		96740ABD27C1F3570047AF24 /* CGPaintFilterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintFilterInput.h; sourceTree = "<group>"; };
-		96740ABE27C1F3570047AF24 /* CGPaintProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintProgram.m; sourceTree = "<group>"; };
-		96740ABF27C1F3570047AF24 /* CGPaintOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintOutput.h; sourceTree = "<group>"; };
-		96740AC027C1F3570047AF24 /* CGPaintFramebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintFramebuffer.h; sourceTree = "<group>"; };
-		96740AC127C1F3570047AF24 /* CGPaintFramebufferCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintFramebufferCache.m; sourceTree = "<group>"; };
-		96740AC227C1F3570047AF24 /* CGPaintOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintOutput.m; sourceTree = "<group>"; };
-		96740AC327C1F3570047AF24 /* CGPaintProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintProgram.h; sourceTree = "<group>"; };
-		96740AC427C1F3570047AF24 /* CGPaintContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintContext.m; sourceTree = "<group>"; };
-		96740AC627C1F3570047AF24 /* CGPaintInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintInput.h; sourceTree = "<group>"; };
-		96740AC827C1F3570047AF24 /* CGPaintViewOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintViewOutput.m; sourceTree = "<group>"; };
-		96740AC927C1F3570047AF24 /* CGPaintViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintViewOutput.h; sourceTree = "<group>"; };
-		96740ACA27C1F3570047AF24 /* CGPaintUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintUtils.m; sourceTree = "<group>"; };
-		96740ACB27C1F3570047AF24 /* CGPaintUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintUtils.h; sourceTree = "<group>"; };
-		96740ACC27C1F3570047AF24 /* CGPaint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaint.h; sourceTree = "<group>"; };
 		96740AD727C1F3950047AF24 /* rgba8_1125x1125.rgba */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rgba8_1125x1125.rgba; sourceTree = "<group>"; };
 		96740AD827C1F3950047AF24 /* CGDrawAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawAgent.h; sourceTree = "<group>"; };
 		96740AD927C1F3950047AF24 /* CGDrawController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGDrawController.m; sourceTree = "<group>"; };
 		96740ADA27C1F3950047AF24 /* CGDrawAgent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CGDrawAgent.mm; sourceTree = "<group>"; };
 		96740ADB27C1F3950047AF24 /* CGDrawController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawController.h; sourceTree = "<group>"; };
 		9674124F27C2888A0047AF24 /* VeRenderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeRenderManager.h; sourceTree = "<group>"; };
+		9688432E27C3E3B8008EDB78 /* CGPaintRenderPipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintRenderPipeline.h; sourceTree = "<group>"; };
+		9688432F27C3E3B8008EDB78 /* CGPaintPipelineOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintPipelineOutput.m; sourceTree = "<group>"; };
+		9688433027C3E3B8008EDB78 /* CGPaintRenderPipeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintRenderPipeline.m; sourceTree = "<group>"; };
+		9688433127C3E3B8008EDB78 /* CGPaintPipelineOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintPipelineOutput.h; sourceTree = "<group>"; };
+		9688433327C3E3B8008EDB78 /* CGPaintFramebuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintFramebuffer.m; sourceTree = "<group>"; };
+		9688433427C3E3B8008EDB78 /* CGPaintFramebufferCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintFramebufferCache.h; sourceTree = "<group>"; };
+		9688433527C3E3B8008EDB78 /* CGPaintContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintContext.h; sourceTree = "<group>"; };
+		9688433627C3E3B8008EDB78 /* CGPaintFilterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintFilterInput.h; sourceTree = "<group>"; };
+		9688433727C3E3B8008EDB78 /* CGPaintProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintProgram.m; sourceTree = "<group>"; };
+		9688433827C3E3B8008EDB78 /* CGPaintOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintOutput.h; sourceTree = "<group>"; };
+		9688433927C3E3B8008EDB78 /* CGPaintFramebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintFramebuffer.h; sourceTree = "<group>"; };
+		9688433A27C3E3B8008EDB78 /* CGPaintFramebufferCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintFramebufferCache.m; sourceTree = "<group>"; };
+		9688433B27C3E3B8008EDB78 /* CGPaintOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintOutput.m; sourceTree = "<group>"; };
+		9688433C27C3E3B8008EDB78 /* CGPaintProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintProgram.h; sourceTree = "<group>"; };
+		9688433D27C3E3B8008EDB78 /* CGPaintContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintContext.m; sourceTree = "<group>"; };
+		9688433F27C3E3B8008EDB78 /* CGPaintInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintInput.h; sourceTree = "<group>"; };
+		9688434127C3E3B8008EDB78 /* CGPaintViewOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintViewOutput.m; sourceTree = "<group>"; };
+		9688434227C3E3B8008EDB78 /* CGPaintViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintViewOutput.h; sourceTree = "<group>"; };
+		9688434327C3E3B8008EDB78 /* CGPaintUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintUtils.m; sourceTree = "<group>"; };
+		9688434427C3E3B8008EDB78 /* CGPaintUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintUtils.h; sourceTree = "<group>"; };
+		9688434527C3E3B8008EDB78 /* CGPaint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaint.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +104,9 @@
 		967409C227C1EFDA0047AF24 /* VisualEffect */ = {
 			isa = PBXGroup;
 			children = (
+				9688432C27C3E3B8008EDB78 /* render */,
 				96740ADF27C1F4510047AF24 /* libVisualEffect */,
 				96740AD627C1F3950047AF24 /* Example */,
-				96740AB327C1F3570047AF24 /* ios */,
 				967409C327C1EFDA0047AF24 /* AppDelegate.h */,
 				967409C427C1EFDA0047AF24 /* AppDelegate.m */,
 				967409C627C1EFDA0047AF24 /* SceneDelegate.h */,
@@ -130,67 +130,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		96740AB327C1F3570047AF24 /* ios */ = {
-			isa = PBXGroup;
-			children = (
-				96740AB427C1F3570047AF24 /* pipeline */,
-				96740AB927C1F3570047AF24 /* core */,
-				96740AC527C1F3570047AF24 /* input */,
-				96740AC727C1F3570047AF24 /* output */,
-				96740ACA27C1F3570047AF24 /* CGPaintUtils.m */,
-				96740ACB27C1F3570047AF24 /* CGPaintUtils.h */,
-				96740ACC27C1F3570047AF24 /* CGPaint.h */,
-			);
-			name = ios;
-			path = ../../../src/platform/ios;
-			sourceTree = "<group>";
-		};
-		96740AB427C1F3570047AF24 /* pipeline */ = {
-			isa = PBXGroup;
-			children = (
-				96740AB527C1F3570047AF24 /* CGPaintRenderPipeline.h */,
-				96740AB627C1F3570047AF24 /* CGPaintPipelineOutput.m */,
-				96740AB727C1F3570047AF24 /* CGPaintRenderPipeline.m */,
-				96740AB827C1F3570047AF24 /* CGPaintPipelineOutput.h */,
-			);
-			path = pipeline;
-			sourceTree = "<group>";
-		};
-		96740AB927C1F3570047AF24 /* core */ = {
-			isa = PBXGroup;
-			children = (
-				96740ABA27C1F3570047AF24 /* CGPaintFramebuffer.m */,
-				96740ABB27C1F3570047AF24 /* CGPaintFramebufferCache.h */,
-				96740ABC27C1F3570047AF24 /* CGPaintContext.h */,
-				96740ABD27C1F3570047AF24 /* CGPaintFilterInput.h */,
-				96740ABE27C1F3570047AF24 /* CGPaintProgram.m */,
-				96740ABF27C1F3570047AF24 /* CGPaintOutput.h */,
-				96740AC027C1F3570047AF24 /* CGPaintFramebuffer.h */,
-				96740AC127C1F3570047AF24 /* CGPaintFramebufferCache.m */,
-				96740AC227C1F3570047AF24 /* CGPaintOutput.m */,
-				96740AC327C1F3570047AF24 /* CGPaintProgram.h */,
-				96740AC427C1F3570047AF24 /* CGPaintContext.m */,
-			);
-			path = core;
-			sourceTree = "<group>";
-		};
-		96740AC527C1F3570047AF24 /* input */ = {
-			isa = PBXGroup;
-			children = (
-				96740AC627C1F3570047AF24 /* CGPaintInput.h */,
-			);
-			path = input;
-			sourceTree = "<group>";
-		};
-		96740AC727C1F3570047AF24 /* output */ = {
-			isa = PBXGroup;
-			children = (
-				96740AC827C1F3570047AF24 /* CGPaintViewOutput.m */,
-				96740AC927C1F3570047AF24 /* CGPaintViewOutput.h */,
-			);
-			path = output;
-			sourceTree = "<group>";
-		};
 		96740AD627C1F3950047AF24 /* Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +148,66 @@
 				9674124F27C2888A0047AF24 /* VeRenderManager.h */,
 			);
 			path = libVisualEffect;
+			sourceTree = "<group>";
+		};
+		9688432C27C3E3B8008EDB78 /* render */ = {
+			isa = PBXGroup;
+			children = (
+				9688432D27C3E3B8008EDB78 /* pipeline */,
+				9688433227C3E3B8008EDB78 /* core */,
+				9688433E27C3E3B8008EDB78 /* input */,
+				9688434027C3E3B8008EDB78 /* output */,
+				9688434327C3E3B8008EDB78 /* CGPaintUtils.m */,
+				9688434427C3E3B8008EDB78 /* CGPaintUtils.h */,
+				9688434527C3E3B8008EDB78 /* CGPaint.h */,
+			);
+			path = render;
+			sourceTree = "<group>";
+		};
+		9688432D27C3E3B8008EDB78 /* pipeline */ = {
+			isa = PBXGroup;
+			children = (
+				9688432E27C3E3B8008EDB78 /* CGPaintRenderPipeline.h */,
+				9688432F27C3E3B8008EDB78 /* CGPaintPipelineOutput.m */,
+				9688433027C3E3B8008EDB78 /* CGPaintRenderPipeline.m */,
+				9688433127C3E3B8008EDB78 /* CGPaintPipelineOutput.h */,
+			);
+			path = pipeline;
+			sourceTree = "<group>";
+		};
+		9688433227C3E3B8008EDB78 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				9688433327C3E3B8008EDB78 /* CGPaintFramebuffer.m */,
+				9688433427C3E3B8008EDB78 /* CGPaintFramebufferCache.h */,
+				9688433527C3E3B8008EDB78 /* CGPaintContext.h */,
+				9688433627C3E3B8008EDB78 /* CGPaintFilterInput.h */,
+				9688433727C3E3B8008EDB78 /* CGPaintProgram.m */,
+				9688433827C3E3B8008EDB78 /* CGPaintOutput.h */,
+				9688433927C3E3B8008EDB78 /* CGPaintFramebuffer.h */,
+				9688433A27C3E3B8008EDB78 /* CGPaintFramebufferCache.m */,
+				9688433B27C3E3B8008EDB78 /* CGPaintOutput.m */,
+				9688433C27C3E3B8008EDB78 /* CGPaintProgram.h */,
+				9688433D27C3E3B8008EDB78 /* CGPaintContext.m */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		9688433E27C3E3B8008EDB78 /* input */ = {
+			isa = PBXGroup;
+			children = (
+				9688433F27C3E3B8008EDB78 /* CGPaintInput.h */,
+			);
+			path = input;
+			sourceTree = "<group>";
+		};
+		9688434027C3E3B8008EDB78 /* output */ = {
+			isa = PBXGroup;
+			children = (
+				9688434127C3E3B8008EDB78 /* CGPaintViewOutput.m */,
+				9688434227C3E3B8008EDB78 /* CGPaintViewOutput.h */,
+			);
+			path = output;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,20 +282,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				967409CB27C1EFDA0047AF24 /* ViewController.m in Sources */,
-				96740AD127C1F3570047AF24 /* CGPaintFramebufferCache.m in Sources */,
-				96740AD027C1F3570047AF24 /* CGPaintProgram.m in Sources */,
+				9688434B27C3E3B8008EDB78 /* CGPaintOutput.m in Sources */,
+				9688434D27C3E3B8008EDB78 /* CGPaintViewOutput.m in Sources */,
 				96740ADD27C1F3950047AF24 /* CGDrawController.m in Sources */,
+				9688434627C3E3B8008EDB78 /* CGPaintPipelineOutput.m in Sources */,
 				96740ADE27C1F3950047AF24 /* CGDrawAgent.mm in Sources */,
-				96740AD227C1F3570047AF24 /* CGPaintOutput.m in Sources */,
+				9688434E27C3E3B8008EDB78 /* CGPaintUtils.m in Sources */,
 				967409C527C1EFDA0047AF24 /* AppDelegate.m in Sources */,
 				967409D627C1EFDB0047AF24 /* main.m in Sources */,
-				96740ACD27C1F3570047AF24 /* CGPaintPipelineOutput.m in Sources */,
-				96740ACE27C1F3570047AF24 /* CGPaintRenderPipeline.m in Sources */,
-				96740AD427C1F3570047AF24 /* CGPaintViewOutput.m in Sources */,
-				96740AD527C1F3570047AF24 /* CGPaintUtils.m in Sources */,
-				96740ACF27C1F3570047AF24 /* CGPaintFramebuffer.m in Sources */,
+				9688434827C3E3B8008EDB78 /* CGPaintFramebuffer.m in Sources */,
+				9688434727C3E3B8008EDB78 /* CGPaintRenderPipeline.m in Sources */,
+				9688434A27C3E3B8008EDB78 /* CGPaintFramebufferCache.m in Sources */,
 				967409C827C1EFDA0047AF24 /* SceneDelegate.m in Sources */,
-				96740AD327C1F3570047AF24 /* CGPaintContext.m in Sources */,
+				9688434927C3E3B8008EDB78 /* CGPaintProgram.m in Sources */,
+				9688434C27C3E3B8008EDB78 /* CGPaintContext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

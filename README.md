@@ -1,6 +1,15 @@
 # VisualEffect
 
-cpp+opengl实现的Lottie动画库
+plan:
+
+vefx
+c++ 实现的基于opengl的无关平台的渲染库
+
+lottie
+c++实现的基于vefx实现AE渲染效果的库
+
+platform
+平台相关的渲染上线文, 渲染窗口, 业务逻辑控制
 
 Lottie动画库主要实现的都是一些形变效果
  
@@ -23,3 +32,8 @@ Lottie动画库主要实现的都是一些形变效果
 AE插件开发
 
 这个工程工作量挺大的, 一步一步来.
+
+参考
+[bgfx](https://github.com/bkaradzic/bgfx)
+[bgfx-minimal-example](https://github.com/jpcy/bgfx-minimal-example)
+
