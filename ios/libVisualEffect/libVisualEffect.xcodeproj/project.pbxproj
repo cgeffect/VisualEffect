@@ -178,7 +178,7 @@
 			children = (
 				9688430827C3E2B1008EDB78 /* platform */,
 				968842D627C3E191008EDB78 /* lottie */,
-				968842AB27C3E0B4008EDB78 /* vefx */,
+				968842AB27C3E0B4008EDB78 /* vgx */,
 				967409FD27C1F0520047AF24 /* libVisualEffect.h */,
 				967409FE27C1F0520047AF24 /* libVisualEffect.m */,
 			);
@@ -196,7 +196,7 @@
 			path = public;
 			sourceTree = "<group>";
 		};
-		968842AB27C3E0B4008EDB78 /* vefx */ = {
+		968842AB27C3E0B4008EDB78 /* vgx */ = {
 			isa = PBXGroup;
 			children = (
 				968842AC27C3E0B4008EDB78 /* core */,
@@ -206,8 +206,8 @@
 				968842C527C3E0B4008EDB78 /* public */,
 				968842C927C3E0B4008EDB78 /* shader */,
 			);
-			name = vefx;
-			path = ../../../src/vefx;
+			name = vgx;
+			path = ../../../src/vgx;
 			sourceTree = "<group>";
 		};
 		968842AC27C3E0B4008EDB78 /* core */ = {

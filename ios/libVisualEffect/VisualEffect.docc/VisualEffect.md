@@ -12,7 +12,7 @@
 
 - <!--@START_MENU_TOKEN@-->``Symbol``<!--@END_MENU_TOKEN@-->
 
-vefx
+vgx
 c++ 实现的基于opengl的无关平台的渲染库
 
 lottie
