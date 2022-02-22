@@ -17,7 +17,6 @@
 		96740A0827C1F0B30047AF24 /* liblibVisualEffect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96740A0727C1F0B30047AF24 /* liblibVisualEffect.a */; };
 		96740ADC27C1F3950047AF24 /* rgba8_1125x1125.rgba in Resources */ = {isa = PBXBuildFile; fileRef = 96740AD727C1F3950047AF24 /* rgba8_1125x1125.rgba */; };
 		96740ADD27C1F3950047AF24 /* CGDrawController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740AD927C1F3950047AF24 /* CGDrawController.m */; };
-		96740ADE27C1F3950047AF24 /* CGDrawAgent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96740ADA27C1F3950047AF24 /* CGDrawAgent.mm */; };
 		967C6E7927C526E700F83E6F /* CGPixelPipelineOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C6E3127C526E700F83E6F /* CGPixelPipelineOutput.m */; };
 		967C6E7A27C526E700F83E6F /* CGPixelRenderPipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C6E3227C526E700F83E6F /* CGPixelRenderPipeline.m */; };
 		967C6E7B27C526E700F83E6F /* CGPixelUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C6E3427C526E700F83E6F /* CGPixelUtils.m */; };
@@ -55,6 +54,7 @@
 		967C6E9B27C526E700F83E6F /* CGPixelShakeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C6E7527C526E700F83E6F /* CGPixelShakeFilter.m */; };
 		967C6E9C27C526E700F83E6F /* CGPixelShakeFilter.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 967C6E7627C526E700F83E6F /* CGPixelShakeFilter.fsh */; };
 		967C6E9D27C526E700F83E6F /* CGPixelRadialFastBlurFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C6E7827C526E700F83E6F /* CGPixelRadialFastBlurFilter.m */; };
+		967C6F1427C5300A00F83E6F /* CGDrawAgent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 967C6F1327C5300A00F83E6F /* CGDrawAgent.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,9 +72,7 @@
 		967409D527C1EFDB0047AF24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		96740A0727C1F0B30047AF24 /* liblibVisualEffect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibVisualEffect.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		96740AD727C1F3950047AF24 /* rgba8_1125x1125.rgba */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rgba8_1125x1125.rgba; sourceTree = "<group>"; };
-		96740AD827C1F3950047AF24 /* CGDrawAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawAgent.h; sourceTree = "<group>"; };
 		96740AD927C1F3950047AF24 /* CGDrawController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGDrawController.m; sourceTree = "<group>"; };
-		96740ADA27C1F3950047AF24 /* CGDrawAgent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CGDrawAgent.mm; sourceTree = "<group>"; };
 		96740ADB27C1F3950047AF24 /* CGDrawController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawController.h; sourceTree = "<group>"; };
 		9674124F27C2888A0047AF24 /* VeRenderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeRenderManager.h; sourceTree = "<group>"; };
 		967C6E2E27C526E700F83E6F /* CGPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPixel.h; sourceTree = "<group>"; };
@@ -147,6 +145,9 @@
 		967C6E7627C526E700F83E6F /* CGPixelShakeFilter.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = CGPixelShakeFilter.fsh; sourceTree = "<group>"; };
 		967C6E7727C526E700F83E6F /* CGPixelSoulFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPixelSoulFilter.h; sourceTree = "<group>"; };
 		967C6E7827C526E700F83E6F /* CGPixelRadialFastBlurFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPixelRadialFastBlurFilter.m; sourceTree = "<group>"; };
+		967C6F1127C52EFC00F83E6F /* VeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeView.h; sourceTree = "<group>"; };
+		967C6F1227C5300A00F83E6F /* CGDrawAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawAgent.h; sourceTree = "<group>"; };
+		967C6F1327C5300A00F83E6F /* CGDrawAgent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CGDrawAgent.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,8 +211,8 @@
 		96740AD627C1F3950047AF24 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				96740AD827C1F3950047AF24 /* CGDrawAgent.h */,
-				96740ADA27C1F3950047AF24 /* CGDrawAgent.mm */,
+				967C6F1227C5300A00F83E6F /* CGDrawAgent.h */,
+				967C6F1327C5300A00F83E6F /* CGDrawAgent.mm */,
 				96740ADB27C1F3950047AF24 /* CGDrawController.h */,
 				96740AD927C1F3950047AF24 /* CGDrawController.m */,
 				96740AD727C1F3950047AF24 /* rgba8_1125x1125.rgba */,
@@ -222,6 +223,7 @@
 		96740ADF27C1F4510047AF24 /* libVisualEffect */ = {
 			isa = PBXGroup;
 			children = (
+				967C6F1127C52EFC00F83E6F /* VeView.h */,
 				9674124F27C2888A0047AF24 /* VeRenderManager.h */,
 			);
 			path = libVisualEffect;
@@ -442,12 +444,12 @@
 				967C6E7E27C526E700F83E6F /* CGPixelContext.m in Sources */,
 				967C6E9A27C526E700F83E6F /* CGPixelGrayFilter.m in Sources */,
 				967C6E9D27C526E700F83E6F /* CGPixelRadialFastBlurFilter.m in Sources */,
-				96740ADE27C1F3950047AF24 /* CGDrawAgent.mm in Sources */,
 				967409C527C1EFDA0047AF24 /* AppDelegate.m in Sources */,
 				967C6E7A27C526E700F83E6F /* CGPixelRenderPipeline.m in Sources */,
 				967409D627C1EFDB0047AF24 /* main.m in Sources */,
 				967C6E8A27C526E700F83E6F /* CGPixelViewOutput.m in Sources */,
 				967409C827C1EFDA0047AF24 /* SceneDelegate.m in Sources */,
+				967C6F1427C5300A00F83E6F /* CGDrawAgent.mm in Sources */,
 				967C6E8827C526E700F83E6F /* CGPixelPixelbufferOutput.m in Sources */,
 				967C6E7F27C526E700F83E6F /* CGPixelOutput.m in Sources */,
 				967C6E8527C526E700F83E6F /* CGPixelCameraInput.m in Sources */,
@@ -610,7 +612,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -638,7 +640,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
