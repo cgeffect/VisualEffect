@@ -12,13 +12,13 @@
 
 namespace vga {
 
-class VeLayer {
+class VgaLayer {
     
 };
 
-class VeModel {
+class VgaModel {
 public:
-    VeLayer *layers;
+    VgaLayer *layers;
 };
 
 }

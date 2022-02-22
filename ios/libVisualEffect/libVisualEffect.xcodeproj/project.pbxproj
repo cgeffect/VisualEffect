@@ -30,7 +30,7 @@
 		9688432927C3E2B1008EDB78 /* CGPaintContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688431A27C3E2B1008EDB78 /* CGPaintContext.m */; };
 		9688432A27C3E2B1008EDB78 /* CGPaintViewOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688431E27C3E2B1008EDB78 /* CGPaintViewOutput.m */; };
 		9688432B27C3E2B1008EDB78 /* CGPaintUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688432027C3E2B1008EDB78 /* CGPaintUtils.m */; };
-		96CEB2CB27C4A4BB004E1812 /* VeModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96CEB2C927C4A4BB004E1812 /* VeModel.cpp */; };
+		96CEB2CB27C4A4BB004E1812 /* VgaModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96CEB2C927C4A4BB004E1812 /* VgaModel.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -141,8 +141,8 @@
 		9688432027C3E2B1008EDB78 /* CGPaintUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintUtils.m; sourceTree = "<group>"; };
 		9688432127C3E2B1008EDB78 /* CGPaintUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintUtils.h; sourceTree = "<group>"; };
 		9688432227C3E2B1008EDB78 /* CGPaint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaint.h; sourceTree = "<group>"; };
-		96CEB2C927C4A4BB004E1812 /* VeModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VeModel.cpp; sourceTree = "<group>"; };
-		96CEB2CA27C4A4BB004E1812 /* VeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VeModel.h; sourceTree = "<group>"; };
+		96CEB2C927C4A4BB004E1812 /* VgaModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VgaModel.cpp; sourceTree = "<group>"; };
+		96CEB2CA27C4A4BB004E1812 /* VgaModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VgaModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,8 +369,8 @@
 		9688430227C3E191008EDB78 /* json */ = {
 			isa = PBXGroup;
 			children = (
-				96CEB2C927C4A4BB004E1812 /* VeModel.cpp */,
-				96CEB2CA27C4A4BB004E1812 /* VeModel.h */,
+				96CEB2C927C4A4BB004E1812 /* VgaModel.cpp */,
+				96CEB2CA27C4A4BB004E1812 /* VgaModel.h */,
 			);
 			path = json;
 			sourceTree = "<group>";
@@ -509,7 +509,7 @@
 				968842CD27C3E0B4008EDB78 /* VgxProgram.cpp in Sources */,
 				968842CF27C3E0B4008EDB78 /* VgxFramebufferCache.cpp in Sources */,
 				9688430727C3E1DF008EDB78 /* VisualEffect.docc in Sources */,
-				96CEB2CB27C4A4BB004E1812 /* VeModel.cpp in Sources */,
+				96CEB2CB27C4A4BB004E1812 /* VgaModel.cpp in Sources */,
 				9688432927C3E2B1008EDB78 /* CGPaintContext.m in Sources */,
 				968842D027C3E0B4008EDB78 /* VgxTexture.cpp in Sources */,
 				9688432627C3E2B1008EDB78 /* CGPaintProgram.m in Sources */,
