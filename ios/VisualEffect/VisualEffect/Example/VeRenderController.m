@@ -1,17 +1,17 @@
 //
-//  VgxController.m
+//  VeRenderController.m
 //  CGPaintC
 //
 //  Created by Jason on 2021/6/11.
 //
 
-#import "CGDrawController.h"
+#import "VeRenderController.h"
 #import "VeView.h"
 
-@interface CGDrawController ()
+@interface VeRenderController ()
 @end
 
-@implementation CGDrawController
+@implementation VeRenderController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

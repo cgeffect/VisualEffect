@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-#import "CGDrawController.h"
+#import "VeRenderController.h"
 
 @interface ViewController ()
 
@@ -21,7 +21,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    CGDrawController *vc = [[CGDrawController alloc] init];
+    VeRenderController *vc = [[VeRenderController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 
 }
