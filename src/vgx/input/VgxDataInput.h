@@ -14,6 +14,14 @@ namespace vgx {
 class VgxDataInput:public VgxOutput {
     
 public:
+    
+    VgxDataInput() {
+        
+    }
+    ~VgxDataInput() {
+        
+    }
+    
     void setInputData(const unsigned char *data, int width, int height) {
         VgxVec2f _size = VgxVec2f(width, height);
         framebuffer.genWithSize(_size, true);

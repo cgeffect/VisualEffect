@@ -20,7 +20,7 @@ public:
     VgxFilter();
     virtual ~VgxFilter();
     
-    virtual void setInputVertexShader(unsigned char *vShader, unsigned char *fShader);
+    void setInputVertexShader(unsigned char *vShader, unsigned char *fShader);
     
 public:
     void renderToTextureWithVertices(const float *vertices, const float *textureCoordinates);

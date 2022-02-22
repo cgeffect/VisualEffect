@@ -16,22 +16,31 @@
 namespace vgx {
 class VgxOutput {
             
-//    virtual ~VgxOutput() {
-//        
-//    };
 public:
-    virtual void addTarget(VgxInput *newtarget) {
+    
+    VgxOutput() {
+        
+    }
+    
+    virtual ~VgxOutput() {
+        
+    };
+
+    //这几个方法子类不需要重写, 不需要加virtual
+    void addTarget(VgxInput *newtarget) {
         mTargetList.push_back(newtarget);
     };
-    virtual void removeTarget(VgxInput *targetToRemove) {
+    void removeTarget(VgxInput *targetToRemove) {
         mTargetList.remove(targetToRemove);
     };
-    virtual void removeAllTargets() {
+    void removeAllTargets() {
         mTargetList.clear();
     };
-    virtual std::list<VgxInput *>targets() {
+    std::list<VgxInput *>targets() {
         return mTargetList;
     };
+    
+    //这个方法子类不需要重写, 不需要加virtual
     virtual void requestRender() {
         
     };

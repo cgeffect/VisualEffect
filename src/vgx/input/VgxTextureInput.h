@@ -17,7 +17,12 @@ namespace vgx {
 class VgxTextureInput:public VgxOutput {
     
 public:
-
+    VgxTextureInput() {
+        
+    }
+    ~VgxTextureInput() {
+        
+    }
     void requestRender() override {
         std::list<CGDrawInput *>::iterator iter;
         for(iter = mTargetList.begin(); iter != mTargetList.end() ;iter++) {

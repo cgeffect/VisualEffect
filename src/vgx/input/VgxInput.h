@@ -16,7 +16,13 @@ namespace vgx {
 class VgxInput {
         
 public:
-    //纯虚函数, 有定义无实现
+    VgxInput() {
+        
+    }
+    ~VgxInput() {
+        
+    }
+    //纯虚函数, 有定义无实现, 不能创建实例对象
     virtual void newFramebufferAvailable(VgxFramebuffer *inFramebuffer)=0;
 
 };
