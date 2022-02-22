@@ -1,17 +1,17 @@
 //
-//  CGDrawProgram.cpp
-//  CGDraw
+//  VgxProgram.cpp
+//  Vgx
 //
 //  Created by Jason on 2021/6/11.
 //
 
-#include "CGDrawProgram.h"
+#include "VgxProgram.h"
 #include <stdlib.h>
 #include "VgxShaderUtil.h"
 
 using namespace vgx;
 
-bool CGDrawProgram::setWithVertexShader(unsigned char *vShaderString, unsigned char *fShaderString) {
+bool VgxProgram::setWithVertexShader(unsigned char *vShaderString, unsigned char *fShaderString) {
     program = glCreateProgram();
     
     // Create and compile vertex shader
@@ -33,7 +33,7 @@ bool CGDrawProgram::setWithVertexShader(unsigned char *vShaderString, unsigned c
     return complieOK;
 }
 
-bool CGDrawProgram::compileShader(GLuint *shader, GLenum type, unsigned char *shaderString) {
+bool VgxProgram::compileShader(GLuint *shader, GLenum type, unsigned char *shaderString) {
 
     GLint status;
     const GLchar *source;
@@ -68,17 +68,17 @@ bool CGDrawProgram::compileShader(GLuint *shader, GLenum type, unsigned char *sh
     return status == GL_TRUE;
 }
 
-void CGDrawProgram::use() {
+void VgxProgram::use() {
     glUseProgram(program);
     VgxShaderUtil::glCheckError((char *)"use");
 }
 
-void CGDrawProgram::unuse() {
+void VgxProgram::unuse() {
     glUseProgram(GL_NONE);
     VgxShaderUtil::glCheckError((char *)"unuse");
 }
 
-bool CGDrawProgram::link() {
+bool VgxProgram::link() {
     GLint status;
     glLinkProgram(program);
     glGetProgramiv(program, GL_LINK_STATUS, &status);
@@ -101,7 +101,7 @@ bool CGDrawProgram::link() {
 
 #pragma mark -
 #pragma mark validate
-bool CGDrawProgram::validate()
+bool VgxProgram::validate()
 {
     //日志长度
     GLint logLength;
@@ -127,10 +127,10 @@ bool CGDrawProgram::validate()
     }
 }
 
-CGDrawProgram::CGDrawProgram() {
+VgxProgram::VgxProgram() {
     
 }
-CGDrawProgram::~CGDrawProgram() {
+VgxProgram::~VgxProgram() {
     if (vertShader) {
         glDeleteShader(vertShader);
         VgxShaderUtil::glCheckError((char *)"CGProgram: glDeleteShader");
@@ -148,13 +148,13 @@ CGDrawProgram::~CGDrawProgram() {
     }
 }
 
-GLint CGDrawProgram::getUniformLocation(unsigned char *name) {
+GLint VgxProgram::getUniformLocation(unsigned char *name) {
     GLint loc = glGetUniformLocation(program, (const GLchar *)name);
     VgxShaderUtil::glCheckError((char *)"getUniformLocation");
     return loc;
 }
 
-GLint CGDrawProgram::getAttribLocation(unsigned char *name) {
+GLint VgxProgram::getAttribLocation(unsigned char *name) {
     GLint loc = glGetAttribLocation(program, (const GLchar *)name);
     VgxShaderUtil::glCheckError((char *)"getAttribLocation");
     return loc;
@@ -162,7 +162,7 @@ GLint CGDrawProgram::getAttribLocation(unsigned char *name) {
 
 #pragma mark -
 #pragma mark setter
-void CGDrawProgram::setUniform1f(GLint location, GLfloat value) {
+void VgxProgram::setUniform1f(GLint location, GLfloat value) {
     glUniform1f(location, value);
 }
 

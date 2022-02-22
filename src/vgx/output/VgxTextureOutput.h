@@ -1,25 +1,25 @@
 //
-//  CGDrawTextureOutput.h
-//  CGDraw
+//  VgxTextureOutput.h
+//  Vgx
 //
 //  Created by Jason on 2021/6/11.
 //
 
-#ifndef CGDrawTextureOutput_h
-#define CGDrawTextureOutput_h
+#ifndef VgxTextureOutput_h
+#define VgxTextureOutput_h
 
 #include <stdio.h>
 #include "VgxInput.h"
 
 namespace vgx {
-class CGDrawTextureOutput:public VgxInput {
+class VgxTextureOutput:public VgxInput {
     
 public:
-    CGDrawTextureOutput() {
+    VgxTextureOutput() {
         
     }
     
-    ~CGDrawTextureOutput() {
+    ~VgxTextureOutput() {
         
     }
     
@@ -36,12 +36,12 @@ public:
     }
     
 public:
-    void newFramebufferAvailable(CGDrawFramebuffer *inFramebuffer) override {
+    void newFramebufferAvailable(VgxFramebuffer *inFramebuffer) override {
         mFramebuffer = inFramebuffer;
     };
 private:
-    CGDrawFramebuffer *mFramebuffer{nullptr};
+    VgxFramebuffer *mFramebuffer{nullptr};
 };
 
 }
-#endif /* CGDrawTextureOutput_h */
+#endif /* VgxTextureOutput_h */

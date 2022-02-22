@@ -1,6 +1,6 @@
 //
-//  CGDrawVec.cpp
-//  CGDraw
+//  VgxVec.cpp
+//  Vgx
 //
 //  Created by Jason on 2021/6/23.
 //

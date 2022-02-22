@@ -1,6 +1,6 @@
 //
-//  CGDrawBridge.h
-//  CGDraw
+//  VgxBridge.h
+//  Vgx
 //
 //  Created by UFOTO on 2021/7/9.
 //

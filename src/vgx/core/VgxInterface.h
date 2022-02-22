@@ -1,12 +1,12 @@
 //
-//  glInterface.hpp
+//  VgxInterface.hpp
 //  VisualEffect
 //
 //  Created by Jason on 2022/2/18.
 //
 
-#ifndef glInterface_hpp
-#define glInterface_hpp
+#ifndef VgxInterface_hpp
+#define VgxInterface_hpp
 #include "CGOpenGL.h"
 
 void glesEnableVertexAttribArray(GLuint index);
@@ -20,4 +20,4 @@ void glesBindRenderbuffer (GLenum target, GLuint renderbuffer);
 void glesFramebufferTexture2D (GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level);
 void glesTexImage2D (GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const GLvoid* pixels);
 
-#endif /* glInterface_hpp */
+#endif /* VgxInterface_hpp */

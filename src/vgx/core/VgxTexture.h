@@ -1,6 +1,6 @@
 //
-//  CGDrawTexture.h
-//  CGDraw
+//  VgxTexture.h
+//  Vgx
 //
 //  Created by Jason on 2021/6/24.
 //
@@ -9,10 +9,10 @@
 #define CGDrawTexture_h
 
 #include <stdio.h>
-#include "glInterface.h"
+#include "VgxInterface.h"
 
 namespace vgx {
-class CGDrawTexture {
+class VgxTexture {
   
 public:
     static GLuint genTexture() {

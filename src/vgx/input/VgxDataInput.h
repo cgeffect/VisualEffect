@@ -1,6 +1,6 @@
 //
-//  CGDrawDataInput.h
-//  CGDraw
+//  VgxDataInput.h
+//  Vgx
 //
 //  Created by Jason on 2021/6/11.
 //
@@ -8,10 +8,10 @@
 #ifndef CGDrawDataInput_h
 #define CGDrawDataInput_h
 
-#include "CGDrawOutput.h"
+#include "VgxOutput.h"
 namespace vgx {
 
-class VgxDataInput:public CGDrawOutput {
+class VgxDataInput:public VgxOutput {
     
 public:
     void setInputData(const unsigned char *data, int width, int height) {
@@ -30,7 +30,7 @@ public:
         }
     }
 private:
-    CGDrawFramebuffer framebuffer;
+    VgxFramebuffer framebuffer;
 };
 
 }

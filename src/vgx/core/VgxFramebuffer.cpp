@@ -1,30 +1,30 @@
 //
-//  CGDrawFramebuffer.cpp
-//  CGDraw
+//  VgxFramebuffer.cpp
+//  Vgx
 //
 //  Created by Jason on 2021/6/11.
 //
 
-#include "CGDrawFramebuffer.h"
+#include "VgxFramebuffer.h"
 #include "VgxShaderUtil.h"
-#include "CGDrawTexture.h"
+#include "VgxTexture.h"
 #include "VgxFramebufferCache.h"
 using namespace vgx;
 
 #pragma mark - life cycle
-void CGDrawFramebuffer::glInit() {
+void VgxFramebuffer::glInit() {
     
 }
 
-void CGDrawFramebuffer::glUnInit() {
+void VgxFramebuffer::glUnInit() {
     
 }
 
-void CGDrawFramebuffer::recycle() {
+void VgxFramebuffer::recycle() {
     VgxFramebufferCache().shareCache()->recycleFramebufferToCache(this);
 }
 
-void CGDrawFramebuffer::destroy() {
+void VgxFramebuffer::destroy() {
     if (mFramebuffer) {
         glDeleteFramebuffers(1, &mFramebuffer);
         mFramebuffer = GL_NONE;
@@ -41,16 +41,16 @@ void CGDrawFramebuffer::destroy() {
             mTexture = GL_NONE;
         }
     }
-    printf("CGDrawFramebuffer destroy\n");
+    printf("VgxFramebuffer destroy\n");
 }
 
 #pragma mark - param
-void CGDrawFramebuffer::genWithSize(VgxVec2f fboSize, bool onlyTexture) {
-    mTextureOptions = CGDrawFramebuffer::defaultTextureOption();
+void VgxFramebuffer::genWithSize(VgxVec2f fboSize, bool onlyTexture) {
+    mTextureOptions = VgxFramebuffer::defaultTextureOption();
     genWithSize(fboSize, mTextureOptions, onlyTexture);
 }
 
-void CGDrawFramebuffer::genWithSize(VgxVec2f fboSize, CGTextureOptions textureOptions, bool onlyTexture) {
+void VgxFramebuffer::genWithSize(VgxVec2f fboSize, CGTextureOptions textureOptions, bool onlyTexture) {
     mFboSize = fboSize;
     mOnlyGenTexture = onlyTexture;
     mTextureOptions = textureOptions;
@@ -61,12 +61,12 @@ void CGDrawFramebuffer::genWithSize(VgxVec2f fboSize, CGTextureOptions textureOp
     }
 }
 
-void CGDrawFramebuffer::genWithSize(VgxVec2f fboSize, GLuint texture) {
+void VgxFramebuffer::genWithSize(VgxVec2f fboSize, GLuint texture) {
     mTexture = texture;
     mFboSize = fboSize;
 }
 
-void CGDrawFramebuffer::upload(const unsigned char *data, VgxVec2f size, GLenum internalformat, GLenum format, bool isOverride) {
+void VgxFramebuffer::upload(const unsigned char *data, VgxVec2f size, GLenum internalformat, GLenum format, bool isOverride) {
     if (isOverride) {
         glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, size.x, size.y, format, GL_UNSIGNED_BYTE, data);
     } else {
@@ -75,7 +75,7 @@ void CGDrawFramebuffer::upload(const unsigned char *data, VgxVec2f size, GLenum 
 }
 
 #pragma mark - private gl 私有函数为什么会提示删除
-void CGDrawFramebuffer::generateTexture() {
+void VgxFramebuffer::generateTexture() {
     //静态函数
 //    CGDrawTexture::genTexture()
     glesGenTextures(1, &mTexture);
@@ -87,7 +87,7 @@ void CGDrawFramebuffer::generateTexture() {
     glesTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, mTextureOptions.wrapT);
 }
 
-void CGDrawFramebuffer::generateFramebuffer() {
+void VgxFramebuffer::generateFramebuffer() {
     glesGenFramebuffers(1, &mFramebuffer);
     glesBindFramebuffer(GL_FRAMEBUFFER, mFramebuffer);
 

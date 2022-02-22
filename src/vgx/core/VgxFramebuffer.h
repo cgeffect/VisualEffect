@@ -1,12 +1,12 @@
 //
-//  CGDrawFramebuffer.h
-//  CGDraw
+//  VgxFramebuffer.h
+//  Vgx
 //
 //  Created by Jason on 2021/6/11.
 //
 
-#ifndef CGDrawFramebuffer_h
-#define CGDrawFramebuffer_h
+#ifndef VgxFramebuffer_h
+#define VgxFramebuffer_h
 
 #include <stdio.h>
 #include "CGOpenGL.h"
@@ -25,15 +25,15 @@ typedef struct _CGTextureOptions {
 } CGTextureOptions;
 
 namespace vgx {
-class CGDrawFramebuffer {
+class VgxFramebuffer {
     
 public:
     
-    CGDrawFramebuffer() {
-        printf("CGDrawFramebuffer init\n");
+    VgxFramebuffer() {
+        printf("VgxFramebuffer init\n");
     }
-    ~CGDrawFramebuffer() {
-        printf("CGDrawFramebuffer unInit\n");
+    ~VgxFramebuffer() {
+        printf("VgxFramebuffer unInit\n");
     }
 
 public:
@@ -121,4 +121,4 @@ private:
 };
 }
 
-#endif /* CGDrawFramebuffer_h */
+#endif /* VgxFramebuffer_h */

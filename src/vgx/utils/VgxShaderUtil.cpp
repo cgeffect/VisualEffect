@@ -1,13 +1,13 @@
 //
 //  CGShaderUtil.h
-//  CGDraw
+//  Vgx
 //
 //  Created by Jason on 2021/6/23.
 //
 #include <cstring>
 #include "VgxShaderUtil.h"
 #include "CGDrawLog.h"
-#include "glInterface.h"
+#include "VgxInterface.h"
 #include <iostream>
 
 int CG_LOG_LEVEL = 4;

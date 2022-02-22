@@ -1,6 +1,6 @@
 //
-//  CGDrawDemo.h
-//  CGDraw
+//  VgxDemo.h
+//  Vgx
 //
 //  Created by Jason on 2021/6/11.
 //

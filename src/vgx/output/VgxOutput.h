@@ -1,22 +1,22 @@
 //
-//  CGDrawOutput.h
-//  CGDraw
+//  VgxOutput.h
+//  Vgx
 //
 //  Created by Jason on 2021/6/11.
 //
 
-#ifndef CGDrawOutput_h
-#define CGDrawOutput_h
+#ifndef VgxOutput_h
+#define VgxOutput_h
 
 #include <stdio.h>
 #include <list>
 #include "VgxInput.h"
-#include "CGDrawFramebuffer.h"
+#include "VgxFramebuffer.h"
 
 namespace vgx {
-class CGDrawOutput {
+class VgxOutput {
             
-//    virtual ~CGDrawOutput() {
+//    virtual ~VgxOutput() {
 //        
 //    };
 public:
@@ -37,11 +37,11 @@ public:
     };
     
 protected:
-    CGDrawFramebuffer *mOutputFramebuffer{nullptr};
+    VgxFramebuffer *mOutputFramebuffer{nullptr};
     std::list<VgxInput *>mTargetList;
 };
 
 }
 
-#endif /* CGDrawOutput_h */
+#endif /* VgxOutput_h */
 

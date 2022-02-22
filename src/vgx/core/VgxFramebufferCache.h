@@ -1,15 +1,15 @@
 //
-//  CGDrawFramebufferCache.h
-//  CGDraw
+//  VgxFramebufferCache.h
+//  Vgx
 //
 //  Created by Jason on 2021/6/11.
 //
 
-#ifndef CGDrawFramebufferCache_h
-#define CGDrawFramebufferCache_h
+#ifndef VgxFramebufferCache_h
+#define VgxFramebufferCache_h
 
 #include <stdio.h>
-#include "CGDrawFramebuffer.h"
+#include "VgxFramebuffer.h"
 #include "VgxVec2f.h"
 #include <pthread/pthread.h>
 #include <map>
@@ -48,23 +48,23 @@ private:
    
     
 public:
-    CGDrawFramebuffer *getFramebufferForSize(VgxVec2f size, bool onlyTexture);
+    VgxFramebuffer *getFramebufferForSize(VgxVec2f size, bool onlyTexture);
     
-    CGDrawFramebuffer *getFramebufferForSize(VgxVec2f size, CGTextureOptions textureOptions, bool onlyTexture);
+    VgxFramebuffer *getFramebufferForSize(VgxVec2f size, CGTextureOptions textureOptions, bool onlyTexture);
 
-    void recycleFramebufferToCache(CGDrawFramebuffer *framebuffer);
+    void recycleFramebufferToCache(VgxFramebuffer *framebuffer);
     
     void deleteAllUnassignedFramebuffers();
     
 private:
   
-    std::list<CGDrawFramebuffer *>mTargetList;
+    std::list<VgxFramebuffer *>mTargetList;
 
-    std::map<std::string, std::list<CGDrawFramebuffer *>> mFramebufferCache;
+    std::map<std::string, std::list<VgxFramebuffer *>> mFramebufferCache;
 
 
 };
 }
 
 
-#endif /* CGDrawFramebufferCache_h */
+#endif /* VgxFramebufferCache_h */

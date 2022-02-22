@@ -1,6 +1,6 @@
 //
-//  CGDrawFilter.h
-//  CGDraw
+//  VgxFilter.h
+//  Vgx
 //
 //  Created by Jason on 2021/6/11.
 //
@@ -10,11 +10,11 @@
 
 #include <stdio.h>
 #include "VgxInput.h"
-#include "CGDrawOutput.h"
-#include "CGDrawProgram.h"
+#include "VgxOutput.h"
+#include "VgxProgram.h"
 
 namespace vgx {
-class VgxFilter:public VgxInput, public CGDrawOutput  {
+class VgxFilter:public VgxInput, public VgxOutput  {
     
 public:
     VgxFilter();
@@ -26,13 +26,13 @@ public:
     void renderToTextureWithVertices(const float *vertices, const float *textureCoordinates);
     void notifyNextTargetsAboutNewFrame();
 
-    void newFramebufferAvailable(CGDrawFramebuffer *inFramebuffer) override;
+    void newFramebufferAvailable(VgxFramebuffer *inFramebuffer) override;
 private:
     GLint mPosition;
     GLint mTexCoord;
     GLint uTexture;
-    CGDrawFramebuffer *mInputFramebuffer;
-    CGDrawProgram *mShaderProgram;
+    VgxFramebuffer *mInputFramebuffer;
+    VgxProgram *mShaderProgram;
 };
 }
 #endif /* CGDrawFilter_h */

@@ -1,11 +1,11 @@
 //
-//  glInterface.cpp
+//  VgxInterface.cpp
 //  VisualEffect
 //
 //  Created by Jason on 2022/2/18.
 //
 
-#include "glInterface.h"
+#include "VgxInterface.h"
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"

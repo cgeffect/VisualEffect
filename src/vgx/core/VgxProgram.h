@@ -1,12 +1,12 @@
 //
-//  CGDrawProgram.h
-//  CGDraw
+//  VgxProgram.h
+//  Vgx
 //
 //  Created by Jason on 2021/6/11.
 //
 
-#ifndef CGDrawProgram_h
-#define CGDrawProgram_h
+#ifndef VgxProgram_h
+#define VgxProgram_h
 
 #include <stdio.h>
 #include <OpenGLES/ES2/gl.h>
@@ -14,11 +14,11 @@
 
 namespace vgx {
 
-class CGDrawProgram {
+class VgxProgram {
     
 public:
-    CGDrawProgram();
-    ~CGDrawProgram();
+    VgxProgram();
+    ~VgxProgram();
     
     bool setWithVertexShader(unsigned char *vShaderString, unsigned char *fShaderString);
 
@@ -45,4 +45,4 @@ private:
 };
 
 };
-#endif /* CGDrawProgram_h */
+#endif /* VgxProgram_h */

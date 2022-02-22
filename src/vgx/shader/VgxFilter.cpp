@@ -1,17 +1,17 @@
 //
-//  CGDrawFilter.cpp
-//  CGDraw
+//  VgxFilter.cpp
+//  Vgx
 //
 //  Created by Jason on 2021/6/11.
 //
 
 #include "VgxFilter.h"
 #include "CGDrawShader.h"
-#include "CGDrawProgram.h"
+#include "VgxProgram.h"
 #include "VgxShaderUtil.h"
 #include "CGOpenGL.h"
 #include "VgxFramebufferCache.h"
-#include "glinterface.h"
+#include "VgxInterface.h"
 
 using namespace vgx;
 
@@ -41,7 +41,7 @@ VgxFilter::~VgxFilter() {
 }
 
 void VgxFilter::setInputVertexShader(unsigned char *vShader, unsigned char *fShader) {
-    CGDrawProgram *program = new CGDrawProgram();
+    VgxProgram *program = new VgxProgram();
     program->setWithVertexShader(vShader, fShader);
     VgxShaderUtil::glCheckError("CGDrawFilter1");
     
@@ -57,7 +57,7 @@ void VgxFilter::setInputVertexShader(unsigned char *vShader, unsigned char *fSha
     mShaderProgram = program;
 }
 
-void VgxFilter::newFramebufferAvailable(CGDrawFramebuffer *inFramebuffer) {
+void VgxFilter::newFramebufferAvailable(VgxFramebuffer *inFramebuffer) {
     mInputFramebuffer = inFramebuffer;
     //1.处理自己的滤镜
     renderToTextureWithVertices(imageVertices, textureCoordinates);

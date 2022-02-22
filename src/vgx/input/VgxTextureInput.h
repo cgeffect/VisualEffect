@@ -1,20 +1,20 @@
 //
-//  CGDrawTextureInput.h
-//  CGDraw
+//  VgxTextureInput.h
+//  Vgx
 //
 //  Created by Jason on 2021/6/11.
 //
 
-#ifndef CGDrawTextureInput_h
-#define CGDrawTextureInput_h
+#ifndef VgxTextureInput_h
+#define VgxTextureInput_h
 
 #include <stdio.h>
-#include "CGDrawOutput.h"
+#include "VgxOutput.h"
 #include "CGDrawInput.h"
 
 namespace vgx {
 
-class CGDrawTextureInput:public CGDrawOutput {
+class VgxTextureInput:public VgxOutput {
     
 public:
 
@@ -28,4 +28,4 @@ public:
 };
 
 }
-#endif /* CGDrawTextureInput_h */
+#endif /* VgxTextureInput_h */

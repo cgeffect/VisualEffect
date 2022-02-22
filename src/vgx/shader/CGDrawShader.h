@@ -1,6 +1,6 @@
 //
-//  CGDrawShader.h
-//  CGDraw
+//  VgxShader.h
+//  Vgx
 //
 //  Created by Jason on 2021/6/23.
 //

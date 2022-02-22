@@ -1,6 +1,6 @@
 //
-//  CGDrawFramebufferCache.cpp
-//  CGDraw
+//  VgxFramebufferCache.cpp
+//  Vgx
 //
 //  Created by Jason on 2021/6/11.
 //
@@ -21,22 +21,22 @@ void VgxFramebufferCache::destroy() {
     
 }
 
-CGDrawFramebuffer * VgxFramebufferCache::getFramebufferForSize(VgxVec2f size, bool onlyTexture) {
-    CGDrawFramebuffer *buffer = VgxFramebufferCache::getFramebufferForSize(size, CGDrawFramebuffer::defaultTextureOption(), onlyTexture);
+VgxFramebuffer * VgxFramebufferCache::getFramebufferForSize(VgxVec2f size, bool onlyTexture) {
+    VgxFramebuffer *buffer = VgxFramebufferCache::getFramebufferForSize(size, VgxFramebuffer::defaultTextureOption(), onlyTexture);
     return buffer;
 }
 
-CGDrawFramebuffer * VgxFramebufferCache::getFramebufferForSize(vgx::VgxVec2f size, CGTextureOptions textureOptions, bool onlyTexture) {
-    CGDrawFramebuffer *buffer = new CGDrawFramebuffer();
+VgxFramebuffer * VgxFramebufferCache::getFramebufferForSize(vgx::VgxVec2f size, CGTextureOptions textureOptions, bool onlyTexture) {
+    VgxFramebuffer *buffer = new VgxFramebuffer();
     buffer->genWithSize(size, textureOptions, onlyTexture);
     return buffer;
 }
 
-void VgxFramebufferCache::recycleFramebufferToCache(vgx::CGDrawFramebuffer *framebuffer) {
-    map<string, list<CGDrawFramebuffer *>>::iterator itor = mFramebufferCache.find(framebuffer->getHashKey());
+void VgxFramebufferCache::recycleFramebufferToCache(vgx::VgxFramebuffer *framebuffer) {
+    map<string, list<VgxFramebuffer *>>::iterator itor = mFramebufferCache.find(framebuffer->getHashKey());
     if (itor != mFramebufferCache.end()) {
-        pair<string, list<CGDrawFramebuffer *>> fbCache = *itor;
-        list<CGDrawFramebuffer *> fbList = fbCache.second;
+        pair<string, list<VgxFramebuffer *>> fbCache = *itor;
+        list<VgxFramebuffer *> fbList = fbCache.second;
         fbList.push_back(framebuffer);
         framebuffer->setActivity(true);
     }
