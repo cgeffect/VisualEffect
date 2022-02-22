@@ -10,7 +10,7 @@
 
 #include "VgxGL.h"
 
-const char * kCGDrawVertexShaderString = CG_SHADER_SRC
+const char * kCGDrawVertexShaderString = VGX_SHADER_SRC
 (
  attribute vec4 position;
  attribute vec4 aTexCoord;
@@ -24,7 +24,7 @@ const char * kCGDrawVertexShaderString = CG_SHADER_SRC
  }
  );
 
-const char * kCGDrawFragmentShaderString = CG_SHADER_SRC
+const char * kCGDrawFragmentShaderString = VGX_SHADER_SRC
 (
  precision highp float;
  varying vec2 varyTextCoord;
