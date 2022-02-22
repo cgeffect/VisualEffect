@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include "CGDrawFramebuffer.h"
 
-namespace CGDraw {
+namespace vgx {
 
 class CGDrawInput {
         

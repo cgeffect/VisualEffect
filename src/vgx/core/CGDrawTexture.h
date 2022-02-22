@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include "glInterface.h"
 
-namespace CGDraw {
+namespace vgx {
 class CGDrawTexture {
   
 public:

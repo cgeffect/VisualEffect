@@ -16,7 +16,7 @@
 #include <iostream>
 #include <list>
 
-namespace CGDraw {
+namespace vgx {
 
 class CGDrawFramebufferCache {
     

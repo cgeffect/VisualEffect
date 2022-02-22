@@ -10,7 +10,7 @@
 
 #include <math.h>
 
-namespace CGDraw {
+namespace vgx {
 
 struct CGVec2f {
 

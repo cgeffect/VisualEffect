@@ -13,7 +13,7 @@
 #include "CGDrawOutput.h"
 #include "CGDrawProgram.h"
 
-namespace CGDraw {
+namespace vgx {
 class CGDrawFilter:public CGDrawInput, public CGDrawOutput  {
     
 public:

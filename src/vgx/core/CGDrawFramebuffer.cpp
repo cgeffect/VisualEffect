@@ -9,7 +9,7 @@
 #include "CGShaderUtil.h"
 #include "CGDrawTexture.h"
 #include "CGDrawFramebufferCache.h"
-using namespace CGDraw;
+using namespace vgx;
 
 #pragma mark - life cycle
 void CGDrawFramebuffer::glInit() {

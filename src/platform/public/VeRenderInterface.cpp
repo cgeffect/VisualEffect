@@ -13,7 +13,7 @@
 #include "CGDrawTextureOutput.h"
 #include "CGDrawDataInput.h"
 
-using namespace CGDraw;
+using namespace vgx;
 
 int setData1(unsigned const char *data, int width, int height) {
 

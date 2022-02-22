@@ -11,7 +11,7 @@
 #include <stdio.h>
 #include "CGDrawInput.h"
 
-namespace CGDraw {
+namespace vgx {
 class CGDrawTextureOutput:public CGDrawInput {
     
 public:

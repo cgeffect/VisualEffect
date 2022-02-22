@@ -24,7 +24,7 @@ typedef struct _CGTextureOptions {
     GLenum type;
 } CGTextureOptions;
 
-namespace CGDraw {
+namespace vgx {
 class CGDrawFramebuffer {
     
 public:
@@ -37,7 +37,7 @@ public:
     }
 
 public:
-    CGDraw::CGVec2f getFboSize() {
+    vgx::CGVec2f getFboSize() {
         return mFboSize;
     };
     GLuint getTexture() {

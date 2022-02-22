@@ -9,7 +9,7 @@
 #define CGDrawDataInput_h
 
 #include "CGDrawOutput.h"
-namespace CGDraw {
+namespace vgx {
 
 class CGDrawDataInput:public CGDrawOutput {
     

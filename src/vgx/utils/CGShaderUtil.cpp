@@ -12,7 +12,7 @@
 
 int CG_LOG_LEVEL = 4;
 
-using namespace CGDraw;
+using namespace vgx;
 
 void CGShaderUtil::setLogLevel(int level) {
     CG_LOG_LEVEL = level;
@@ -27,11 +27,11 @@ GLuint CGShaderUtil::loadShader(GLenum type, const GLchar *source) {
         GLint compiled;
         glGetShaderiv(shader, GL_COMPILE_STATUS, &compiled);
         if (compiled == 0) {
-            CG_DRAW_LOGE("glError: Could not compile shader %d:\n %s", type, source);
+            printf("glError: Could not compile shader %d:\n %s", type, source);
             char temp[512] = {0};
             GLsizei length;
             glGetShaderInfoLog(shader, 512, &length, temp);
-            CG_DRAW_LOGE("glError %s", temp);
+            printf("glError %s", temp);
             glDeleteShader(shader);
             shader = 0;
 
@@ -57,11 +57,11 @@ GLuint CGShaderUtil::createProgram(const GLchar *vertexSource, const GLchar *fra
         GLint linkStatus;
         glGetProgramiv(program, GL_LINK_STATUS, &linkStatus);
         if (linkStatus != GL_TRUE) {
-            CG_DRAW_LOGE("glError: Could not link program: ");
+            printf("glError: Could not link program: ");
             char temp[512] = {0};
             GLsizei length;
             glGetProgramInfoLog(program, 512, &length, temp);
-            CG_DRAW_LOGE("glError %s", temp);
+            printf("glError %s", temp);
             glDeleteProgram(program);
             program = 0;
         }

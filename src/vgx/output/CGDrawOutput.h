@@ -13,7 +13,7 @@
 #include "CGDrawInput.h"
 #include "CGDrawFramebuffer.h"
 
-namespace CGDraw {
+namespace vgx {
 class CGDrawOutput {
             
 //    virtual ~CGDrawOutput() {

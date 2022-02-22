@@ -18,7 +18,7 @@
 
 extern int CG_LOG_LEVEL;
 
-namespace CGDraw {
+namespace vgx {
 
 #ifndef MODULE_NAME
 #define MODULE_NAME CGDraw

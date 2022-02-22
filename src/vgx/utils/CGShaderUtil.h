@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include "CGOpenGL.h"
 
-namespace CGDraw {
+namespace vgx {
 
 class CGShaderUtil {
 

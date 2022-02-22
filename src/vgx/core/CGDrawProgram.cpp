@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include "CGShaderUtil.h"
 
-using namespace CGDraw;
+using namespace vgx;
 
 bool CGDrawProgram::setWithVertexShader(unsigned char *vShaderString, unsigned char *fShaderString) {
     program = glCreateProgram();

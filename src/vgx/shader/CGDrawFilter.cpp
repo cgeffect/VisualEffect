@@ -13,7 +13,7 @@
 #include "CGDrawFramebufferCache.h"
 #include "glinterface.h"
 
-using namespace CGDraw;
+using namespace vgx;
 
 static const GLfloat imageVertices[] = {
     -1.0f, -1.0f,

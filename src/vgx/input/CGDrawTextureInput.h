@@ -12,7 +12,7 @@
 #include "CGDrawOutput.h"
 #include "CGDrawInput.h"
 
-namespace CGDraw {
+namespace vgx {
 
 class CGDrawTextureInput:public CGDrawOutput {
     
