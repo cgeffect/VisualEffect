@@ -119,25 +119,25 @@ void VgxShaderUtil::glCheckError(const char *flag) {
     while ((error = glGetError()) != GL_NO_ERROR) {
         switch (error) {
             case GL_NO_ERROR:
-//                NSLog(@"GL_NO_ERROR: gl success");
+                printf("GL_NO_ERROR: gl success\n");
                 break;
             case GL_INVALID_ENUM:
-//                NSLog(@"GL_INVALID_ENUM: 为枚举参数指定了不可接受的值");
+                printf("GL_INVALID_ENUM: 为枚举参数指定了不可接受的值\n");
                 break;
             case GL_INVALID_VALUE:
-//                NSLog(@"GL_INVALID_VALUE: 数字参数超出范围");
+                printf("GL_INVALID_VALUE: 数字参数超出范围\n");
                 break;
             case GL_INVALID_OPERATION:
-//                NSLog(@"GL_INVALID_OPERATION: 当前状态下不允许指定的操作");
+                printf("GL_INVALID_OPERATION: 当前状态下不允许指定的操作\n");
                 break;
             case GL_INVALID_FRAMEBUFFER_OPERATION:
-//                NSLog(@"GL_INVALID_FRAMEBUFFER_OPERATION: 该命令试图渲染到帧缓冲区或从帧缓冲区读取，而当前绑定的帧缓冲区不是帧缓冲区完成状态, 即glCheckFramebufferStatus的返回值不是GL_FRAMEBUFFER_COMPLETE");
+                printf("GL_INVALID_FRAMEBUFFER_OPERATION: 该命令试图渲染到帧缓冲区或从帧缓冲区读取，而当前绑定的帧缓冲区不是帧缓冲区完成状态, 即glCheckFramebufferStatus的返回值不是GL_FRAMEBUFFER_COMPLETE\n");
                 break;
             case GL_OUT_OF_MEMORY:
-//                NSLog(@"GL_OUT_OF_MEMORY: 没有足够的内存来执行命令。 在记录此错误之后，GL的状态是未定义的，除了错误标志的状态。");
+                printf("GL_OUT_OF_MEMORY: 没有足够的内存来执行命令。 在记录此错误之后，GL的状态是未定义的，除了错误标志的状态。\n");
                 break;
             default:
-//                NSLog(@"其他gl错误");
+                printf("其他gl错误\n");
                 break;
         }
         printf("%s: glError: 0x%X\n", flag, error);
