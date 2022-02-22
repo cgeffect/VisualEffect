@@ -10,6 +10,9 @@
 #include "VeDrawContext.h"
 
 @interface VeView ()
+{
+    VeDrawContext *ctx;
+}
 @property(nonatomic, strong)CGPixelViewOutput *glView;
 @end
 
@@ -22,6 +25,7 @@
         _glView = [[CGPixelViewOutput alloc] initWithFrame:self.bounds];
         _glView.center = self.center;
         [self addSubview:_glView];
+        ctx = [[VeDrawContext alloc] init];
     }
     return self;
 }
@@ -29,9 +33,8 @@
 - (int)setData:(UInt8 *)data width:(int)width height:(int)height {
     runSyncOnSerialQueue(^{
         [[CGPixelContext sharedRenderContext] useAsCurrentContext];
-        VeDrawContext *ctx = [[VeDrawContext alloc] init];
-        int texId = [ctx glDrawData:data width:1125 height:1125];
-        CGPixelFramebuffer *framebuffer = [[CGPixelFramebuffer alloc] initWithSize:CGSizeMake(1125, 1125) texture:texId];
+        int texId = [self->ctx glDrawData:data width:width height:height];
+        CGPixelFramebuffer *framebuffer = [[CGPixelFramebuffer alloc] initWithSize:CGSizeMake(width, height) texture:texId];
         [self->_glView setInputFramebuffer:framebuffer];
         CMSampleTimingInfo info = {0};
         [self->_glView newFrameReadyAtTime:kCMTimeZero timimgInfo:info];

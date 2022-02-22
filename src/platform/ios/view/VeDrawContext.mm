@@ -18,15 +18,15 @@
 
 - (int)glDrawData:(UInt8 *)data width:(int)width height:(int)height {
 
-    auto _dataInput = new vgx::VgxDataInput();
-    auto _filter = new vgx::VgxFilter();
-    auto _output = new vgx::VgxTextureOutput();
+    auto dataInput = new vgx::VgxDataInput();
+    auto filter = new vgx::VgxFilter();
+    auto output = new vgx::VgxTextureOutput();
 
-    _dataInput->setInputData(data, width, height);
-    _dataInput->addTarget(_filter);
-    _filter->addTarget(_output);
-    _dataInput->requestRender();
-    int texId = _output->getTexId();
+    dataInput->setInputData(data, width, height);
+    dataInput->addTarget(filter);
+    filter->addTarget(output);
+    dataInput->requestRender();
+    int texId = output->getTexId();
     return texId;
 }
 @end

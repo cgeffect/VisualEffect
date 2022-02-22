@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface VeView : UIView
+__attribute__((visibility("default"))) @interface VeView : UIView
 
 - (int)setData:(UInt8 *)data width:(int)width height:(int)height;
 
