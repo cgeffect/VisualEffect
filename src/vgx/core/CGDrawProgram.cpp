@@ -7,7 +7,7 @@
 
 #include "CGDrawProgram.h"
 #include <stdlib.h>
-#include "CGShaderUtil.h"
+#include "VgxShaderUtil.h"
 
 using namespace vgx;
 
@@ -70,12 +70,12 @@ bool CGDrawProgram::compileShader(GLuint *shader, GLenum type, unsigned char *sh
 
 void CGDrawProgram::use() {
     glUseProgram(program);
-    CGShaderUtil::glCheckError((char *)"use");
+    VgxShaderUtil::glCheckError((char *)"use");
 }
 
 void CGDrawProgram::unuse() {
     glUseProgram(GL_NONE);
-    CGShaderUtil::glCheckError((char *)"unuse");
+    VgxShaderUtil::glCheckError((char *)"unuse");
 }
 
 bool CGDrawProgram::link() {
@@ -95,7 +95,7 @@ bool CGDrawProgram::link() {
         fragShader = 0;
     }
     
-    CGShaderUtil::glCheckError((char *)"use");
+    VgxShaderUtil::glCheckError((char *)"use");
     return true;
 }
 
@@ -133,30 +133,30 @@ CGDrawProgram::CGDrawProgram() {
 CGDrawProgram::~CGDrawProgram() {
     if (vertShader) {
         glDeleteShader(vertShader);
-        CGShaderUtil::glCheckError((char *)"CGProgram: glDeleteShader");
+        VgxShaderUtil::glCheckError((char *)"CGProgram: glDeleteShader");
     }
     
     if (fragShader) {
         glDeleteShader(fragShader);
-        CGShaderUtil::glCheckError((char *)"CGProgram: glDeleteShader");
+        VgxShaderUtil::glCheckError((char *)"CGProgram: glDeleteShader");
     }
     
     
     if (program) {
         glDeleteProgram(program);
-        CGShaderUtil::glCheckError((char *)"CGProgram: glDeleteProgram");
+        VgxShaderUtil::glCheckError((char *)"CGProgram: glDeleteProgram");
     }
 }
 
 GLint CGDrawProgram::getUniformLocation(unsigned char *name) {
     GLint loc = glGetUniformLocation(program, (const GLchar *)name);
-    CGShaderUtil::glCheckError((char *)"getUniformLocation");
+    VgxShaderUtil::glCheckError((char *)"getUniformLocation");
     return loc;
 }
 
 GLint CGDrawProgram::getAttribLocation(unsigned char *name) {
     GLint loc = glGetAttribLocation(program, (const GLchar *)name);
-    CGShaderUtil::glCheckError((char *)"getAttribLocation");
+    VgxShaderUtil::glCheckError((char *)"getAttribLocation");
     return loc;
 }
 

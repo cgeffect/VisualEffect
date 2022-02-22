@@ -5,34 +5,34 @@
 //  Created by Jason on 2021/6/11.
 //
 
-#include "CGDrawFramebufferCache.h"
+#include "VgxFramebufferCache.h"
 
 using namespace vgx;
 using namespace std;
-void CGDrawFramebufferCache::glInit() {
+void VgxFramebufferCache::glInit() {
     
 }
 
-void CGDrawFramebufferCache::glUnInit() {
+void VgxFramebufferCache::glUnInit() {
     
 }
 
-void CGDrawFramebufferCache::destroy() {
+void VgxFramebufferCache::destroy() {
     
 }
 
-CGDrawFramebuffer * CGDrawFramebufferCache::getFramebufferForSize(CGVec2f size, bool onlyTexture) {
-    CGDrawFramebuffer *buffer = CGDrawFramebufferCache::getFramebufferForSize(size, CGDrawFramebuffer::defaultTextureOption(), onlyTexture);
+CGDrawFramebuffer * VgxFramebufferCache::getFramebufferForSize(VgxVec2f size, bool onlyTexture) {
+    CGDrawFramebuffer *buffer = VgxFramebufferCache::getFramebufferForSize(size, CGDrawFramebuffer::defaultTextureOption(), onlyTexture);
     return buffer;
 }
 
-CGDrawFramebuffer * CGDrawFramebufferCache::getFramebufferForSize(vgx::CGVec2f size, CGTextureOptions textureOptions, bool onlyTexture) {
+CGDrawFramebuffer * VgxFramebufferCache::getFramebufferForSize(vgx::VgxVec2f size, CGTextureOptions textureOptions, bool onlyTexture) {
     CGDrawFramebuffer *buffer = new CGDrawFramebuffer();
     buffer->genWithSize(size, textureOptions, onlyTexture);
     return buffer;
 }
 
-void CGDrawFramebufferCache::recycleFramebufferToCache(vgx::CGDrawFramebuffer *framebuffer) {
+void VgxFramebufferCache::recycleFramebufferToCache(vgx::CGDrawFramebuffer *framebuffer) {
     map<string, list<CGDrawFramebuffer *>>::iterator itor = mFramebufferCache.find(framebuffer->getHashKey());
     if (itor != mFramebufferCache.end()) {
         pair<string, list<CGDrawFramebuffer *>> fbCache = *itor;
@@ -43,7 +43,7 @@ void CGDrawFramebufferCache::recycleFramebufferToCache(vgx::CGDrawFramebuffer *f
     
 }
 
-void CGDrawFramebufferCache::deleteAllUnassignedFramebuffers() {
+void VgxFramebufferCache::deleteAllUnassignedFramebuffers() {
     mFramebufferCache.clear();
 }
 

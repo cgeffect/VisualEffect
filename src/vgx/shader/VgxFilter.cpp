@@ -5,12 +5,12 @@
 //  Created by Jason on 2021/6/11.
 //
 
-#include "CGDrawFilter.h"
+#include "VgxFilter.h"
 #include "CGDrawShader.h"
 #include "CGDrawProgram.h"
-#include "CGShaderUtil.h"
+#include "VgxShaderUtil.h"
 #include "CGOpenGL.h"
-#include "CGDrawFramebufferCache.h"
+#include "VgxFramebufferCache.h"
 #include "glinterface.h"
 
 using namespace vgx;
@@ -29,21 +29,21 @@ static const GLfloat textureCoordinates[] = {
     1.0f, 1.0f,
 };
 
-CGDrawFilter::CGDrawFilter() {
+VgxFilter::VgxFilter() {
 //    const std::string &_progName = kCGDrawVertexShaderString;
     unsigned char *vShader = (unsigned char *)kCGDrawVertexShaderString;
     unsigned char *fShader = (unsigned char *)kCGDrawFragmentShaderString;
-    CGDrawFilter::setInputVertexShader(vShader, fShader);
+    VgxFilter::setInputVertexShader(vShader, fShader);
 }
 
-CGDrawFilter::~CGDrawFilter() {
+VgxFilter::~VgxFilter() {
     
 }
 
-void CGDrawFilter::setInputVertexShader(unsigned char *vShader, unsigned char *fShader) {
+void VgxFilter::setInputVertexShader(unsigned char *vShader, unsigned char *fShader) {
     CGDrawProgram *program = new CGDrawProgram();
     program->setWithVertexShader(vShader, fShader);
-    CGShaderUtil::glCheckError("CGDrawFilter1");
+    VgxShaderUtil::glCheckError("CGDrawFilter1");
     
     if (program && program->link()) {
         mPosition = program->getAttribLocation((unsigned char *)ATTR_POSITION);
@@ -53,11 +53,11 @@ void CGDrawFilter::setInputVertexShader(unsigned char *vShader, unsigned char *f
         glesEnableVertexAttribArray(mTexCoord);
     }
     
-    CGShaderUtil::glCheckError("CGDrawFilter2");
+    VgxShaderUtil::glCheckError("CGDrawFilter2");
     mShaderProgram = program;
 }
 
-void CGDrawFilter::newFramebufferAvailable(CGDrawFramebuffer *inFramebuffer) {
+void VgxFilter::newFramebufferAvailable(CGDrawFramebuffer *inFramebuffer) {
     mInputFramebuffer = inFramebuffer;
     //1.处理自己的滤镜
     renderToTextureWithVertices(imageVertices, textureCoordinates);
@@ -65,8 +65,8 @@ void CGDrawFilter::newFramebufferAvailable(CGDrawFramebuffer *inFramebuffer) {
     notifyNextTargetsAboutNewFrame();
 }
 
-void CGDrawFilter::renderToTextureWithVertices(const GLfloat *vertices, const GLfloat *textureCoordinates) {
-    mOutputFramebuffer = CGDrawFramebufferCache::shareCache()->getFramebufferForSize(mInputFramebuffer->getFboSize(), false);
+void VgxFilter::renderToTextureWithVertices(const GLfloat *vertices, const GLfloat *textureCoordinates) {
+    mOutputFramebuffer = VgxFramebufferCache::shareCache()->getFramebufferForSize(mInputFramebuffer->getFboSize(), false);
     glViewport(0, 0, mInputFramebuffer->getFboSize().x, mInputFramebuffer->getFboSize().y);
     mOutputFramebuffer->bindFramebuffer();
     mOutputFramebuffer->bindTexture();
@@ -101,7 +101,7 @@ void CGDrawFilter::renderToTextureWithVertices(const GLfloat *vertices, const GL
     }
 }
 
-void CGDrawFilter::notifyNextTargetsAboutNewFrame() {
+void VgxFilter::notifyNextTargetsAboutNewFrame() {
     std::list<VgxInput *>::iterator iter;
     for(iter = mTargetList.begin(); iter != mTargetList.end() ;iter++) {
         VgxInput *target = *iter;

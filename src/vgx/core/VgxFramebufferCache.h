@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 #include "CGDrawFramebuffer.h"
-#include "CGVec.h"
+#include "VgxVec2f.h"
 #include <pthread/pthread.h>
 #include <map>
 #include <iostream>
@@ -18,14 +18,14 @@
 
 namespace vgx {
 
-class CGDrawFramebufferCache {
+class VgxFramebufferCache {
     
 public:
 //    static pthread_mutex_t m_mutex;
 
-    static CGDrawFramebufferCache* shareCache() {
+    static VgxFramebufferCache* shareCache() {
 //        pthread_mutex_lock(&m_mutex);
-        static CGDrawFramebufferCache instance;
+        static VgxFramebufferCache instance;
 //        pthread_mutex_unlock(&m_mutex);
         return &instance;
     }
@@ -36,10 +36,10 @@ public:
     
     void destroy();
     
-    CGDrawFramebufferCache() {
+    VgxFramebufferCache() {
 //        pthread_mutex_init(&m_mutex, NULL);
     };
-    ~CGDrawFramebufferCache() {
+    ~VgxFramebufferCache() {
         
     };
 
@@ -48,9 +48,9 @@ private:
    
     
 public:
-    CGDrawFramebuffer *getFramebufferForSize(CGVec2f size, bool onlyTexture);
+    CGDrawFramebuffer *getFramebufferForSize(VgxVec2f size, bool onlyTexture);
     
-    CGDrawFramebuffer *getFramebufferForSize(CGVec2f size, CGTextureOptions textureOptions, bool onlyTexture);
+    CGDrawFramebuffer *getFramebufferForSize(VgxVec2f size, CGTextureOptions textureOptions, bool onlyTexture);
 
     void recycleFramebufferToCache(CGDrawFramebuffer *framebuffer);
     

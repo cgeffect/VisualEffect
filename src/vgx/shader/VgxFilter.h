@@ -14,11 +14,11 @@
 #include "CGDrawProgram.h"
 
 namespace vgx {
-class CGDrawFilter:public VgxInput, public CGDrawOutput  {
+class VgxFilter:public VgxInput, public CGDrawOutput  {
     
 public:
-    CGDrawFilter();
-    virtual ~CGDrawFilter();
+    VgxFilter();
+    virtual ~VgxFilter();
     
     virtual void setInputVertexShader(unsigned char *vShader, unsigned char *fShader);
     

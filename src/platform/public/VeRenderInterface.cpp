@@ -8,7 +8,7 @@
 #include "VeRenderInterface.h"
 
 #include "CGDrawFramebuffer.h"
-#include "CGDrawFilter.h"
+#include "VgxFilter.h"
 #include "VgxDataInput.h"
 #include "CGDrawTextureOutput.h"
 #include "VgxDataInput.h"
@@ -18,7 +18,7 @@ using namespace vgx;
 int setData1(unsigned const char *data, int width, int height) {
 
     auto _dataInput = new VgxDataInput();
-    auto _filter = new CGDrawFilter();
+    auto _filter = new VgxFilter();
     auto _output = new CGDrawTextureOutput();
 
     _dataInput->setInputData(data, width, height);

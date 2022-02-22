@@ -5,7 +5,7 @@
 //  Created by Jason on 2021/6/23.
 //
 #include <cstring>
-#include "CGShaderUtil.h"
+#include "VgxShaderUtil.h"
 #include "CGDrawLog.h"
 #include "glInterface.h"
 #include <iostream>
@@ -14,10 +14,10 @@ int CG_LOG_LEVEL = 4;
 
 using namespace vgx;
 
-void CGShaderUtil::setLogLevel(int level) {
+void VgxShaderUtil::setLogLevel(int level) {
     CG_LOG_LEVEL = level;
 }
-GLuint CGShaderUtil::loadShader(GLenum type, const GLchar *source) {
+GLuint VgxShaderUtil::loadShader(GLenum type, const GLchar *source) {
     GLuint shader = glCreateShader(type);
 
     if (shader != 0 && source != NULL) {
@@ -40,7 +40,7 @@ GLuint CGShaderUtil::loadShader(GLenum type, const GLchar *source) {
     return shader;
 }
 
-GLuint CGShaderUtil::createProgram(const GLchar *vertexSource, const GLchar *fragmentSource) {
+GLuint VgxShaderUtil::createProgram(const GLchar *vertexSource, const GLchar *fragmentSource) {
     GLuint vertexShader = loadShader(GL_VERTEX_SHADER, vertexSource);
     glCheckError("loadShader GL_VERTEX_SHADER");
 
@@ -71,7 +71,7 @@ GLuint CGShaderUtil::createProgram(const GLchar *vertexSource, const GLchar *fra
     return program;
 }
 
-GLuint CGShaderUtil::genTexture() {
+GLuint VgxShaderUtil::genTexture() {
     GLuint tid;
     glesGenTextures(1, &tid);
     glBindTexture(GL_TEXTURE_2D, tid);
@@ -83,7 +83,7 @@ GLuint CGShaderUtil::genTexture() {
     return tid;
 }
 
-GLuint CGShaderUtil::genTexture(int w, int h, GLenum f) {
+GLuint VgxShaderUtil::genTexture(int w, int h, GLenum f) {
     if(w * h <= 0) {
         return TEXTURE_NULL;
     }
@@ -102,7 +102,7 @@ GLuint CGShaderUtil::genTexture(int w, int h, GLenum f) {
 }
 
 
-GLuint CGShaderUtil::genTexture(void *data, int w, int h) {
+GLuint VgxShaderUtil::genTexture(void *data, int w, int h) {
     GLuint tid;
     glesGenTextures(1, (GLuint *) &tid);
     glBindTexture(GL_TEXTURE_2D, (GLuint) tid);
@@ -114,7 +114,7 @@ GLuint CGShaderUtil::genTexture(void *data, int w, int h) {
     return tid;
 }
 
-void CGShaderUtil::glCheckError(const char *flag) {
+void VgxShaderUtil::glCheckError(const char *flag) {
     GLenum error;
     while ((error = glGetError()) != GL_NO_ERROR) {
         switch (error) {

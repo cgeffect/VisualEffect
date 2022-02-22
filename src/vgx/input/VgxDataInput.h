@@ -15,7 +15,7 @@ class VgxDataInput:public CGDrawOutput {
     
 public:
     void setInputData(const unsigned char *data, int width, int height) {
-        CGVec2f _size = CGVec2f(width, height);
+        VgxVec2f _size = VgxVec2f(width, height);
         framebuffer.genWithSize(_size, true);
         framebuffer.bindTexture();
         framebuffer.upload(data, _size, GL_RGBA, GL_RGBA, false);

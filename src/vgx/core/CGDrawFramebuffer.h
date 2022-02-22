@@ -10,9 +10,9 @@
 
 #include <stdio.h>
 #include "CGOpenGL.h"
-#include "CGVec.h"
+#include "VgxVec2f.h"
 #include <iostream>
-#include "CGShaderUtil.h"
+#include "VgxShaderUtil.h"
 
 typedef struct _CGTextureOptions {
     GLenum minFilter;
@@ -37,7 +37,7 @@ public:
     }
 
 public:
-    vgx::CGVec2f getFboSize() {
+    vgx::VgxVec2f getFboSize() {
         return mFboSize;
     };
     GLuint getTexture() {
@@ -63,33 +63,33 @@ public:
     void glUnInit();
     void destroy();
     
-    void genWithSize(CGVec2f fboSize, bool onlyTexture);
+    void genWithSize(VgxVec2f fboSize, bool onlyTexture);
     
-    void genWithSize(CGVec2f fboSize, CGTextureOptions textureOptions, bool onlyTexture);
+    void genWithSize(VgxVec2f fboSize, CGTextureOptions textureOptions, bool onlyTexture);
     
-    void genWithSize(CGVec2f fboSize, GLuint texture);
+    void genWithSize(VgxVec2f fboSize, GLuint texture);
 
     inline void bindFramebuffer() {
         glBindFramebuffer(GL_FRAMEBUFFER, mFramebuffer);
-        CGShaderUtil::glCheckError("bindFramebuffer");
+        VgxShaderUtil::glCheckError("bindFramebuffer");
     };
 
     inline void unbindFramebuffer() {
         glBindFramebuffer(GL_FRAMEBUFFER, GL_NONE);
-        CGShaderUtil::glCheckError("unbindFramebuffer");
+        VgxShaderUtil::glCheckError("unbindFramebuffer");
     };
 
     inline void bindTexture() {
         glBindTexture(GL_TEXTURE_2D, mTexture);
-        CGShaderUtil::glCheckError("bindTexture");
+        VgxShaderUtil::glCheckError("bindTexture");
     };
 
     inline void unbindTexture() {
         glBindTexture(GL_TEXTURE_2D, GL_NONE);
-        CGShaderUtil::glCheckError("unbindTexture");
+        VgxShaderUtil::glCheckError("unbindTexture");
     };
     
-    void upload(const unsigned char *data, CGVec2f size, GLenum internalformat, GLenum format, bool isOverride);
+    void upload(const unsigned char *data, VgxVec2f size, GLenum internalformat, GLenum format, bool isOverride);
     
     void recycle();
         
@@ -106,7 +106,7 @@ public:
     };
     
 private:
-    CGVec2f mFboSize;
+    VgxVec2f mFboSize;
     GLTex mTexture;
     bool mOnlyGenTexture;
     

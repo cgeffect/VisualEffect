@@ -6,9 +6,9 @@
 //
 
 #include "CGDrawFramebuffer.h"
-#include "CGShaderUtil.h"
+#include "VgxShaderUtil.h"
 #include "CGDrawTexture.h"
-#include "CGDrawFramebufferCache.h"
+#include "VgxFramebufferCache.h"
 using namespace vgx;
 
 #pragma mark - life cycle
@@ -21,7 +21,7 @@ void CGDrawFramebuffer::glUnInit() {
 }
 
 void CGDrawFramebuffer::recycle() {
-    CGDrawFramebufferCache().shareCache()->recycleFramebufferToCache(this);
+    VgxFramebufferCache().shareCache()->recycleFramebufferToCache(this);
 }
 
 void CGDrawFramebuffer::destroy() {
@@ -45,12 +45,12 @@ void CGDrawFramebuffer::destroy() {
 }
 
 #pragma mark - param
-void CGDrawFramebuffer::genWithSize(CGVec2f fboSize, bool onlyTexture) {
+void CGDrawFramebuffer::genWithSize(VgxVec2f fboSize, bool onlyTexture) {
     mTextureOptions = CGDrawFramebuffer::defaultTextureOption();
     genWithSize(fboSize, mTextureOptions, onlyTexture);
 }
 
-void CGDrawFramebuffer::genWithSize(CGVec2f fboSize, CGTextureOptions textureOptions, bool onlyTexture) {
+void CGDrawFramebuffer::genWithSize(VgxVec2f fboSize, CGTextureOptions textureOptions, bool onlyTexture) {
     mFboSize = fboSize;
     mOnlyGenTexture = onlyTexture;
     mTextureOptions = textureOptions;
@@ -61,12 +61,12 @@ void CGDrawFramebuffer::genWithSize(CGVec2f fboSize, CGTextureOptions textureOpt
     }
 }
 
-void CGDrawFramebuffer::genWithSize(CGVec2f fboSize, GLuint texture) {
+void CGDrawFramebuffer::genWithSize(VgxVec2f fboSize, GLuint texture) {
     mTexture = texture;
     mFboSize = fboSize;
 }
 
-void CGDrawFramebuffer::upload(const unsigned char *data, CGVec2f size, GLenum internalformat, GLenum format, bool isOverride) {
+void CGDrawFramebuffer::upload(const unsigned char *data, VgxVec2f size, GLenum internalformat, GLenum format, bool isOverride) {
     if (isOverride) {
         glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, size.x, size.y, format, GL_UNSIGNED_BYTE, data);
     } else {

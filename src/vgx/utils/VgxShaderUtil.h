@@ -12,7 +12,7 @@
 
 namespace vgx {
 
-class CGShaderUtil {
+class VgxShaderUtil {
 
 public:
     static void setLogLevel(int level);

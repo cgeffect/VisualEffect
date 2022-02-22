@@ -12,16 +12,16 @@
 
 namespace vgx {
 
-struct CGVec2f {
+struct VgxVec2f {
 
     float x{0.f};
     float y{0.f};
 
-    CGVec2f() : x(0.f), y(0.f) {
+    VgxVec2f() : x(0.f), y(0.f) {
         
     }
 
-    CGVec2f(float _x, float _y) :
+    VgxVec2f(float _x, float _y) :
             x(_x), y(_y) {
     }
 
@@ -29,7 +29,7 @@ struct CGVec2f {
 //            x(_v.x), y(_v.y) {
 //    }
 
-    ~CGVec2f() {
+    ~VgxVec2f() {
     }
 
     inline void set(float _x, float _y) {
@@ -37,7 +37,7 @@ struct CGVec2f {
         y = _y;
     }
 
-    inline void set(const CGVec2f &_v) {
+    inline void set(const VgxVec2f &_v) {
         x = _v.x;
         y = _v.y;
     }
