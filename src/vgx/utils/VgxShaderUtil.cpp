@@ -18,7 +18,7 @@ void VgxShaderUtil::setLogLevel(int level) {
     CG_LOG_LEVEL = level;
 }
 GLuint VgxShaderUtil::loadShader(GLenum type, const GLchar *source) {
-    GLuint shader = glCreateShader(type);
+    GLuint shader = glesCreateShader(type);
 
     if (shader != 0 && source != NULL) {
         GLint length = (GLint)strlen(source);
@@ -32,7 +32,7 @@ GLuint VgxShaderUtil::loadShader(GLenum type, const GLchar *source) {
             GLsizei length;
             glGetShaderInfoLog(shader, 512, &length, temp);
             printf("glError %s", temp);
-            glDeleteShader(shader);
+            glesDeleteShader(shader);
             shader = 0;
 
         }
@@ -47,26 +47,26 @@ GLuint VgxShaderUtil::createProgram(const GLchar *vertexSource, const GLchar *fr
     GLuint pixelShader = loadShader(GL_FRAGMENT_SHADER, fragmentSource);
     glCheckError("loadShader GL_FRAGMENT_SHADER");
 
-    GLuint program = glCreateProgram();
+    GLuint program = glesCreateProgram();
     if (program != 0) {
-        glAttachShader(program, vertexShader);
+        glesAttachShader(program, vertexShader);
         glCheckError("glAttachShader");
-        glAttachShader(program, pixelShader);
+        glesAttachShader(program, pixelShader);
         glCheckError("glAttachShader");
-        glLinkProgram(program);
+        glesLinkProgram(program);
         GLint linkStatus;
-        glGetProgramiv(program, GL_LINK_STATUS, &linkStatus);
+        glesGetProgramiv(program, GL_LINK_STATUS, &linkStatus);
         if (linkStatus != GL_TRUE) {
             printf("glError: Could not link program: ");
             char temp[512] = {0};
             GLsizei length;
-            glGetProgramInfoLog(program, 512, &length, temp);
+            glesGetProgramInfoLog(program, 512, &length, temp);
             printf("glError %s", temp);
-            glDeleteProgram(program);
+            glesDeleteProgram(program);
             program = 0;
         }
-        glDeleteShader(vertexShader);
-        glDeleteShader(pixelShader);
+        glesDeleteShader(vertexShader);
+        glesDeleteShader(pixelShader);
     }
     return program;
 }
@@ -74,12 +74,12 @@ GLuint VgxShaderUtil::createProgram(const GLchar *vertexSource, const GLchar *fr
 GLuint VgxShaderUtil::genTexture() {
     GLuint tid;
     glesGenTextures(1, &tid);
-    glBindTexture(GL_TEXTURE_2D, tid);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-    glBindTexture(GL_TEXTURE_2D, 0);
+    glesBindTexture(GL_TEXTURE_2D, tid);
+    glesTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glesTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glesTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glesTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    glesBindTexture(GL_TEXTURE_2D, 0);
     return tid;
 }
 
@@ -90,13 +90,13 @@ GLuint VgxShaderUtil::genTexture(int w, int h, GLenum f) {
     GLuint tid;
     glesGenTextures(1, &tid);
     if (tid > TEXTURE_NULL) {
-        glBindTexture(GL_TEXTURE_2D, tid);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-        glTexImage2D(GL_TEXTURE_2D, 0, f, w, h, 0, f, GL_UNSIGNED_BYTE, 0);
-        glBindTexture(GL_TEXTURE_2D, 0);
+        glesBindTexture(GL_TEXTURE_2D, tid);
+        glesTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+        glesTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+        glesTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+        glesTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+        glesTexImage2D(GL_TEXTURE_2D, 0, f, w, h, 0, f, GL_UNSIGNED_BYTE, 0);
+        glesBindTexture(GL_TEXTURE_2D, 0);
     }
     return tid;
 }
@@ -105,18 +105,18 @@ GLuint VgxShaderUtil::genTexture(int w, int h, GLenum f) {
 GLuint VgxShaderUtil::genTexture(void *data, int w, int h) {
     GLuint tid;
     glesGenTextures(1, (GLuint *) &tid);
-    glBindTexture(GL_TEXTURE_2D, (GLuint) tid);
-    glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-    glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, w, h, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
+    glesBindTexture(GL_TEXTURE_2D, (GLuint) tid);
+    glesTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glesTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glesTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glesTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    glesTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, w, h, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
     return tid;
 }
 
 void VgxShaderUtil::glCheckError(const char *flag) {
     GLenum error;
-    while ((error = glGetError()) != GL_NO_ERROR) {
+    while ((error = glesGetError()) != GL_NO_ERROR) {
         switch (error) {
             case GL_NO_ERROR:
                 printf("GL_NO_ERROR: gl success\n");
