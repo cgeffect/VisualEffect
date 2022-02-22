@@ -5,8 +5,8 @@
 //  Created by UFOTO on 2021/7/9.
 //
 
-#ifndef CGDrawBridge_h
-#define CGDrawBridge_h
+#ifndef VgxBridge_h
+#define VgxBridge_h
 
 #ifdef __APPLE__
 
@@ -18,4 +18,4 @@ typedef struct Bridge_IOS {
 
 #endif
 
-#endif /* CGDrawBridge_h */
+#endif /* VgxBridge_h */

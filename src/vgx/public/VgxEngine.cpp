@@ -6,7 +6,7 @@
 //
 
 #include <stdio.h>
-#include "CGDrawEngine.h"
+#include "VgxEngine.h"
 
 long registerEngine() {
     return 0;

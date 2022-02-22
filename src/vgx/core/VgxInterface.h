@@ -19,5 +19,8 @@ void glesBindFramebuffer (GLenum target, GLuint framebuffer);
 void glesBindRenderbuffer (GLenum target, GLuint renderbuffer);
 void glesFramebufferTexture2D (GLenum target, GLenum attachment, GLenum textarget, GLuint texture, GLint level);
 void glesTexImage2D (GLenum target, GLint level, GLint internalformat, GLsizei width, GLsizei height, GLint border, GLenum format, GLenum type, const GLvoid* pixels);
+void glesDeleteFramebuffers (GLsizei n, const GLuint* framebuffers);
+void glesDeleteProgram (GLuint program);
+void glesDeleteRenderbuffers (GLsizei n, const GLuint* renderbuffers);
 
 #endif /* VgxInterface_hpp */

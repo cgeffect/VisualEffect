@@ -8,6 +8,7 @@
 #include "VgxProgram.h"
 #include <stdlib.h>
 #include "VgxShaderUtil.h"
+#include "VgxInterface.h"
 
 using namespace vgx;
 
@@ -143,7 +144,7 @@ VgxProgram::~VgxProgram() {
     
     
     if (program) {
-        glDeleteProgram(program);
+        glesDeleteProgram(program);
         VgxShaderUtil::glCheckError((char *)"CGProgram: glDeleteProgram");
     }
 }

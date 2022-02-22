@@ -49,4 +49,15 @@ void glesTexImage2D (GLenum target, GLint level, GLint internalformat, GLsizei w
 
 }
 
+void glesDeleteFramebuffers (GLsizei n, const GLuint* framebuffers) {
+    glDeleteFramebuffers (n, framebuffers);
+}
+void glesDeleteProgram (GLuint program) {
+    glDeleteProgram (program);
+}
+void glesDeleteRenderbuffers (GLsizei n, const GLuint* renderbuffers) {
+    glDeleteRenderbuffers (n, renderbuffers);
+}
+
+
 #pragma clang diagnostic pop

@@ -26,7 +26,7 @@ void VgxFramebuffer::recycle() {
 
 void VgxFramebuffer::destroy() {
     if (mFramebuffer) {
-        glDeleteFramebuffers(1, &mFramebuffer);
+        glesDeleteFramebuffers(1, &mFramebuffer);
         mFramebuffer = GL_NONE;
     }
     

@@ -14,11 +14,11 @@
 		968842CD27C3E0B4008EDB78 /* VgxProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968842B127C3E0B4008EDB78 /* VgxProgram.cpp */; };
 		968842CE27C3E0B4008EDB78 /* VgxInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968842B227C3E0B4008EDB78 /* VgxInterface.cpp */; };
 		968842CF27C3E0B4008EDB78 /* VgxFramebufferCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968842B327C3E0B4008EDB78 /* VgxFramebufferCache.cpp */; };
-		968842D027C3E0B4008EDB78 /* CGDrawTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968842B427C3E0B4008EDB78 /* CGDrawTexture.cpp */; };
+		968842D027C3E0B4008EDB78 /* VgxTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968842B427C3E0B4008EDB78 /* VgxTexture.cpp */; };
 		968842D127C3E0B4008EDB78 /* VgxFramebuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968842B627C3E0B4008EDB78 /* VgxFramebuffer.cpp */; };
 		968842D227C3E0B4008EDB78 /* VgxShaderUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968842BF27C3E0B4008EDB78 /* VgxShaderUtil.cpp */; };
 		968842D327C3E0B4008EDB78 /* VgxVec2f.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968842C027C3E0B4008EDB78 /* VgxVec2f.cpp */; };
-		968842D427C3E0B4008EDB78 /* CGDrawEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968842C627C3E0B4008EDB78 /* CGDrawEngine.cpp */; };
+		968842D427C3E0B4008EDB78 /* VgxEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968842C627C3E0B4008EDB78 /* VgxEngine.cpp */; };
 		968842D527C3E0B4008EDB78 /* VgxFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968842CC27C3E0B4008EDB78 /* VgxFilter.cpp */; };
 		9688430727C3E1DF008EDB78 /* VisualEffect.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9688430627C3E1DF008EDB78 /* VisualEffect.docc */; };
 		9688432327C3E2B1008EDB78 /* CGPaintPipelineOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688430C27C3E2B1008EDB78 /* CGPaintPipelineOutput.m */; };
@@ -61,7 +61,7 @@
 		968842B127C3E0B4008EDB78 /* VgxProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VgxProgram.cpp; sourceTree = "<group>"; };
 		968842B227C3E0B4008EDB78 /* VgxInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VgxInterface.cpp; sourceTree = "<group>"; };
 		968842B327C3E0B4008EDB78 /* VgxFramebufferCache.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VgxFramebufferCache.cpp; sourceTree = "<group>"; };
-		968842B427C3E0B4008EDB78 /* CGDrawTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawTexture.cpp; sourceTree = "<group>"; };
+		968842B427C3E0B4008EDB78 /* VgxTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VgxTexture.cpp; sourceTree = "<group>"; };
 		968842B527C3E0B4008EDB78 /* VgxInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxInterface.h; sourceTree = "<group>"; };
 		968842B627C3E0B4008EDB78 /* VgxFramebuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VgxFramebuffer.cpp; sourceTree = "<group>"; };
 		968842B827C3E0B4008EDB78 /* VgxDataInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxDataInput.h; sourceTree = "<group>"; };
@@ -75,9 +75,9 @@
 		968842C227C3E0B4008EDB78 /* VgxGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxGL.h; sourceTree = "<group>"; };
 		968842C327C3E0B4008EDB78 /* VgxShaderUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxShaderUtil.h; sourceTree = "<group>"; };
 		968842C427C3E0B4008EDB78 /* VgxLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxLog.h; sourceTree = "<group>"; };
-		968842C627C3E0B4008EDB78 /* CGDrawEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawEngine.cpp; sourceTree = "<group>"; };
-		968842C727C3E0B4008EDB78 /* CGDrawBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawBridge.h; sourceTree = "<group>"; };
-		968842C827C3E0B4008EDB78 /* CGDrawEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawEngine.h; sourceTree = "<group>"; };
+		968842C627C3E0B4008EDB78 /* VgxEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VgxEngine.cpp; sourceTree = "<group>"; };
+		968842C727C3E0B4008EDB78 /* VgxBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxBridge.h; sourceTree = "<group>"; };
+		968842C827C3E0B4008EDB78 /* VgxEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxEngine.h; sourceTree = "<group>"; };
 		968842CA27C3E0B4008EDB78 /* VgxFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxFilter.h; sourceTree = "<group>"; };
 		968842CB27C3E0B4008EDB78 /* VgxShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxShader.h; sourceTree = "<group>"; };
 		968842CC27C3E0B4008EDB78 /* VgxFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VgxFilter.cpp; sourceTree = "<group>"; };
@@ -219,7 +219,7 @@
 				968842AD27C3E0B4008EDB78 /* VgxFramebufferCache.h */,
 				968842B127C3E0B4008EDB78 /* VgxProgram.cpp */,
 				968842AF27C3E0B4008EDB78 /* VgxProgram.h */,
-				968842B427C3E0B4008EDB78 /* CGDrawTexture.cpp */,
+				968842B427C3E0B4008EDB78 /* VgxTexture.cpp */,
 				968842AE27C3E0B4008EDB78 /* VgxTexture.h */,
 				968842B227C3E0B4008EDB78 /* VgxInterface.cpp */,
 				968842B527C3E0B4008EDB78 /* VgxInterface.h */,
@@ -262,9 +262,9 @@
 		968842C527C3E0B4008EDB78 /* public */ = {
 			isa = PBXGroup;
 			children = (
-				968842C727C3E0B4008EDB78 /* CGDrawBridge.h */,
-				968842C627C3E0B4008EDB78 /* CGDrawEngine.cpp */,
-				968842C827C3E0B4008EDB78 /* CGDrawEngine.h */,
+				968842C727C3E0B4008EDB78 /* VgxBridge.h */,
+				968842C627C3E0B4008EDB78 /* VgxEngine.cpp */,
+				968842C827C3E0B4008EDB78 /* VgxEngine.h */,
 			);
 			path = public;
 			sourceTree = "<group>";
@@ -511,7 +511,7 @@
 				9688430727C3E1DF008EDB78 /* VisualEffect.docc in Sources */,
 				96CEB2CB27C4A4BB004E1812 /* VeModel.cpp in Sources */,
 				9688432927C3E2B1008EDB78 /* CGPaintContext.m in Sources */,
-				968842D027C3E0B4008EDB78 /* CGDrawTexture.cpp in Sources */,
+				968842D027C3E0B4008EDB78 /* VgxTexture.cpp in Sources */,
 				9688432627C3E2B1008EDB78 /* CGPaintProgram.m in Sources */,
 				9674124E27C284EB0047AF24 /* VeRenderManager.cpp in Sources */,
 				9688432527C3E2B1008EDB78 /* CGPaintFramebuffer.m in Sources */,
@@ -524,7 +524,7 @@
 				967409FF27C1F0520047AF24 /* libVisualEffect.m in Sources */,
 				9688432327C3E2B1008EDB78 /* CGPaintPipelineOutput.m in Sources */,
 				9688432427C3E2B1008EDB78 /* CGPaintRenderPipeline.m in Sources */,
-				968842D427C3E0B4008EDB78 /* CGDrawEngine.cpp in Sources */,
+				968842D427C3E0B4008EDB78 /* VgxEngine.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
