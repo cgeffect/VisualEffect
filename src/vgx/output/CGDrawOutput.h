@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 #include <list>
-#include "CGDrawInput.h"
+#include "VgxInput.h"
 #include "CGDrawFramebuffer.h"
 
 namespace vgx {
@@ -20,16 +20,16 @@ class CGDrawOutput {
 //        
 //    };
 public:
-    virtual void addTarget(CGDrawInput *newtarget) {
+    virtual void addTarget(VgxInput *newtarget) {
         mTargetList.push_back(newtarget);
     };
-    virtual void removeTarget(CGDrawInput *targetToRemove) {
+    virtual void removeTarget(VgxInput *targetToRemove) {
         mTargetList.remove(targetToRemove);
     };
     virtual void removeAllTargets() {
         mTargetList.clear();
     };
-    virtual std::list<CGDrawInput *>targets() {
+    virtual std::list<VgxInput *>targets() {
         return mTargetList;
     };
     virtual void requestRender() {
@@ -38,7 +38,7 @@ public:
     
 protected:
     CGDrawFramebuffer *mOutputFramebuffer{nullptr};
-    std::list<CGDrawInput *>mTargetList;
+    std::list<VgxInput *>mTargetList;
 };
 
 }

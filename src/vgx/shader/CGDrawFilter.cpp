@@ -102,9 +102,9 @@ void CGDrawFilter::renderToTextureWithVertices(const GLfloat *vertices, const GL
 }
 
 void CGDrawFilter::notifyNextTargetsAboutNewFrame() {
-    std::list<CGDrawInput *>::iterator iter;
+    std::list<VgxInput *>::iterator iter;
     for(iter = mTargetList.begin(); iter != mTargetList.end() ;iter++) {
-        CGDrawInput *target = *iter;
+        VgxInput *target = *iter;
         target->newFramebufferAvailable(mOutputFramebuffer);
     }
 }

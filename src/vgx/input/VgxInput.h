@@ -13,7 +13,7 @@
 
 namespace vgx {
 
-class CGDrawInput {
+class VgxInput {
         
 public:
     //纯虚函数, 有定义无实现

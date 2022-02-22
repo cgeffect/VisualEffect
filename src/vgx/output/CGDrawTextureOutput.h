@@ -9,10 +9,10 @@
 #define CGDrawTextureOutput_h
 
 #include <stdio.h>
-#include "CGDrawInput.h"
+#include "VgxInput.h"
 
 namespace vgx {
-class CGDrawTextureOutput:public CGDrawInput {
+class CGDrawTextureOutput:public VgxInput {
     
 public:
     CGDrawTextureOutput() {

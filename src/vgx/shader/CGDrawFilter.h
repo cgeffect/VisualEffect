@@ -9,12 +9,12 @@
 #define CGDrawFilter_h
 
 #include <stdio.h>
-#include "CGDrawInput.h"
+#include "VgxInput.h"
 #include "CGDrawOutput.h"
 #include "CGDrawProgram.h"
 
 namespace vgx {
-class CGDrawFilter:public CGDrawInput, public CGDrawOutput  {
+class CGDrawFilter:public VgxInput, public CGDrawOutput  {
     
 public:
     CGDrawFilter();

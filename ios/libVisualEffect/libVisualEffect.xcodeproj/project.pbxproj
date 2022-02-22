@@ -64,9 +64,9 @@
 		968842B427C3E0B4008EDB78 /* CGDrawTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawTexture.cpp; sourceTree = "<group>"; };
 		968842B527C3E0B4008EDB78 /* glInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glInterface.h; sourceTree = "<group>"; };
 		968842B627C3E0B4008EDB78 /* CGDrawFramebuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawFramebuffer.cpp; sourceTree = "<group>"; };
-		968842B827C3E0B4008EDB78 /* CGDrawDataInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawDataInput.h; sourceTree = "<group>"; };
+		968842B827C3E0B4008EDB78 /* VgxDataInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxDataInput.h; sourceTree = "<group>"; };
 		968842B927C3E0B4008EDB78 /* CGDrawTextureInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawTextureInput.h; sourceTree = "<group>"; };
-		968842BA27C3E0B4008EDB78 /* CGDrawInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawInput.h; sourceTree = "<group>"; };
+		968842BA27C3E0B4008EDB78 /* VgxInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxInput.h; sourceTree = "<group>"; };
 		968842BC27C3E0B4008EDB78 /* CGDrawTextureOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawTextureOutput.h; sourceTree = "<group>"; };
 		968842BD27C3E0B4008EDB78 /* CGDrawOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawOutput.h; sourceTree = "<group>"; };
 		968842BF27C3E0B4008EDB78 /* CGShaderUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGShaderUtil.cpp; sourceTree = "<group>"; };
@@ -230,8 +230,8 @@
 		968842B727C3E0B4008EDB78 /* input */ = {
 			isa = PBXGroup;
 			children = (
-				968842B827C3E0B4008EDB78 /* CGDrawDataInput.h */,
-				968842BA27C3E0B4008EDB78 /* CGDrawInput.h */,
+				968842B827C3E0B4008EDB78 /* VgxDataInput.h */,
+				968842BA27C3E0B4008EDB78 /* VgxInput.h */,
 				968842B927C3E0B4008EDB78 /* CGDrawTextureInput.h */,
 			);
 			path = input;

@@ -11,7 +11,7 @@
 #include "CGDrawOutput.h"
 namespace vgx {
 
-class CGDrawDataInput:public CGDrawOutput {
+class VgxDataInput:public CGDrawOutput {
     
 public:
     void setInputData(const unsigned char *data, int width, int height) {
@@ -23,9 +23,9 @@ public:
         mOutputFramebuffer = &framebuffer;
     }
     void requestRender() override {
-        std::list<CGDrawInput *>::iterator iter;
+        std::list<VgxInput *>::iterator iter;
         for(iter = mTargetList.begin(); iter != mTargetList.end(); iter++) {
-            CGDrawInput *target = *iter;
+            VgxInput *target = *iter;
             target->newFramebufferAvailable(mOutputFramebuffer);
         }
     }
