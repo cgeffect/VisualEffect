@@ -32,4 +32,16 @@
 *.app
 
 
-*.xcuserstate
+*.xcuserstate  
+ 
+project.xcworkspace  
+ 
+xcuserdata  
+ 
+UserInterfaceState.xcuserstate  
+ 
+project.xcworkspace/  
+ 
+xcuserdata/  
+ 
+UserInterface.xcuserstate  

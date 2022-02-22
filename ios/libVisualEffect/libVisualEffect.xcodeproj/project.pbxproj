@@ -20,7 +20,6 @@
 		968842D327C3E0B4008EDB78 /* CGVec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968842C027C3E0B4008EDB78 /* CGVec.cpp */; };
 		968842D427C3E0B4008EDB78 /* CGDrawEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968842C627C3E0B4008EDB78 /* CGDrawEngine.cpp */; };
 		968842D527C3E0B4008EDB78 /* CGDrawFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968842CC27C3E0B4008EDB78 /* CGDrawFilter.cpp */; };
-		9688430527C3E191008EDB78 /* VEModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9688430427C3E191008EDB78 /* VEModel.cpp */; };
 		9688430727C3E1DF008EDB78 /* VisualEffect.docc in Sources */ = {isa = PBXBuildFile; fileRef = 9688430627C3E1DF008EDB78 /* VisualEffect.docc */; };
 		9688432327C3E2B1008EDB78 /* CGPaintPipelineOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688430C27C3E2B1008EDB78 /* CGPaintPipelineOutput.m */; };
 		9688432427C3E2B1008EDB78 /* CGPaintRenderPipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688430D27C3E2B1008EDB78 /* CGPaintRenderPipeline.m */; };
@@ -31,6 +30,7 @@
 		9688432927C3E2B1008EDB78 /* CGPaintContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688431A27C3E2B1008EDB78 /* CGPaintContext.m */; };
 		9688432A27C3E2B1008EDB78 /* CGPaintViewOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688431E27C3E2B1008EDB78 /* CGPaintViewOutput.m */; };
 		9688432B27C3E2B1008EDB78 /* CGPaintUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9688432027C3E2B1008EDB78 /* CGPaintUtils.m */; };
+		96CEB2CB27C4A4BB004E1812 /* VeModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96CEB2C927C4A4BB004E1812 /* VeModel.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -119,8 +119,6 @@
 		968842FE27C3E191008EDB78 /* pointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pointer.h; sourceTree = "<group>"; };
 		9688430027C3E191008EDB78 /* inttypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inttypes.h; sourceTree = "<group>"; };
 		9688430127C3E191008EDB78 /* stdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdint.h; sourceTree = "<group>"; };
-		9688430327C3E191008EDB78 /* VEModel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VEModel.hpp; sourceTree = "<group>"; };
-		9688430427C3E191008EDB78 /* VEModel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VEModel.cpp; sourceTree = "<group>"; };
 		9688430627C3E1DF008EDB78 /* VisualEffect.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = VisualEffect.docc; sourceTree = "<group>"; };
 		9688430B27C3E2B1008EDB78 /* CGPaintRenderPipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintRenderPipeline.h; sourceTree = "<group>"; };
 		9688430C27C3E2B1008EDB78 /* CGPaintPipelineOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintPipelineOutput.m; sourceTree = "<group>"; };
@@ -143,6 +141,8 @@
 		9688432027C3E2B1008EDB78 /* CGPaintUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPaintUtils.m; sourceTree = "<group>"; };
 		9688432127C3E2B1008EDB78 /* CGPaintUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaintUtils.h; sourceTree = "<group>"; };
 		9688432227C3E2B1008EDB78 /* CGPaint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPaint.h; sourceTree = "<group>"; };
+		96CEB2C927C4A4BB004E1812 /* VeModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VeModel.cpp; sourceTree = "<group>"; };
+		96CEB2CA27C4A4BB004E1812 /* VeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VeModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				9688430827C3E2B1008EDB78 /* platform */,
-				968842D627C3E191008EDB78 /* lottie */,
+				968842D627C3E191008EDB78 /* vga */,
 				968842AB27C3E0B4008EDB78 /* vgx */,
 				967409FD27C1F0520047AF24 /* libVisualEffect.h */,
 				967409FE27C1F0520047AF24 /* libVisualEffect.m */,
@@ -213,16 +213,16 @@
 		968842AC27C3E0B4008EDB78 /* core */ = {
 			isa = PBXGroup;
 			children = (
-				968842AD27C3E0B4008EDB78 /* CGDrawFramebufferCache.h */,
-				968842AE27C3E0B4008EDB78 /* CGDrawTexture.h */,
-				968842AF27C3E0B4008EDB78 /* CGDrawProgram.h */,
-				968842B027C3E0B4008EDB78 /* CGDrawFramebuffer.h */,
-				968842B127C3E0B4008EDB78 /* CGDrawProgram.cpp */,
-				968842B227C3E0B4008EDB78 /* glInterface.cpp */,
-				968842B327C3E0B4008EDB78 /* CGDrawFramebufferCache.cpp */,
-				968842B427C3E0B4008EDB78 /* CGDrawTexture.cpp */,
-				968842B527C3E0B4008EDB78 /* glInterface.h */,
 				968842B627C3E0B4008EDB78 /* CGDrawFramebuffer.cpp */,
+				968842B027C3E0B4008EDB78 /* CGDrawFramebuffer.h */,
+				968842B327C3E0B4008EDB78 /* CGDrawFramebufferCache.cpp */,
+				968842AD27C3E0B4008EDB78 /* CGDrawFramebufferCache.h */,
+				968842B127C3E0B4008EDB78 /* CGDrawProgram.cpp */,
+				968842AF27C3E0B4008EDB78 /* CGDrawProgram.h */,
+				968842B427C3E0B4008EDB78 /* CGDrawTexture.cpp */,
+				968842AE27C3E0B4008EDB78 /* CGDrawTexture.h */,
+				968842B227C3E0B4008EDB78 /* glInterface.cpp */,
+				968842B527C3E0B4008EDB78 /* glInterface.h */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -231,8 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				968842B827C3E0B4008EDB78 /* CGDrawDataInput.h */,
-				968842B927C3E0B4008EDB78 /* CGDrawTextureInput.h */,
 				968842BA27C3E0B4008EDB78 /* CGDrawInput.h */,
+				968842B927C3E0B4008EDB78 /* CGDrawTextureInput.h */,
 			);
 			path = input;
 			sourceTree = "<group>";
@@ -240,8 +240,8 @@
 		968842BB27C3E0B4008EDB78 /* output */ = {
 			isa = PBXGroup;
 			children = (
-				968842BC27C3E0B4008EDB78 /* CGDrawTextureOutput.h */,
 				968842BD27C3E0B4008EDB78 /* CGDrawOutput.h */,
+				968842BC27C3E0B4008EDB78 /* CGDrawTextureOutput.h */,
 			);
 			path = output;
 			sourceTree = "<group>";
@@ -249,12 +249,12 @@
 		968842BE27C3E0B4008EDB78 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				968842C427C3E0B4008EDB78 /* CGDrawLog.h */,
+				968842C227C3E0B4008EDB78 /* CGOpenGL.h */,
 				968842BF27C3E0B4008EDB78 /* CGShaderUtil.cpp */,
+				968842C327C3E0B4008EDB78 /* CGShaderUtil.h */,
 				968842C027C3E0B4008EDB78 /* CGVec.cpp */,
 				968842C127C3E0B4008EDB78 /* CGVec.h */,
-				968842C227C3E0B4008EDB78 /* CGOpenGL.h */,
-				968842C327C3E0B4008EDB78 /* CGShaderUtil.h */,
-				968842C427C3E0B4008EDB78 /* CGDrawLog.h */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -262,8 +262,8 @@
 		968842C527C3E0B4008EDB78 /* public */ = {
 			isa = PBXGroup;
 			children = (
-				968842C627C3E0B4008EDB78 /* CGDrawEngine.cpp */,
 				968842C727C3E0B4008EDB78 /* CGDrawBridge.h */,
+				968842C627C3E0B4008EDB78 /* CGDrawEngine.cpp */,
 				968842C827C3E0B4008EDB78 /* CGDrawEngine.h */,
 			);
 			path = public;
@@ -272,21 +272,21 @@
 		968842C927C3E0B4008EDB78 /* shader */ = {
 			isa = PBXGroup;
 			children = (
+				968842CC27C3E0B4008EDB78 /* CGDrawFilter.cpp */,
 				968842CA27C3E0B4008EDB78 /* CGDrawFilter.h */,
 				968842CB27C3E0B4008EDB78 /* CGDrawShader.h */,
-				968842CC27C3E0B4008EDB78 /* CGDrawFilter.cpp */,
 			);
 			path = shader;
 			sourceTree = "<group>";
 		};
-		968842D627C3E191008EDB78 /* lottie */ = {
+		968842D627C3E191008EDB78 /* vga */ = {
 			isa = PBXGroup;
 			children = (
 				968842D727C3E191008EDB78 /* third */,
 				9688430227C3E191008EDB78 /* json */,
 			);
-			name = lottie;
-			path = ../../../src/lottie;
+			name = vga;
+			path = ../../../src/vga;
 			sourceTree = "<group>";
 		};
 		968842D727C3E191008EDB78 /* third */ = {
@@ -369,8 +369,8 @@
 		9688430227C3E191008EDB78 /* json */ = {
 			isa = PBXGroup;
 			children = (
-				9688430327C3E191008EDB78 /* VEModel.hpp */,
-				9688430427C3E191008EDB78 /* VEModel.cpp */,
+				96CEB2C927C4A4BB004E1812 /* VeModel.cpp */,
+				96CEB2CA27C4A4BB004E1812 /* VeModel.h */,
 			);
 			path = json;
 			sourceTree = "<group>";
@@ -502,7 +502,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9688430527C3E191008EDB78 /* VEModel.cpp in Sources */,
 				968842D227C3E0B4008EDB78 /* CGShaderUtil.cpp in Sources */,
 				968842CE27C3E0B4008EDB78 /* glInterface.cpp in Sources */,
 				968842D527C3E0B4008EDB78 /* CGDrawFilter.cpp in Sources */,
@@ -510,6 +509,7 @@
 				968842CD27C3E0B4008EDB78 /* CGDrawProgram.cpp in Sources */,
 				968842CF27C3E0B4008EDB78 /* CGDrawFramebufferCache.cpp in Sources */,
 				9688430727C3E1DF008EDB78 /* VisualEffect.docc in Sources */,
+				96CEB2CB27C4A4BB004E1812 /* VeModel.cpp in Sources */,
 				9688432927C3E2B1008EDB78 /* CGPaintContext.m in Sources */,
 				968842D027C3E0B4008EDB78 /* CGDrawTexture.cpp in Sources */,
 				9688432627C3E2B1008EDB78 /* CGPaintProgram.m in Sources */,
