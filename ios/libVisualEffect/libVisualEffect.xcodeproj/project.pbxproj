@@ -72,14 +72,14 @@
 		968842BF27C3E0B4008EDB78 /* VgxShaderUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VgxShaderUtil.cpp; sourceTree = "<group>"; };
 		968842C027C3E0B4008EDB78 /* VgxVec2f.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VgxVec2f.cpp; sourceTree = "<group>"; };
 		968842C127C3E0B4008EDB78 /* VgxVec2f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxVec2f.h; sourceTree = "<group>"; };
-		968842C227C3E0B4008EDB78 /* CGOpenGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGOpenGL.h; sourceTree = "<group>"; };
+		968842C227C3E0B4008EDB78 /* VgxGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxGL.h; sourceTree = "<group>"; };
 		968842C327C3E0B4008EDB78 /* VgxShaderUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxShaderUtil.h; sourceTree = "<group>"; };
-		968842C427C3E0B4008EDB78 /* CGDrawLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawLog.h; sourceTree = "<group>"; };
+		968842C427C3E0B4008EDB78 /* VgxLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxLog.h; sourceTree = "<group>"; };
 		968842C627C3E0B4008EDB78 /* CGDrawEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CGDrawEngine.cpp; sourceTree = "<group>"; };
 		968842C727C3E0B4008EDB78 /* CGDrawBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawBridge.h; sourceTree = "<group>"; };
 		968842C827C3E0B4008EDB78 /* CGDrawEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawEngine.h; sourceTree = "<group>"; };
 		968842CA27C3E0B4008EDB78 /* VgxFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxFilter.h; sourceTree = "<group>"; };
-		968842CB27C3E0B4008EDB78 /* CGDrawShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGDrawShader.h; sourceTree = "<group>"; };
+		968842CB27C3E0B4008EDB78 /* VgxShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxShader.h; sourceTree = "<group>"; };
 		968842CC27C3E0B4008EDB78 /* VgxFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VgxFilter.cpp; sourceTree = "<group>"; };
 		968842D927C3E191008EDB78 /* fwd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fwd.h; sourceTree = "<group>"; };
 		968842DA27C3E191008EDB78 /* memorystream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memorystream.h; sourceTree = "<group>"; };
@@ -249,8 +249,8 @@
 		968842BE27C3E0B4008EDB78 /* utils */ = {
 			isa = PBXGroup;
 			children = (
-				968842C427C3E0B4008EDB78 /* CGDrawLog.h */,
-				968842C227C3E0B4008EDB78 /* CGOpenGL.h */,
+				968842C427C3E0B4008EDB78 /* VgxLog.h */,
+				968842C227C3E0B4008EDB78 /* VgxGL.h */,
 				968842BF27C3E0B4008EDB78 /* VgxShaderUtil.cpp */,
 				968842C327C3E0B4008EDB78 /* VgxShaderUtil.h */,
 				968842C027C3E0B4008EDB78 /* VgxVec2f.cpp */,
@@ -274,7 +274,7 @@
 			children = (
 				968842CC27C3E0B4008EDB78 /* VgxFilter.cpp */,
 				968842CA27C3E0B4008EDB78 /* VgxFilter.h */,
-				968842CB27C3E0B4008EDB78 /* CGDrawShader.h */,
+				968842CB27C3E0B4008EDB78 /* VgxShader.h */,
 			);
 			path = shader;
 			sourceTree = "<group>";

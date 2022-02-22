@@ -6,10 +6,10 @@
 //
 
 #include "VgxFilter.h"
-#include "CGDrawShader.h"
+#include "VgxShader.h"
 #include "VgxProgram.h"
 #include "VgxShaderUtil.h"
-#include "CGOpenGL.h"
+#include "VgxGL.h"
 #include "VgxFramebufferCache.h"
 #include "VgxInterface.h"
 

@@ -5,8 +5,8 @@
 //  Created by Jason on 2021/6/23.
 //
 
-#ifndef CGDrawLog_h
-#define CGDrawLog_h
+#ifndef VgxLog_h
+#define VgxLog_h
 
 #define CG_LOG_ALL     1
 #define CG_LOG_VERBOSE 2
@@ -156,4 +156,4 @@ do { \
 }
 
 
-#endif /* CGDrawLog_h */
+#endif /* VgxLog_h */

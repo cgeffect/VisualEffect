@@ -6,7 +6,7 @@
 //
 #include <cstring>
 #include "VgxShaderUtil.h"
-#include "CGDrawLog.h"
+#include "VgxLog.h"
 #include "VgxInterface.h"
 #include <iostream>
 

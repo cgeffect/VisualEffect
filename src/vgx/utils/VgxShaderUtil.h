@@ -8,7 +8,7 @@
 #define CAMERASDK_SHADER_UTIL_H
 
 #include <stdio.h>
-#include "CGOpenGL.h"
+#include "VgxGL.h"
 
 namespace vgx {
 

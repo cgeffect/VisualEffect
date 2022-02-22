@@ -1,12 +1,12 @@
 //
-//  CGOpenGL.h
+//  VgxGL.h
 //  Vgx
 //
 //  Created by Jason on 2021/6/23.
 //
 
-#ifndef CGOpenGL_h
-#define CGOpenGL_h
+#ifndef VgxGL_h
+#define VgxGL_h
 
 #ifdef __ANDROID__
 #include <EGL/egl.h>
@@ -73,4 +73,4 @@
 
 #define GLTex GLuint
 
-#endif /* CGOpenGL_h */
+#endif /* VgxGL_h */

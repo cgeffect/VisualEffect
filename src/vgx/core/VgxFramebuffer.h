@@ -9,7 +9,7 @@
 #define VgxFramebuffer_h
 
 #include <stdio.h>
-#include "CGOpenGL.h"
+#include "VgxGL.h"
 #include "VgxVec2f.h"
 #include <iostream>
 #include "VgxShaderUtil.h"

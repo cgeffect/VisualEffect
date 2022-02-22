@@ -5,10 +5,10 @@
 //  Created by Jason on 2021/6/23.
 //
 
-#ifndef CGDrawShader_h
-#define CGDrawShader_h
+#ifndef VgxShader_h
+#define VgxShader_h
 
-#include "CGOpenGL.h"
+#include "VgxGL.h"
 
 const char * kCGDrawVertexShaderString = CG_SHADER_SRC
 (
@@ -44,4 +44,4 @@ const char * kCGDrawFragmentShaderString = CG_SHADER_SRC
 );
 
 
-#endif /* CGDrawShader_h */
+#endif /* VgxShader_h */

@@ -7,7 +7,7 @@
 
 #ifndef VgxInterface_hpp
 #define VgxInterface_hpp
-#include "CGOpenGL.h"
+#include "VgxGL.h"
 
 void glesEnableVertexAttribArray(GLuint index);
 void glesGenTextures (GLsizei n, GLuint* textures);
