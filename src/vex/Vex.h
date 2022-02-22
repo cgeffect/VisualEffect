@@ -1,12 +1,12 @@
 //
-//  Vga.h
+//  Vex.h
 //  libVisualEffect
 //
 //  Created by Jason on 2022/2/22.
 //
 
-#ifndef Vga_h
-#define Vga_h
+#ifndef Vex_h
+#define Vex_h
 
 
-#endif /* Vga_h */
+#endif /* Vex_h */

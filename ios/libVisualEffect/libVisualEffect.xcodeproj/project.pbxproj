@@ -145,7 +145,6 @@
 		967C6F0E27C52D6F00F83E6F /* VeDrawContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VeDrawContext.h; sourceTree = "<group>"; };
 		967C6F0F27C52D6F00F83E6F /* VeDrawContext.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VeDrawContext.mm; sourceTree = "<group>"; };
 		967C6F1527C530DC00F83E6F /* Vgx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vgx.h; sourceTree = "<group>"; };
-		967C6F1627C5310200F83E6F /* Vga.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vga.h; sourceTree = "<group>"; };
 		968842AD27C3E0B4008EDB78 /* VgxFramebufferCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxFramebufferCache.h; sourceTree = "<group>"; };
 		968842AE27C3E0B4008EDB78 /* VgxTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxTexture.h; sourceTree = "<group>"; };
 		968842AF27C3E0B4008EDB78 /* VgxProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxProgram.h; sourceTree = "<group>"; };
@@ -212,6 +211,7 @@
 		9688430027C3E191008EDB78 /* inttypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inttypes.h; sourceTree = "<group>"; };
 		9688430127C3E191008EDB78 /* stdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdint.h; sourceTree = "<group>"; };
 		9688430627C3E1DF008EDB78 /* VisualEffect.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = VisualEffect.docc; sourceTree = "<group>"; };
+		968AFC8327C5323D00602D9C /* Vex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vex.h; sourceTree = "<group>"; };
 		96CEB2C927C4A4BB004E1812 /* VgaModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VgaModel.cpp; sourceTree = "<group>"; };
 		96CEB2CA27C4A4BB004E1812 /* VgaModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VgaModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -248,7 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				9688430827C3E2B1008EDB78 /* platform */,
-				968842D627C3E191008EDB78 /* vga */,
+				968842D627C3E191008EDB78 /* vex */,
 				968842AB27C3E0B4008EDB78 /* vgx */,
 				967409FD27C1F0520047AF24 /* libVisualEffect.h */,
 				967409FE27C1F0520047AF24 /* libVisualEffect.m */,
@@ -468,15 +468,15 @@
 			path = shader;
 			sourceTree = "<group>";
 		};
-		968842D627C3E191008EDB78 /* vga */ = {
+		968842D627C3E191008EDB78 /* vex */ = {
 			isa = PBXGroup;
 			children = (
 				968842D727C3E191008EDB78 /* third */,
 				9688430227C3E191008EDB78 /* json */,
-				967C6F1627C5310200F83E6F /* Vga.h */,
+				968AFC8327C5323D00602D9C /* Vex.h */,
 			);
-			name = vga;
-			path = ../../../src/vga;
+			name = vex;
+			path = ../../../src/vex;
 			sourceTree = "<group>";
 		};
 		968842D727C3E191008EDB78 /* third */ = {
