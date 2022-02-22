@@ -6,11 +6,13 @@
 //
 
 #import "VeDrawContext.h"
-#include "VgxFramebuffer.h"
-#include "VgxFilter.h"
-#include "VgxDataInput.h"
-#include "VgxTextureOutput.h"
-#include "VgxDataInput.h"
+#import "Vgx.h"
+
+@interface VeDrawContext ()
+{
+    
+}
+@end
 
 @implementation VeDrawContext
 

@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		967409FF27C1F0520047AF24 /* libVisualEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 967409FE27C1F0520047AF24 /* libVisualEffect.m */; };
 		96740A0027C1F0520047AF24 /* libVisualEffect.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 967409FD27C1F0520047AF24 /* libVisualEffect.h */; };
-		9674124E27C284EB0047AF24 /* VeRenderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9674124C27C284EB0047AF24 /* VeRenderManager.cpp */; };
-		9674125227C28A5C0047AF24 /* VeRenderInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9674125027C28A5C0047AF24 /* VeRenderInterface.cpp */; };
 		967C6EEA27C529A600F83E6F /* CGPixelPipelineOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C6EA227C529A500F83E6F /* CGPixelPipelineOutput.m */; };
 		967C6EEB27C529A600F83E6F /* CGPixelRenderPipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C6EA327C529A500F83E6F /* CGPixelRenderPipeline.m */; };
 		967C6EEC27C529A600F83E6F /* CGPixelUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C6EA527C529A500F83E6F /* CGPixelUtils.m */; };
@@ -72,10 +70,6 @@
 		967409FA27C1F0520047AF24 /* liblibVisualEffect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibVisualEffect.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		967409FD27C1F0520047AF24 /* libVisualEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libVisualEffect.h; sourceTree = "<group>"; };
 		967409FE27C1F0520047AF24 /* libVisualEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libVisualEffect.m; sourceTree = "<group>"; };
-		9674124C27C284EB0047AF24 /* VeRenderManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VeRenderManager.cpp; sourceTree = "<group>"; };
-		9674124D27C284EB0047AF24 /* VeRenderManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VeRenderManager.h; sourceTree = "<group>"; };
-		9674125027C28A5C0047AF24 /* VeRenderInterface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VeRenderInterface.cpp; sourceTree = "<group>"; };
-		9674125127C28A5C0047AF24 /* VeRenderInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VeRenderInterface.h; sourceTree = "<group>"; };
 		967C6E9F27C529A500F83E6F /* CGPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPixel.h; sourceTree = "<group>"; };
 		967C6EA127C529A500F83E6F /* CGPixelRenderPipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPixelRenderPipeline.h; sourceTree = "<group>"; };
 		967C6EA227C529A500F83E6F /* CGPixelPipelineOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPixelPipelineOutput.m; sourceTree = "<group>"; };
@@ -150,6 +144,8 @@
 		967C6F0C27C52C7C00F83E6F /* VeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VeView.m; sourceTree = "<group>"; };
 		967C6F0E27C52D6F00F83E6F /* VeDrawContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VeDrawContext.h; sourceTree = "<group>"; };
 		967C6F0F27C52D6F00F83E6F /* VeDrawContext.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VeDrawContext.mm; sourceTree = "<group>"; };
+		967C6F1527C530DC00F83E6F /* Vgx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vgx.h; sourceTree = "<group>"; };
+		967C6F1627C5310200F83E6F /* Vga.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vga.h; sourceTree = "<group>"; };
 		968842AD27C3E0B4008EDB78 /* VgxFramebufferCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxFramebufferCache.h; sourceTree = "<group>"; };
 		968842AE27C3E0B4008EDB78 /* VgxTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxTexture.h; sourceTree = "<group>"; };
 		968842AF27C3E0B4008EDB78 /* VgxProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxProgram.h; sourceTree = "<group>"; };
@@ -258,17 +254,6 @@
 				967409FE27C1F0520047AF24 /* libVisualEffect.m */,
 			);
 			path = libVisualEffect;
-			sourceTree = "<group>";
-		};
-		9674124B27C284B20047AF24 /* public */ = {
-			isa = PBXGroup;
-			children = (
-				9674124C27C284EB0047AF24 /* VeRenderManager.cpp */,
-				9674124D27C284EB0047AF24 /* VeRenderManager.h */,
-				9674125027C28A5C0047AF24 /* VeRenderInterface.cpp */,
-				9674125127C28A5C0047AF24 /* VeRenderInterface.h */,
-			);
-			path = public;
 			sourceTree = "<group>";
 		};
 		967C6E9E27C529A500F83E6F /* render */ = {
@@ -468,6 +453,7 @@
 				968842C727C3E0B4008EDB78 /* VgxBridge.h */,
 				968842C627C3E0B4008EDB78 /* VgxEngine.cpp */,
 				968842C827C3E0B4008EDB78 /* VgxEngine.h */,
+				967C6F1527C530DC00F83E6F /* Vgx.h */,
 			);
 			path = public;
 			sourceTree = "<group>";
@@ -487,6 +473,7 @@
 			children = (
 				968842D727C3E191008EDB78 /* third */,
 				9688430227C3E191008EDB78 /* json */,
+				967C6F1627C5310200F83E6F /* Vga.h */,
 			);
 			name = vga;
 			path = ../../../src/vga;
@@ -581,7 +568,6 @@
 		9688430827C3E2B1008EDB78 /* platform */ = {
 			isa = PBXGroup;
 			children = (
-				9674124B27C284B20047AF24 /* public */,
 				9688430927C3E2B1008EDB78 /* ios */,
 			);
 			name = platform;
@@ -684,8 +670,6 @@
 				968842D027C3E0B4008EDB78 /* VgxTexture.cpp in Sources */,
 				967C6EEB27C529A600F83E6F /* CGPixelRenderPipeline.m in Sources */,
 				967C6EFA27C529A600F83E6F /* CGPixelTargetOutput.m in Sources */,
-				9674124E27C284EB0047AF24 /* VeRenderManager.cpp in Sources */,
-				9674125227C28A5C0047AF24 /* VeRenderInterface.cpp in Sources */,
 				967C6F0427C529A600F83E6F /* CGPixelGrayFilter.m in Sources */,
 				968842D327C3E0B4008EDB78 /* VgxVec2f.cpp in Sources */,
 				967C6EF527C529A600F83E6F /* CGPixelVideoInput.m in Sources */,

@@ -11,8 +11,6 @@
 
 @interface VeView ()
 @property(nonatomic, strong)CGPixelViewOutput *glView;
-//@property(nonatomic, strong)CGDrawAgent *agent;
-
 @end
 
 @implementation VeView
