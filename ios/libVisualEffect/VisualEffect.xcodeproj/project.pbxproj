@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		967409FF27C1F0520047AF24 /* libVisualEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 967409FE27C1F0520047AF24 /* libVisualEffect.m */; };
-		96740A0027C1F0520047AF24 /* libVisualEffect.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 967409FD27C1F0520047AF24 /* libVisualEffect.h */; };
+		967409FF27C1F0520047AF24 /* VisualEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 967409FE27C1F0520047AF24 /* VisualEffect.m */; };
+		96740A0027C1F0520047AF24 /* VisualEffect.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 967409FD27C1F0520047AF24 /* VisualEffect.h */; };
 		967C6EEA27C529A600F83E6F /* CGPixelPipelineOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C6EA227C529A500F83E6F /* CGPixelPipelineOutput.m */; };
 		967C6EEB27C529A600F83E6F /* CGPixelRenderPipeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C6EA327C529A500F83E6F /* CGPixelRenderPipeline.m */; };
 		967C6EEC27C529A600F83E6F /* CGPixelUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C6EA527C529A500F83E6F /* CGPixelUtils.m */; };
@@ -60,16 +60,16 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				96740A0027C1F0520047AF24 /* libVisualEffect.h in CopyFiles */,
+				96740A0027C1F0520047AF24 /* VisualEffect.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		967409FA27C1F0520047AF24 /* liblibVisualEffect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibVisualEffect.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		967409FD27C1F0520047AF24 /* libVisualEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libVisualEffect.h; sourceTree = "<group>"; };
-		967409FE27C1F0520047AF24 /* libVisualEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libVisualEffect.m; sourceTree = "<group>"; };
+		967409FA27C1F0520047AF24 /* libVisualEffect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVisualEffect.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		967409FD27C1F0520047AF24 /* VisualEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VisualEffect.h; sourceTree = "<group>"; };
+		967409FE27C1F0520047AF24 /* VisualEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisualEffect.m; sourceTree = "<group>"; };
 		967C6E9F27C529A500F83E6F /* CGPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPixel.h; sourceTree = "<group>"; };
 		967C6EA127C529A500F83E6F /* CGPixelRenderPipeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPixelRenderPipeline.h; sourceTree = "<group>"; };
 		967C6EA227C529A500F83E6F /* CGPixelPipelineOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPixelPipelineOutput.m; sourceTree = "<group>"; };
@@ -231,7 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				9688430627C3E1DF008EDB78 /* VisualEffect.docc */,
-				967409FC27C1F0520047AF24 /* libVisualEffect */,
+				967409FC27C1F0520047AF24 /* VisualEffect */,
 				967409FB27C1F0520047AF24 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -239,21 +239,21 @@
 		967409FB27C1F0520047AF24 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				967409FA27C1F0520047AF24 /* liblibVisualEffect.a */,
+				967409FA27C1F0520047AF24 /* libVisualEffect.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		967409FC27C1F0520047AF24 /* libVisualEffect */ = {
+		967409FC27C1F0520047AF24 /* VisualEffect */ = {
 			isa = PBXGroup;
 			children = (
 				9688430827C3E2B1008EDB78 /* platform */,
 				968842D627C3E191008EDB78 /* vfx */,
 				968842AB27C3E0B4008EDB78 /* vgx */,
-				967409FD27C1F0520047AF24 /* libVisualEffect.h */,
-				967409FE27C1F0520047AF24 /* libVisualEffect.m */,
+				967409FD27C1F0520047AF24 /* VisualEffect.h */,
+				967409FE27C1F0520047AF24 /* VisualEffect.m */,
 			);
-			path = libVisualEffect;
+			path = VisualEffect;
 			sourceTree = "<group>";
 		};
 		967C6E9E27C529A500F83E6F /* render */ = {
@@ -594,9 +594,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		967409F927C1F0520047AF24 /* libVisualEffect */ = {
+		967409F927C1F0520047AF24 /* VisualEffect */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 96740A0327C1F0520047AF24 /* Build configuration list for PBXNativeTarget "libVisualEffect" */;
+			buildConfigurationList = 96740A0327C1F0520047AF24 /* Build configuration list for PBXNativeTarget "VisualEffect" */;
 			buildPhases = (
 				967409F627C1F0520047AF24 /* Sources */,
 				967409F727C1F0520047AF24 /* Frameworks */,
@@ -606,9 +606,9 @@
 			);
 			dependencies = (
 			);
-			name = libVisualEffect;
+			name = VisualEffect;
 			productName = libVisualEffect;
-			productReference = 967409FA27C1F0520047AF24 /* liblibVisualEffect.a */;
+			productReference = 967409FA27C1F0520047AF24 /* libVisualEffect.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -625,7 +625,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 967409F527C1F0520047AF24 /* Build configuration list for PBXProject "libVisualEffect" */;
+			buildConfigurationList = 967409F527C1F0520047AF24 /* Build configuration list for PBXProject "VisualEffect" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -638,7 +638,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				967409F927C1F0520047AF24 /* libVisualEffect */,
+				967409F927C1F0520047AF24 /* VisualEffect */,
 			);
 		};
 /* End PBXProject section */
@@ -681,7 +681,7 @@
 				967C6F0427C529A600F83E6F /* CGPixelGrayFilter.m in Sources */,
 				968842D327C3E0B4008EDB78 /* VgxVec2f.cpp in Sources */,
 				967C6EF527C529A600F83E6F /* CGPixelVideoInput.m in Sources */,
-				967409FF27C1F0520047AF24 /* libVisualEffect.m in Sources */,
+				967409FF27C1F0520047AF24 /* VisualEffect.m in Sources */,
 				967C6EF927C529A600F83E6F /* CGPixelPixelbufferOutput.m in Sources */,
 				967C6EF727C529A600F83E6F /* CGPixelRawDataInput.m in Sources */,
 				967C6F0327C529A600F83E6F /* CGPixelRadialRotateBlurFilter.m in Sources */,
@@ -834,7 +834,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		967409F527C1F0520047AF24 /* Build configuration list for PBXProject "libVisualEffect" */ = {
+		967409F527C1F0520047AF24 /* Build configuration list for PBXProject "VisualEffect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96740A0127C1F0520047AF24 /* Debug */,
@@ -843,7 +843,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		96740A0327C1F0520047AF24 /* Build configuration list for PBXNativeTarget "libVisualEffect" */ = {
+		96740A0327C1F0520047AF24 /* Build configuration list for PBXNativeTarget "VisualEffect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96740A0427C1F0520047AF24 /* Debug */,

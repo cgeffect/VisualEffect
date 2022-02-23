@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		962833D727C5D7C3008C431C /* libVisualEffect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 962833D627C5D7C3008C431C /* libVisualEffect.a */; };
 		967409C527C1EFDA0047AF24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 967409C427C1EFDA0047AF24 /* AppDelegate.m */; };
 		967409C827C1EFDA0047AF24 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 967409C727C1EFDA0047AF24 /* SceneDelegate.m */; };
 		967409CB27C1EFDA0047AF24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967409CA27C1EFDA0047AF24 /* ViewController.m */; };
@@ -14,13 +15,13 @@
 		967409D027C1EFDB0047AF24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967409CF27C1EFDB0047AF24 /* Assets.xcassets */; };
 		967409D327C1EFDB0047AF24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967409D127C1EFDB0047AF24 /* LaunchScreen.storyboard */; };
 		967409D627C1EFDB0047AF24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 967409D527C1EFDB0047AF24 /* main.m */; };
-		96740A0827C1F0B30047AF24 /* liblibVisualEffect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96740A0727C1F0B30047AF24 /* liblibVisualEffect.a */; };
 		96740ADC27C1F3950047AF24 /* rgba8_1125x1125.rgba in Resources */ = {isa = PBXBuildFile; fileRef = 96740AD727C1F3950047AF24 /* rgba8_1125x1125.rgba */; };
 		96740ADD27C1F3950047AF24 /* VeRenderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96740AD927C1F3950047AF24 /* VeRenderController.m */; };
 		96F4260F27C5405900D441A6 /* CGDrawAgent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96F4260E27C5405900D441A6 /* CGDrawAgent.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		962833D627C5D7C3008C431C /* libVisualEffect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libVisualEffect.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		967409C027C1EFDA0047AF24 /* VisualView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967409C327C1EFDA0047AF24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		967409C427C1EFDA0047AF24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96740A0827C1F0B30047AF24 /* liblibVisualEffect.a in Frameworks */,
+				962833D727C5D7C3008C431C /* libVisualEffect.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +96,7 @@
 		96740A0627C1F0B30047AF24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				962833D627C5D7C3008C431C /* libVisualEffect.a */,
 				96F4260C27C5402D00D441A6 /* libc++.tbd */,
 				96740A0727C1F0B30047AF24 /* liblibVisualEffect.a */,
 			);

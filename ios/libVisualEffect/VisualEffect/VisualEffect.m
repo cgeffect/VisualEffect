@@ -5,8 +5,8 @@
 //  Created by Jason on 2022/2/20.
 //
 
-#import "libVisualEffect.h"
+#import "VisualEffect.h"
 
-@implementation libVisualEffect
+@implementation VisualEffect
 
 @end

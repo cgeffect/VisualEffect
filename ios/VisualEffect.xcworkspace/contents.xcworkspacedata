@@ -5,6 +5,6 @@
       location = "group:VisualView/VisualView.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:libVisualEffect/libVisualEffect.xcodeproj">
+      location = "group:/Users/jason/Jason/project/VisualEffect/ios/libVisualEffect/VisualEffect.xcodeproj">
    </FileRef>
 </Workspace>

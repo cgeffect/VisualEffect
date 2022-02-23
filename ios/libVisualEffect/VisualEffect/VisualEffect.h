@@ -7,6 +7,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface libVisualEffect : NSObject
+@interface VisualEffect : NSObject
 
 @end
