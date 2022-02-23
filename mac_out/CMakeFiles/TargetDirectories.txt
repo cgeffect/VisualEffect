@@ -1,0 +1,3 @@
+/Users/jason/Jason/project/VisualEffect/mac_out/CMakeFiles/pag.dir
+/Users/jason/Jason/project/VisualEffect/mac_out/CMakeFiles/edit_cache.dir
+/Users/jason/Jason/project/VisualEffect/mac_out/CMakeFiles/rebuild_cache.dir
