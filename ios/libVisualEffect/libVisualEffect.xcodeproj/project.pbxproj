@@ -213,7 +213,7 @@
 		96F4260627C53C8200D441A6 /* pointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pointer.h; sourceTree = "<group>"; };
 		96F4260827C53C8200D441A6 /* inttypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inttypes.h; sourceTree = "<group>"; };
 		96F4260927C53C8200D441A6 /* stdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdint.h; sourceTree = "<group>"; };
-		96F4261227C5D27F00D441A6 /* Vmg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vmg.h; sourceTree = "<group>"; };
+		96F4261427C5D39300D441A6 /* Vfx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vfx.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,7 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				9688430827C3E2B1008EDB78 /* platform */,
-				968842D627C3E191008EDB78 /* vmg */,
+				968842D627C3E191008EDB78 /* vfx */,
 				968842AB27C3E0B4008EDB78 /* vgx */,
 				967409FD27C1F0520047AF24 /* libVisualEffect.h */,
 				967409FE27C1F0520047AF24 /* libVisualEffect.m */,
@@ -468,15 +468,15 @@
 			path = shader;
 			sourceTree = "<group>";
 		};
-		968842D627C3E191008EDB78 /* vmg */ = {
+		968842D627C3E191008EDB78 /* vfx */ = {
 			isa = PBXGroup;
 			children = (
 				96F4261027C5CF4C00D441A6 /* public */,
 				968842D727C3E191008EDB78 /* third */,
 				9688430227C3E191008EDB78 /* json */,
 			);
-			name = vmg;
-			path = ../../../src/vmg;
+			name = vfx;
+			path = ../../../src/vfx;
 			sourceTree = "<group>";
 		};
 		968842D727C3E191008EDB78 /* third */ = {
@@ -586,7 +586,7 @@
 		96F4261027C5CF4C00D441A6 /* public */ = {
 			isa = PBXGroup;
 			children = (
-				96F4261227C5D27F00D441A6 /* Vmg.h */,
+				96F4261427C5D39300D441A6 /* Vfx.h */,
 			);
 			path = public;
 			sourceTree = "<group>";
