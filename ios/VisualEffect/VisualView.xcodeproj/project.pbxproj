@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		967409C027C1EFDA0047AF24 /* VisualEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		967409C027C1EFDA0047AF24 /* VisualView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967409C327C1EFDA0047AF24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		967409C427C1EFDA0047AF24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		967409C627C1EFDA0047AF24 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 		967409C127C1EFDA0047AF24 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				967409C027C1EFDA0047AF24 /* VisualEffect.app */,
+				967409C027C1EFDA0047AF24 /* VisualView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,9 +124,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		967409BF27C1EFDA0047AF24 /* VisualEffect */ = {
+		967409BF27C1EFDA0047AF24 /* VisualView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 967409D927C1EFDB0047AF24 /* Build configuration list for PBXNativeTarget "VisualEffect" */;
+			buildConfigurationList = 967409D927C1EFDB0047AF24 /* Build configuration list for PBXNativeTarget "VisualView" */;
 			buildPhases = (
 				967409BC27C1EFDA0047AF24 /* Sources */,
 				967409BD27C1EFDA0047AF24 /* Frameworks */,
@@ -136,9 +136,9 @@
 			);
 			dependencies = (
 			);
-			name = VisualEffect;
+			name = VisualView;
 			productName = VisualEffect;
-			productReference = 967409C027C1EFDA0047AF24 /* VisualEffect.app */;
+			productReference = 967409C027C1EFDA0047AF24 /* VisualView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -155,7 +155,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 967409BB27C1EFDA0047AF24 /* Build configuration list for PBXProject "VisualEffect" */;
+			buildConfigurationList = 967409BB27C1EFDA0047AF24 /* Build configuration list for PBXProject "VisualView" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -168,7 +168,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				967409BF27C1EFDA0047AF24 /* VisualEffect */,
+				967409BF27C1EFDA0047AF24 /* VisualView */,
 			);
 		};
 /* End PBXProject section */
@@ -394,7 +394,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		967409BB27C1EFDA0047AF24 /* Build configuration list for PBXProject "VisualEffect" */ = {
+		967409BB27C1EFDA0047AF24 /* Build configuration list for PBXProject "VisualView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				967409D727C1EFDB0047AF24 /* Debug */,
@@ -403,7 +403,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		967409D927C1EFDB0047AF24 /* Build configuration list for PBXNativeTarget "VisualEffect" */ = {
+		967409D927C1EFDB0047AF24 /* Build configuration list for PBXNativeTarget "VisualView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				967409DA27C1EFDB0047AF24 /* Debug */,
