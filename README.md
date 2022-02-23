@@ -8,7 +8,7 @@ plan:
 vgx
 c++ 实现的基于opengl的无关平台的渲染库
 
-lottie
+vfx
 c++实现的基于vefx实现AE渲染效果的库
 
 platform
