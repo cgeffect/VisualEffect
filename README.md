@@ -1,5 +1,8 @@
 # VisualEffect
 
+[![](https://p1-jj.byteimg.com/tos-cn-i-t2oaga2asx/gold-user-assets/2017/12/13/1604ec3c62a7de14~tplv-t2oaga2asx-image.image)](https://travis-ci.org/Alamofire/Alamofire) ![](https://img.shields.io/badge/language-c++-orange.svg) ![](https://img.shields.io/badge/language-objective-orange.svg) ![](https://img.shields.io/badge/language-java-orange.svg) ![](https://img.shields.io/badge/license-Apache-3CB371.svg)
+
+
 plan:
 
 vgx
