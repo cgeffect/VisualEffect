@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/jason/Jason/project/VisualEffect/ios/VisualEffect/VisualView.xcodeproj">
+      location = "group:VisualView/VisualView.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:libVisualEffect/libVisualEffect.xcodeproj">
