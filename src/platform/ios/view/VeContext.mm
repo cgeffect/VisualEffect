@@ -1,20 +1,20 @@
 //
-//  VeDrawContext.m
+//  VeContext.m
 //  libVisualEffect
 //
 //  Created by Jason on 2022/2/22.
 //
 
-#import "VeDrawContext.h"
+#import "VeContext.h"
 #import "Vgx.h"
 
-@interface VeDrawContext ()
+@interface VeContext ()
 {
     
 }
 @end
 
-@implementation VeDrawContext
+@implementation VeContext
 
 - (int)glDrawData:(UInt8 *)data width:(int)width height:(int)height {
 

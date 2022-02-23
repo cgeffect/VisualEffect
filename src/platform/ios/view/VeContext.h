@@ -1,5 +1,5 @@
 //
-//  VeDrawContext.h
+//  VeContext.h
 //  libVisualEffect
 //
 //  Created by Jason on 2022/2/22.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface VeDrawContext : NSObject
+@interface VeContext : NSObject
 
 - (int)glDrawData:(UInt8 *)data width:(int)width height:(int)height;
 

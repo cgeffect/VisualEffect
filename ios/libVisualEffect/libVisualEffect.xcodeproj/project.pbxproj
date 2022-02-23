@@ -39,7 +39,7 @@
 		967C6F0527C529A600F83E6F /* CGPixelShakeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C6EE627C529A600F83E6F /* CGPixelShakeFilter.m */; };
 		967C6F0627C529A600F83E6F /* CGPixelRadialFastBlurFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C6EE927C529A600F83E6F /* CGPixelRadialFastBlurFilter.m */; };
 		967C6F0D27C52C7C00F83E6F /* VeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 967C6F0C27C52C7C00F83E6F /* VeView.m */; };
-		967C6F1027C52D6F00F83E6F /* VeDrawContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = 967C6F0F27C52D6F00F83E6F /* VeDrawContext.mm */; };
+		967C6F1027C52D6F00F83E6F /* VeContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = 967C6F0F27C52D6F00F83E6F /* VeContext.mm */; };
 		968842CD27C3E0B4008EDB78 /* VgxProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968842B127C3E0B4008EDB78 /* VgxProgram.cpp */; };
 		968842CE27C3E0B4008EDB78 /* VgxInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968842B227C3E0B4008EDB78 /* VgxInterface.cpp */; };
 		968842CF27C3E0B4008EDB78 /* VgxFramebufferCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 968842B327C3E0B4008EDB78 /* VgxFramebufferCache.cpp */; };
@@ -142,8 +142,8 @@
 		967C6EE927C529A600F83E6F /* CGPixelRadialFastBlurFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPixelRadialFastBlurFilter.m; sourceTree = "<group>"; };
 		967C6F0B27C52C7C00F83E6F /* VeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VeView.h; sourceTree = "<group>"; };
 		967C6F0C27C52C7C00F83E6F /* VeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VeView.m; sourceTree = "<group>"; };
-		967C6F0E27C52D6F00F83E6F /* VeDrawContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VeDrawContext.h; sourceTree = "<group>"; };
-		967C6F0F27C52D6F00F83E6F /* VeDrawContext.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VeDrawContext.mm; sourceTree = "<group>"; };
+		967C6F0E27C52D6F00F83E6F /* VeContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VeContext.h; sourceTree = "<group>"; };
+		967C6F0F27C52D6F00F83E6F /* VeContext.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VeContext.mm; sourceTree = "<group>"; };
 		967C6F1527C530DC00F83E6F /* Vgx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vgx.h; sourceTree = "<group>"; };
 		968842AD27C3E0B4008EDB78 /* VgxFramebufferCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxFramebufferCache.h; sourceTree = "<group>"; };
 		968842AE27C3E0B4008EDB78 /* VgxTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxTexture.h; sourceTree = "<group>"; };
@@ -378,8 +378,8 @@
 			children = (
 				967C6F0B27C52C7C00F83E6F /* VeView.h */,
 				967C6F0C27C52C7C00F83E6F /* VeView.m */,
-				967C6F0E27C52D6F00F83E6F /* VeDrawContext.h */,
-				967C6F0F27C52D6F00F83E6F /* VeDrawContext.mm */,
+				967C6F0E27C52D6F00F83E6F /* VeContext.h */,
+				967C6F0F27C52D6F00F83E6F /* VeContext.mm */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -387,11 +387,11 @@
 		968842AB27C3E0B4008EDB78 /* vgx */ = {
 			isa = PBXGroup;
 			children = (
+				968842C527C3E0B4008EDB78 /* public */,
 				968842AC27C3E0B4008EDB78 /* core */,
 				968842B727C3E0B4008EDB78 /* input */,
 				968842BB27C3E0B4008EDB78 /* output */,
 				968842BE27C3E0B4008EDB78 /* utils */,
-				968842C527C3E0B4008EDB78 /* public */,
 				968842C927C3E0B4008EDB78 /* shader */,
 			);
 			name = vgx;
@@ -471,9 +471,9 @@
 		968842D627C3E191008EDB78 /* vex */ = {
 			isa = PBXGroup;
 			children = (
+				96F4261027C5CF4C00D441A6 /* public */,
 				968842D727C3E191008EDB78 /* third */,
 				9688430227C3E191008EDB78 /* json */,
-				968AFC8327C5323D00602D9C /* Vex.h */,
 			);
 			name = vex;
 			path = ../../../src/vex;
@@ -583,6 +583,14 @@
 			path = msinttypes;
 			sourceTree = "<group>";
 		};
+		96F4261027C5CF4C00D441A6 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				968AFC8327C5323D00602D9C /* Vex.h */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -678,7 +686,7 @@
 				967C6EF727C529A600F83E6F /* CGPixelRawDataInput.m in Sources */,
 				967C6F0327C529A600F83E6F /* CGPixelRadialRotateBlurFilter.m in Sources */,
 				967C6EF127C529A600F83E6F /* CGPixelProgram.m in Sources */,
-				967C6F1027C52D6F00F83E6F /* VeDrawContext.mm in Sources */,
+				967C6F1027C52D6F00F83E6F /* VeContext.mm in Sources */,
 				967C6F0127C529A600F83E6F /* CGPixelGlitchFilter.m in Sources */,
 				967C6EEF27C529A600F83E6F /* CGPixelContext.m in Sources */,
 				967C6F0527C529A600F83E6F /* CGPixelShakeFilter.m in Sources */,

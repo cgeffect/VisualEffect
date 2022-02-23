@@ -7,11 +7,11 @@
 
 #import "VeView.h"
 #include "CGPixel.h"
-#include "VeDrawContext.h"
+#include "VeContext.h"
 
 @interface VeView ()
 {
-    VeDrawContext *ctx;
+    VeContext *ctx;
 }
 @property(nonatomic, strong)CGPixelViewOutput *glView;
 @end
@@ -25,7 +25,7 @@
         _glView = [[CGPixelViewOutput alloc] initWithFrame:self.bounds];
         _glView.center = self.center;
         [self addSubview:_glView];
-        ctx = [[VeDrawContext alloc] init];
+        ctx = [[VeContext alloc] init];
     }
     return self;
 }
