@@ -15,22 +15,23 @@
 #include "IVgxFilter.h"
 
 namespace vgx {
-class VgxFilter:public VgxInput, public VgxOutput  {
+class VgxFilter:public VgxInput, public VgxOutput, public IVgxFilter {
     
 public:
     VgxFilter();
     virtual ~VgxFilter();
     
 public: //VgxInput
-    void setInputVertexShader(unsigned char *vShader, unsigned char *fShader);
     
-    void newFramebufferAvailable(VgxFramebuffer *inFramebuffer) override;
+    virtual void newFramebufferAvailable(VgxFramebuffer *inFramebuffer) override;
 
-public:
+public: //IVgxFilter
     
-    void renderToTextureWithVertices(const float *vertices, const float *textureCoordinates);
+    virtual void setInputVertexShader(unsigned char *vShader, unsigned char *fShader) override;
     
-    void notifyNextTargetsAboutNewFrame();
+    virtual void renderToTextureWithVertices(const float *vertices, const float *textureCoordinates) override;
+    
+    virtual void notifyNextTargetsAboutNewFrame() override;
 
 private:
     GLint mPosition;

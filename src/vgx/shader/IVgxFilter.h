@@ -1,24 +1,25 @@
-////
-////  IVgxFilter.hpp
-////  VisualEffect
-////
-////  Created by Jason on 2022/2/23.
-////
 //
-//#ifndef IVgxFilter_hpp
-//#define IVgxFilter_hpp
+//  IVgxFilter.h
+//  VisualEffect
 //
-//namespace vgx {
-//class IVgxFilter {
+//  Created by Jason on 2022/2/24.
 //
-//public:
-//
-//    virtual void setInputVertexShader(unsigned char *vShader, unsigned char *fShader) = 0;
-//
-//    virtual void renderToTextureWithVertices(const float *vertices, const float *textureCoordinates) = 0;
-//
-//    virtual void notifyNextTargetsAboutNewFrame() = 0;
-//
-//};
-//
-//#endif /* IVgxFilter_hpp */
+
+#ifndef IVgxFilter_h
+#define IVgxFilter_h
+
+namespace vgx {
+class IVgxFilter {
+
+public:
+    
+    virtual void setInputVertexShader(unsigned char *vShader, unsigned char *fShader) = 0;
+    
+    virtual void renderToTextureWithVertices(const float *vertices, const float *textureCoordinates) = 0;
+    
+    virtual void notifyNextTargetsAboutNewFrame() = 0;
+
+};
+}
+
+#endif /* IVgxFilter_h */
