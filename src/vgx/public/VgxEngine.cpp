@@ -1,25 +1,25 @@
+////
+////  VgxEngine.cpp
+////  Vgx
+////
+////  Created by VisualEffect on 2021/7/9.
+////
 //
-//  VgxEngine.cpp
-//  Vgx
+//#include <stdio.h>
+//#include "VgxEngine.h"
 //
-//  Created by UFOTO on 2021/7/9.
+//long registerEngine() {
+//    return 0;
+//}
 //
-
-#include <stdio.h>
-#include "VgxEngine.h"
-
-long registerEngine() {
-    return 0;
-}
-
-void setInputData(char *data) {
-    
-}
-
-void register_callback(long handle, CallbackCpp *callback) {
-    
-}
-
-void getRenderTexture(long handle) {
-    
-}
+//void setInputData(char *data) {
+//    
+//}
+//
+//void register_callback(long handle, CallbackCpp *callback) {
+//    
+//}
+//
+//void getRenderTexture(long handle) {
+//    
+//}

@@ -9,9 +9,7 @@
 #import "Vgx.h"
 
 @interface VeContext ()
-{
-    
-}
+
 @end
 
 @implementation VeContext
@@ -29,4 +27,5 @@
     int texId = output->getTexId();
     return texId;
 }
+
 @end

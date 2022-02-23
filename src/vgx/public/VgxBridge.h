@@ -1,21 +1,21 @@
+////
+////  VgxBridge.h
+////  Vgx
+////
+////  Created by VisualEffect on 2021/7/9.
+////
 //
-//  VgxBridge.h
-//  Vgx
+//#ifndef VgxBridge_h
+//#define VgxBridge_h
 //
-//  Created by UFOTO on 2021/7/9.
+//#ifdef __APPLE__
 //
-
-#ifndef VgxBridge_h
-#define VgxBridge_h
-
-#ifdef __APPLE__
-
-typedef unsigned char *(*getTexture)(void *bridge, long tmp);
-typedef struct Bridge_IOS {
-    void *bridge;
-    getTexture getTexture;
-} CallbackCpp;
-
-#endif
-
-#endif /* VgxBridge_h */
+//typedef unsigned char *(*getTexture)(void *bridge, long tmp);
+//typedef struct Bridge_IOS {
+//    void *bridge;
+//    getTexture getTexture;
+//} CallbackCpp;
+//
+//#endif
+//
+//#endif /* VgxBridge_h */

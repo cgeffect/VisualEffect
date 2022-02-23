@@ -67,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		962833E227C689DD008C431C /* IVgxFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IVgxFilter.h; sourceTree = "<group>"; };
 		967409FA27C1F0520047AF24 /* libVisualEffect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libVisualEffect.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		967409FD27C1F0520047AF24 /* VisualEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VisualEffect.h; sourceTree = "<group>"; };
 		967409FE27C1F0520047AF24 /* VisualEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VisualEffect.m; sourceTree = "<group>"; };
@@ -461,6 +462,7 @@
 		968842C927C3E0B4008EDB78 /* shader */ = {
 			isa = PBXGroup;
 			children = (
+				962833E227C689DD008C431C /* IVgxFilter.h */,
 				968842CC27C3E0B4008EDB78 /* VgxFilter.cpp */,
 				968842CA27C3E0B4008EDB78 /* VgxFilter.h */,
 				968842CB27C3E0B4008EDB78 /* VgxShader.h */,

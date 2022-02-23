@@ -5,13 +5,14 @@
 //  Created by Jason on 2021/6/11.
 //
 
-#ifndef CGDrawFilter_h
-#define CGDrawFilter_h
+#ifndef VgxFilter_h
+#define VgxFilter_h
 
 #include <stdio.h>
 #include "VgxInput.h"
 #include "VgxOutput.h"
 #include "VgxProgram.h"
+#include "IVgxFilter.h"
 
 namespace vgx {
 class VgxFilter:public VgxInput, public VgxOutput  {
@@ -20,13 +21,17 @@ public:
     VgxFilter();
     virtual ~VgxFilter();
     
+public: //VgxInput
     void setInputVertexShader(unsigned char *vShader, unsigned char *fShader);
     
+    void newFramebufferAvailable(VgxFramebuffer *inFramebuffer) override;
+
 public:
+    
     void renderToTextureWithVertices(const float *vertices, const float *textureCoordinates);
+    
     void notifyNextTargetsAboutNewFrame();
 
-    void newFramebufferAvailable(VgxFramebuffer *inFramebuffer) override;
 private:
     GLint mPosition;
     GLint mTexCoord;
@@ -35,4 +40,4 @@ private:
     VgxProgram *mShaderProgram;
 };
 }
-#endif /* CGDrawFilter_h */
+#endif /* VgxFilter_h */
