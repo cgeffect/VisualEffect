@@ -1,6 +1,6 @@
 //
-//  libVisualEffect.m
-//  libVisualEffect
+//  VisualEffect.m
+//  VisualEffect
 //
 //  Created by Jason on 2022/2/20.
 //
