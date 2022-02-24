@@ -1,5 +1,5 @@
 //
-//  VgxInput.h
+//  IVgxInput.h
 //  Vgx
 //
 //  Created by Jason on 2021/6/11.
@@ -13,7 +13,7 @@
 
 namespace vgx {
 
-class VgxInput {
+class IVgxInput {
         
 public:
     //纯虚函数, 有定义无实现, 不能创建实例对象

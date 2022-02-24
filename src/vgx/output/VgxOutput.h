@@ -10,7 +10,7 @@
 
 #include <stdio.h>
 #include <list>
-#include "VgxInput.h"
+#include "IVgxInput.h"
 #include "VgxFramebuffer.h"
 
 namespace vgx {
@@ -27,16 +27,16 @@ public:
     };
 
     //这几个方法子类不需要重写, 不需要加virtual
-    void addTarget(VgxInput *newtarget) {
+    void addTarget(IVgxInput *newtarget) {
         mTargetList.push_back(newtarget);
     };
-    void removeTarget(VgxInput *targetToRemove) {
+    void removeTarget(IVgxInput *targetToRemove) {
         mTargetList.remove(targetToRemove);
     };
     void removeAllTargets() {
         mTargetList.clear();
     };
-    std::list<VgxInput *>targets() {
+    std::list<IVgxInput *>targets() {
         return mTargetList;
     };
     
@@ -47,7 +47,7 @@ public:
     
 protected:
     VgxFramebuffer *mOutputFramebuffer{nullptr};
-    std::list<VgxInput *>mTargetList;
+    std::list<IVgxInput *>mTargetList;
 };
 
 }

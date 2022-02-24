@@ -9,10 +9,10 @@
 #define VgxTextureOutput_h
 
 #include <stdio.h>
-#include "VgxInput.h"
+#include "IVgxInput.h"
 
 namespace vgx {
-class VgxTextureOutput:public VgxInput {
+class VgxTextureOutput:public IVgxInput {
     
 public:
     VgxTextureOutput() {

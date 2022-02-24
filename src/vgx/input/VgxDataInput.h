@@ -31,9 +31,9 @@ public:
         mOutputFramebuffer = &framebuffer;
     }
     void requestRender() override {
-        std::list<VgxInput *>::iterator iter;
+        std::list<IVgxInput *>::iterator iter;
         for(iter = mTargetList.begin(); iter != mTargetList.end(); iter++) {
-            VgxInput *target = *iter;
+            IVgxInput *target = *iter;
             target->newFramebufferAvailable(mOutputFramebuffer);
         }
     }

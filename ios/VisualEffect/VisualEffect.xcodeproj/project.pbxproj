@@ -158,7 +158,7 @@
 		968842B627C3E0B4008EDB78 /* VgxFramebuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VgxFramebuffer.cpp; sourceTree = "<group>"; };
 		968842B827C3E0B4008EDB78 /* VgxDataInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxDataInput.h; sourceTree = "<group>"; };
 		968842B927C3E0B4008EDB78 /* VgxTextureInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxTextureInput.h; sourceTree = "<group>"; };
-		968842BA27C3E0B4008EDB78 /* VgxInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxInput.h; sourceTree = "<group>"; };
+		968842BA27C3E0B4008EDB78 /* IVgxInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IVgxInput.h; sourceTree = "<group>"; };
 		968842BC27C3E0B4008EDB78 /* VgxTextureOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxTextureOutput.h; sourceTree = "<group>"; };
 		968842BD27C3E0B4008EDB78 /* VgxOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VgxOutput.h; sourceTree = "<group>"; };
 		968842BF27C3E0B4008EDB78 /* VgxShaderUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VgxShaderUtil.cpp; sourceTree = "<group>"; };
@@ -393,7 +393,7 @@
 				968842B727C3E0B4008EDB78 /* input */,
 				968842BB27C3E0B4008EDB78 /* output */,
 				968842BE27C3E0B4008EDB78 /* utils */,
-				968842C927C3E0B4008EDB78 /* shader */,
+				968842C927C3E0B4008EDB78 /* filter */,
 			);
 			name = vgx;
 			path = ../../../src/vgx;
@@ -420,7 +420,7 @@
 			isa = PBXGroup;
 			children = (
 				968842B827C3E0B4008EDB78 /* VgxDataInput.h */,
-				968842BA27C3E0B4008EDB78 /* VgxInput.h */,
+				968842BA27C3E0B4008EDB78 /* IVgxInput.h */,
 				968842B927C3E0B4008EDB78 /* VgxTextureInput.h */,
 			);
 			path = input;
@@ -459,7 +459,7 @@
 			path = public;
 			sourceTree = "<group>";
 		};
-		968842C927C3E0B4008EDB78 /* shader */ = {
+		968842C927C3E0B4008EDB78 /* filter */ = {
 			isa = PBXGroup;
 			children = (
 				962833E727C69182008C431C /* IVgxFilter.h */,
@@ -467,7 +467,7 @@
 				968842CA27C3E0B4008EDB78 /* VgxFilter.h */,
 				968842CB27C3E0B4008EDB78 /* VgxShader.h */,
 			);
-			path = shader;
+			path = filter;
 			sourceTree = "<group>";
 		};
 		968842D627C3E191008EDB78 /* vfx */ = {

@@ -9,13 +9,13 @@
 #define VgxFilter_h
 
 #include <stdio.h>
-#include "VgxInput.h"
+#include "IVgxInput.h"
 #include "VgxOutput.h"
 #include "VgxProgram.h"
 #include "IVgxFilter.h"
 
 namespace vgx {
-class VgxFilter:public VgxInput, public VgxOutput, public IVgxFilter {
+class VgxFilter:public IVgxInput, public IVgxFilter, public VgxOutput {
     
 public:
     VgxFilter();
