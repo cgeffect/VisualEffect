@@ -39,6 +39,7 @@ file(GLOB_RECURSE PAG_FILES
         src/vgx/public/*.*
         src/vgx/shader/*.*
         src/vgx/utils/*.*)
+        
 
 if (PAG_USE_OPENGL)
 
