@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.1)
+
 project(PAG)
 
 # Uncomment the next 4 lines to build libpag for Intel cpus on Apple Silicon devices.
