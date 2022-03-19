@@ -128,4 +128,8 @@ GL_API void GL_APIENTRY glesGetProgramInfoLog (GLuint program, GLsizei bufsize, 
 GL_API void GL_APIENTRY glesGetProgramiv (GLuint program, GLenum pname, GLint* params) {
     glGetProgramiv ( program, pname, params);
 }
+GL_API void GL_APIENTRY glesShaderSource (GLuint shader, GLsizei count, const GLchar* const *string, const GLint* length) {
+    glShaderSource(shader, count, string, length);
+}
+
 #pragma clang diagnostic pop

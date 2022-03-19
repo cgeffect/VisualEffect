@@ -42,5 +42,5 @@ GL_API void GL_APIENTRY glesDeleteShader (GLuint shader);
 GL_API GLenum GL_APIENTRY glesGetError (void);
 GL_API void GL_APIENTRY glesGetProgramInfoLog (GLuint program, GLsizei bufsize, GLsizei* length, GLchar* infolog);
 GL_API void GL_APIENTRY glesGetProgramiv (GLuint program, GLenum pname, GLint* params);
-
+GL_API void GL_APIENTRY glesShaderSource (GLuint shader, GLsizei count, const GLchar* const *string, const GLint* length);
 #endif /* VgxInterface_hpp */

@@ -13,7 +13,7 @@
 using namespace vgx;
 
 bool VgxProgram::setWithVertexShader(unsigned char *vShaderString, unsigned char *fShaderString) {
-    program = glCreateProgram();
+    program = glesCreateProgram();
     
     // Create and compile vertex shader
     bool complieOK = compileShader(&vertShader, GL_VERTEX_SHADER, vShaderString);
@@ -28,8 +28,8 @@ bool VgxProgram::setWithVertexShader(unsigned char *vShaderString, unsigned char
     }
     
     // Attach Shader to program
-    glAttachShader(program, vertShader);
-    glAttachShader(program, fragShader);
+    glesAttachShader(program, vertShader);
+    glesAttachShader(program, fragShader);
     
     return complieOK;
 }
@@ -45,7 +45,7 @@ bool VgxProgram::compileShader(GLuint *shader, GLenum type, unsigned char *shade
     source = (GLchar *)shaderString;
 
     *shader = glCreateShader(type);
-    glShaderSource(*shader, 1, &source, NULL);
+    glesShaderSource(*shader, 1, &source, NULL);
     glCompileShader(*shader);
 
     glGetShaderiv(*shader, GL_COMPILE_STATUS, &status);

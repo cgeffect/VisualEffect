@@ -34,7 +34,6 @@
 		967409D227C1EFDB0047AF24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		967409D427C1EFDB0047AF24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		967409D527C1EFDB0047AF24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		96740A0727C1F0B30047AF24 /* liblibVisualEffect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibVisualEffect.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		96740AD727C1F3950047AF24 /* rgba8_1125x1125.rgba */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rgba8_1125x1125.rgba; sourceTree = "<group>"; };
 		96740AD927C1F3950047AF24 /* VeRenderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VeRenderController.m; sourceTree = "<group>"; };
 		96740ADB27C1F3950047AF24 /* VeRenderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VeRenderController.h; sourceTree = "<group>"; };
@@ -98,7 +97,6 @@
 			children = (
 				962833D627C5D7C3008C431C /* libVisualEffect.a */,
 				96F4260C27C5402D00D441A6 /* libc++.tbd */,
-				96740A0727C1F0B30047AF24 /* liblibVisualEffect.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
