@@ -9,7 +9,7 @@ vgx
 c++ 实现的基于opengl的无关平台的渲染库
 
 vfx
-c++实现的基于vefx实现AE渲染效果的库
+c++实现的基于vgx实现AE渲染效果的库
 
 platform
 平台相关的渲染上线文, 渲染窗口, 业务逻辑控制
@@ -36,7 +36,7 @@ AE插件开发
 
 这个工程工作量挺大的, 一步一步来. 工程当做自己的一个学习项目, 写的同时学到一些东西. 
 
-参考
+参考<br/>
 [bgfx](https://github.com/bkaradzic/bgfx)<br/>
 [bgfx-minimal-example](https://github.com/jpcy/bgfx-minimal-example)<br/>
 [The-Forge](https://github.com/ConfettiFX/The-Forge)<br/>
