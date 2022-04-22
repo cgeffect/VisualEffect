@@ -22,12 +22,12 @@ struct VgxVec2f {
     }
 
     VgxVec2f(float _x, float _y) :
-            x(_x), y(_y) {
+        x(_x), y(_y) {
     }
 
-//    CGVec2f(const CGVec2f &_v) :
-//            x(_v.x), y(_v.y) {
-//    }
+    VgxVec2f(const VgxVec2f &_v) :
+        x(_v.x), y(_v.y) {
+    }
 
     ~VgxVec2f() {
     }
